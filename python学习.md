@@ -1,25 +1,3 @@
-# Python 资源大全中文版
-
-        <!-- 作者区域 -->
-        <div class="author">
-          [
-            ![96](//upload.jianshu.io/users/upload_avatars/2898156/856e36eb-3eec-4e42-b258-12b009fabf5e.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96)
-](/u/c26433653d96)          <div class="info">
-            <span class="name">[天外飞仙丶](/u/c26433653d96)</span>
-            <!-- 关注用户按钮 -->
-            <div props-data-classes="user-follow-button-header" data-author-follow-button></div>
-            <!-- 文章数据信息 -->
-            <div class="meta">
-              <!-- 如果文章更新时间大于发布时间，那么使用 tooltip 显示更新时间 -->
-                <span class="publish-time">2017.12.06 17:51</span>
-              <span class="wordage">字数 14368</span>
-            </div>
-          </div>
-          <!-- 如果是当前作者，加入编辑按钮 -->
-        </div>
-
-        <!-- 文章内容 -->
-        <div data-note-content class="show-content">
 
 # Python 资源大全中文版
 
