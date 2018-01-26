@@ -1,0 +1,2151 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html class="ie lt-ie8"><![endif]-->
+<!--[if IE 7]><html class="ie lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="ie ie8"><![endif]-->
+<!--[if IE 9]><html class="ie ie9"><![endif]-->
+<!--[if !IE]><!--> <html> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+
+  <!-- Start of Baidu Transcode -->
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta name="applicable-device" content="pc,mobile">
+  <meta name="MobileOptimized" content="width"/>
+  <meta name="HandheldFriendly" content="true"/>
+  <meta name="mobile-agent" content="format=html5;url=https://www.jianshu.com/p/e62eff348032">
+  <!-- End of Baidu Transcode -->
+
+    <meta name="description"  content="Python 资源大全中文版 我想很多程序员应该记得 GitHub 上有一个 Awesome - XXX 系列的资源整理。awesome-python 是 vinta 发起维护的 Python 资源列表，内容包括：Web框架、网络爬虫、网络内容提取、模板引擎、数据库、数据可视化、图片处理、文本处理、自然语言处理、机器学习、日志、代码分析等。由伯乐在线持续更新。 Awesome 系列虽然挺全，...">
+
+  <meta name="360-site-verification" content="604a14b53c6b871206001285921e81d8" />
+  <meta property="wb:webmaster" content="294ec9de89e7fadb" />
+  <meta property="qc:admins" content="104102651453316562112116375" />
+  <meta property="qc:admins" content="11635613706305617" />
+  <meta property="qc:admins" content="1163561616621163056375" />
+  <meta name="google-site-verification" content="cV4-qkUJZR6gmFeajx_UyPe47GW9vY6cnCrYtCHYNh4" />
+  <meta name="google-site-verification" content="HF7lfF8YEGs1qtCE-kPml8Z469e2RHhGajy6JPVy5XI" />
+  <meta http-equiv="mobile-agent" content="format=html5; url=https://www.jianshu.com/p/e62eff348032">
+
+  <!-- Apple -->
+  <meta name="apple-mobile-web-app-title" content="简书">
+
+    <!--  Meta for Smart App Banner -->
+  <meta name="apple-itunes-app" content="app-id=888237539, app-argument=jianshu://notes/20695873">
+  <!-- End -->
+
+  <!--  Meta for Twitter Card -->
+  <meta content="summary" property="twitter:card">
+  <meta content="@jianshucom" property="twitter:site">
+  <meta content="Python 资源大全中文版" property="twitter:title">
+  <meta content="Python 资源大全中文版 我想很多程序员应该记得 GitHub 上有一个 Awesome - XXX 系列的资源整理。awesome-python 是 vinta 发起维护的 Python 资源列表，内容包括：Web框架、网络爬虫、网络内容提取、模板引擎、数据库、数据可视化、图片处理、文本处理、自然语言处理、机器学习、日志、代码分析等。由伯乐在线持续更新。 Awesome 系列虽然挺全，但基本只对收录的资源做了极为简要的介绍，如果有更详细的中文介绍，对相应开发者的帮助会更大。这也是我们发起这个开源项目的初衷。 我们要做什么？ 基于 awesome-python 列表，我们将对其中的各..." property="twitter:description">
+  <meta content="https://www.jianshu.com/p/e62eff348032" property="twitter:url">
+  <!-- End -->
+
+  <!--  Meta for OpenGraph -->
+  <meta property="fb:app_id" content="865829053512461">
+  <meta property="og:site_name" content="简书">
+  <meta property="og:title" content="Python 资源大全中文版">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.jianshu.com/p/e62eff348032">
+  <meta property="og:description" content="Python 资源大全中文版 我想很多程序员应该记得 GitHub 上有一个 Awesome - XXX 系列的资源整理。awesome-python 是 vinta 发起维护的 Python ...">
+  <!-- End -->
+
+  <!--  Meta for Facebook Applinks -->
+  <meta property="al:ios:url" content="jianshu://notes/20695873" />
+  <meta property="al:ios:app_store_id" content="888237539" />
+  <meta property="al:ios:app_name" content="简书" />
+
+  <meta property="al:android:url" content="jianshu://notes/20695873" />
+  <meta property="al:android:package" content="com.jianshu.haruki" />
+  <meta property="al:android:app_name" content="简书" />
+  <!-- End -->
+
+    <title>Python 资源大全中文版 - 简书</title>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="ogmxBuusgXC1b3aywQ+in/4A2yxkR/j6I+1leKwgMOKwtAlMvLUifI4Bk3/t428NsDcCUVlsHd0NpC2BNdcwYQ==" />
+
+  <link rel="stylesheet" media="all" href="//cdn2.jianshu.io/assets/web-b902b38f60020358f549.css" />
+
+  <link rel="stylesheet" media="all" href="//cdn2.jianshu.io/assets/web/pages/notes/show/entry-cce16e51495a87f95c7a.css" />
+
+  <link href="//cdn2.jianshu.io/assets/favicons/favicon-03411b154a430b85d807b4366489c21122fb983a38f3d7ca926f882e6367b13e.ico" rel="icon">
+      <link rel="apple-touch-icon-precomposed" href="//cdn2.jianshu.io/assets/apple-touch-icons/57-a6f1f1ee62ace44f6dc2f6a08575abd3c3b163288881c78dd8d75247682a4b27.png" sizes="57x57" />
+      <link rel="apple-touch-icon-precomposed" href="//cdn2.jianshu.io/assets/apple-touch-icons/72-fb9834bcfce738fd7b9c5e31363e79443e09a81a8e931170b58bc815387c1562.png" sizes="72x72" />
+      <link rel="apple-touch-icon-precomposed" href="//cdn2.jianshu.io/assets/apple-touch-icons/76-49d88e539ff2489475d603994988d871219141ecaa0b1a7a9a1914f4fe3182d6.png" sizes="76x76" />
+      <link rel="apple-touch-icon-precomposed" href="//cdn2.jianshu.io/assets/apple-touch-icons/114-24252fe693524ed3a9d0905e49bff3cbd0228f25a320aa09053c2ebb4955de97.png" sizes="114x114" />
+      <link rel="apple-touch-icon-precomposed" href="//cdn2.jianshu.io/assets/apple-touch-icons/120-1bb7371f5e87f93ce780a5f1a05ff1b176828ee0d1d130e768575918a2e05834.png" sizes="120x120" />
+      <link rel="apple-touch-icon-precomposed" href="//cdn2.jianshu.io/assets/apple-touch-icons/152-bf209460fc1c17bfd3e2b84c8e758bc11ca3e570fd411c3bbd84149b97453b99.png" sizes="152x152" />
+
+  <!-- Start of 访问统计 -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?0c0e9d9b1e7d617b3e6842e85b9fb068";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+  <!-- End of 访问统计 -->
+</head>
+
+  <body lang="zh-CN" class="reader-black-font">
+    <!-- 全局顶部导航栏 -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="width-limit">
+    <!-- 左上方 Logo -->
+    [![Nav logo](//cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png)](/)
+
+    <!-- 右上角 -->
+      <!-- 未登录显示登录/注册/写文章 -->
+      [
+        写文章
+](/writer#/)      [注册](/sign_up)
+      [登录](/sign_in)
+
+    <!-- 如果用户登录，显示下拉菜单 -->
+
+    <div id="view-mode-ctrl">
+    </div>
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="menu">
+
+*   [
+                <span class="menu-text">首页</span>
+](/)*   [<span class="menu-text">下载App</span>](/apps?utm_medium=desktop&amp;utm_source=navbar-apps)
+*   <form target="_blank" action="/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+              <input type="text" name="q" id="q" value="" autocomplete="off" placeholder="搜索" class="search-input" />
+              [](javascript:void(null))
+</form>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="note">
+  [<span class="close">&times;</span>](/apps/download?utm_source=sbc)
+  <div class="post">
+    <div class="article">
+
+# Python 资源大全中文版
+
+        <!-- 作者区域 -->
+        <div class="author">
+          [
+            ![96](//upload.jianshu.io/users/upload_avatars/2898156/856e36eb-3eec-4e42-b258-12b009fabf5e.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96)
+](/u/c26433653d96)          <div class="info">
+            <span class="name">[天外飞仙丶](/u/c26433653d96)</span>
+            <!-- 关注用户按钮 -->
+            <div props-data-classes="user-follow-button-header" data-author-follow-button></div>
+            <!-- 文章数据信息 -->
+            <div class="meta">
+              <!-- 如果文章更新时间大于发布时间，那么使用 tooltip 显示更新时间 -->
+                <span class="publish-time">2017.12.06 17:51</span>
+              <span class="wordage">字数 14368</span>
+            </div>
+          </div>
+          <!-- 如果是当前作者，加入编辑按钮 -->
+        </div>
+
+        <!-- 文章内容 -->
+        <div data-note-content class="show-content">
+
+# Python 资源大全中文版
+
+我想很多程序员应该记得 GitHub 上有一个 Awesome - XXX 系列的资源整理。[awesome-python](https://link.jianshu.com?t=https://github.com/vinta/awesome-python) 是 vinta 发起维护的 Python 资源列表，内容包括：Web框架、网络爬虫、网络内容提取、模板引擎、数据库、数据可视化、图片处理、文本处理、自然语言处理、机器学习、日志、代码分析等。由伯乐在线持续更新。
+
+Awesome 系列虽然挺全，但基本只对收录的资源做了极为简要的介绍，如果有更详细的中文介绍，对相应开发者的帮助会更大。这也是我们发起这个开源项目的初衷。
+
+* * *
+
+### 我们要做什么？
+
+*   基于 awesome-python 列表，我们将对其中的各个资源项进行编译整理。此外还将从其他来源补充好资源。
+
+*   整理后的内容，将收录在[伯乐在线资源频道](https://link.jianshu.com?t=http://hao.jobbole.com/)。可参考已整理的内容：
+
+*   《[Scrapy：Python的爬虫框架](https://link.jianshu.com?t=http://hao.jobbole.com/python-scrapy/)》
+
+*   《[Flask：一个使用Python编写的轻量级Web应用框架](https://link.jianshu.com?t=http://hao.jobbole.com/flask/)》
+
+### 环境管理
+
+管理 Python 版本和环境的工具
+
+*   p：非常简单的交互式 python 版本管理工具。[官网](https://link.jianshu.com?t=https://github.com/qw3rtman/p)
+
+*   pyenv：简单的 Python 版本管理工具。[官网](https://link.jianshu.com?t=https://github.com/yyuu/pyenv)
+
+*   Vex：可以在虚拟环境中执行命令。[官网](https://link.jianshu.com?t=https://github.com/sashahart/vex)
+
+*   virtualenv：创建独立 Python 环境的工具。[官网](https://link.jianshu.com?t=https://pypi.python.org/pypi/virtualenv)
+
+*   virtualenvwrapper：virtualenv 的一组扩展。[官网](https://link.jianshu.com?t=https://pypi.python.org/pypi/virtualenvwrapper)
+
+### 包管理
+
+管理包和依赖的工具。
+
+*   pip：Python 包和依赖关系管理工具。[官网](https://link.jianshu.com?t=https://pip.pypa.io/)
+
+*   pip-tools：保证 Python 包依赖关系更新的一组工具。[官网](https://link.jianshu.com?t=https://github.com/nvie/pip-tools)
+
+*   conda：跨平台，Python 二进制包管理工具。[官网](https://link.jianshu.com?t=https://github.com/conda/conda/)
+
+*   Curdling：管理 Python 包的命令行工具。[官网](https://link.jianshu.com?t=http://clarete.li/curdling/)
+
+*   wheel：Python 分发的新标准，意在取代 eggs。[官网](https://link.jianshu.com?t=http://pythonwheels.com/)
+
+### 包仓库
+
+本地 PyPI 仓库服务和代{过}{滤}理。
+
+*   warehouse：下一代 PyPI。[官网](https://link.jianshu.com?t=https://github.com/pypa/warehouse)
+
+*   Warehouse：PyPA 提供的 PyPI 镜像工具。[官网](https://link.jianshu.com?t=https://warehouse.python.org/) [bandersnatch](https://link.jianshu.com?t=https://bitbucket.org/pypa/bandersnatch)
+
+*   devpi：PyPI 服务和打包/测试/分发工具。[官网](https://link.jianshu.com?t=http://doc.devpi.net/)
+
+*   localshop：本地 PyPI 服务（自定义包并且自动对 PyPI 镜像）。[官网](https://link.jianshu.com?t=https://github.com/mvantellingen/localshop)
+
+### 分发
+
+打包为可执行文件以便分发。
+
+*   PyInstaller：将 Python 程序转换成独立的执行文件（跨平台）。[官网](https://link.jianshu.com?t=https://github.com/pyinstaller/pyinstaller)
+
+*   dh-virtualenv：构建并将 virtualenv 虚拟环境作为一个 Debian 包来发布。[官网](https://link.jianshu.com?t=http://dh-virtualenv.readthedocs.org/)
+
+*   Nuitka：将脚本、模块、包编译成可执行文件或扩展模块。[官网](https://link.jianshu.com?t=http://nuitka.net/)
+
+*   py2app：将 Python 脚本变为独立软件包（Mac OS X）。[官网](https://link.jianshu.com?t=http://pythonhosted.org/py2app/)
+
+*   py2exe：将 Python 脚本变为独立软件包（Windows）。[官网](https://link.jianshu.com?t=http://www.py2exe.org/)
+
+*   pynsist：一个用来创建 Windows 安装程序的工具，可以在安装程序中打包 Python本身。[官网](https://link.jianshu.com?t=http://pynsist.readthedocs.org/)
+
+### 构建工具
+
+将源码编译成软件。
+
+*   buildout：一个构建系统，从多个组件来创建，组装和部署应用。[官网](https://link.jianshu.com?t=http://www.buildout.org/)
+
+*   BitBake：针对嵌入式 Linux 的类似 make 的构建工具。[官网](https://link.jianshu.com?t=http://www.yoctoproject.org/docs/1.6/bitbake-user-manual/bitbake-user-manual.html)
+
+*   fabricate：对任何语言自动找到依赖关系的构建工具。[官网](https://link.jianshu.com?t=https://code.google.com/archive/p/fabricate)
+
+*   PlatformIO：多平台命令行构建工具。[官网](https://link.jianshu.com?t=https://github.com/platformio/platformio)
+
+*   PyBuilder：纯 Python 实现的持续化构建工具。[官网](https://link.jianshu.com?t=https://github.com/pybuilder/pybuilder)
+
+*   SCons：软件构建工具。[官网](https://link.jianshu.com?t=http://www.scons.org/)
+
+### 交互式解析器
+
+交互式 Python 解析器。
+
+*   IPython：功能丰富的工具，非常有效的使用交互式 Python。[官网](https://link.jianshu.com?t=https://github.com/ipython/ipython)
+
+*   [bpython](https://link.jianshu.com?t=http://hao.jobbole.com/bpython/)：界面丰富的 Python 解析器。[官网](https://link.jianshu.com?t=http://bpython-interpreter.org/)
+
+*   ptpython：高级交互式Python解析器， 构建于[python-prompt-toolkit](https://link.jianshu.com?t=https://github.com/jonathanslenders/python-prompt-toolkit) 之上。[官网](https://link.jianshu.com?t=https://github.com/jonathanslenders/ptpython)
+
+### 文件
+
+文件管理和 MIME（多用途的网际邮件扩充协议）类型检测。
+
+*   imghdr：（Python 标准库）检测图片类型。[官网](https://link.jianshu.com?t=https://docs.python.org/2/library/imghdr.html)
+
+*   mimetypes：（Python 标准库）将文件名映射为 MIME 类型。[官网](https://link.jianshu.com?t=https://docs.python.org/2/library/mimetypes.html)
+
+*   path.py：对 os.path 进行封装的模块。[官网](https://link.jianshu.com?t=https://github.com/jaraco/path.py)
+
+*   pathlib：（Python3.4+ 标准库）跨平台的、面向对象的路径操作库。[官网](https://link.jianshu.com?t=https://pathlib.readthedocs.org/en/pep428/)
+
+*   python-magic：文件类型检测的第三方库 libmagic 的 Python 接口。[官网](https://link.jianshu.com?t=https://github.com/ahupp/python-magic)
+
+*   Unipath：用面向对象的方式操作文件和目录。[官网](https://link.jianshu.com?t=https://github.com/mikeorr/Unipath)
+
+*   watchdog：管理文件系统事件的 API 和 shell 工具[官网](https://link.jianshu.com?t=https://github.com/gorakhargosh/watchdog)
+
+### 日期和时间
+
+操作日期和时间的类库。
+
+*   arrow：更好的 Python 日期时间操作类库。[官网](https://link.jianshu.com?t=https://github.com/crsmithdev/arrow)
+
+*   Chronyk：Python 3 的类库，用于解析手写格式的时间和日期。[官网](https://link.jianshu.com?t=https://github.com/KoffeinFlummi/Chronyk)
+
+*   dateutil：Python datetime 模块的扩展。[官网](https://link.jianshu.com?t=https://pypi.python.org/pypi/python-dateutil)
+
+*   delorean：解决 Python 中有关日期处理的棘手问题的库。[官网](https://link.jianshu.com?t=https://github.com/myusuf3/delorean/)
+
+*   moment：一个用来处理时间和日期的Python库。灵感来自于Moment.js。[官网](https://link.jianshu.com?t=https://github.com/zachwill/moment)
+
+*   PyTime：一个简单易用的Python模块，用于通过字符串来操作日期/时间。[官网](https://link.jianshu.com?t=https://github.com/shinux/PyTime)
+
+*   pytz：现代以及历史版本的世界时区定义。将时区数据库引入Python。[官网](https://link.jianshu.com?t=https://launchpad.net/pytz)
+
+*   when.py：提供用户友好的函数来帮助用户进行常用的日期和时间操作。[官网](https://link.jianshu.com?t=https://github.com/dirn/When.py)
+
+### 文本处理
+
+用于解析和操作文本的库。
+
+*   通用
+
+*   [chardet](https://link.jianshu.com?t=http://hao.jobbole.com/chardet/)：字符编码检测器，兼容 Python2 和 Python3。[官网](https://link.jianshu.com?t=https://github.com/chardet/chardet)
+
+*   difflib：(Python 标准库)帮助我们进行差异化比较。[官网](https://link.jianshu.com?t=https://docs.python.org/2/library/difflib.html)
+
+*   ftfy：让Unicode文本更完整更连贯。[官网](https://link.jianshu.com?t=https://github.com/LuminosoInsight/python-ftfy)
+
+*   fuzzywuzzy：模糊字符串匹配。[官网](https://link.jianshu.com?t=https://github.com/seatgeek/fuzzywuzzy)
+
+*   Levenshtein：快速计算编辑距离以及字符串的相似度。[官网](https://link.jianshu.com?t=https://github.com/ztane/python-Levenshtein/)
+
+*   pangu.py：在中日韩语字符和数字字母之间添加空格。[官网](https://link.jianshu.com?t=https://github.com/vinta/pangu.py)
+
+*   yfiglet-figlet：[pyfiglet -figlet](https://link.jianshu.com?t=https://github.com/pwaller/pyfiglet) 的 Python实现。
+
+*   shortuuid：一个生成器库，用以生成简洁的，明白的，URL 安全的 UUID。[官网](https://link.jianshu.com?t=https://github.com/stochastic-technologies/shortuuid)
+
+*   unidecode：Unicode 文本的 ASCII 转换形式 。[官网](https://link.jianshu.com?t=https://pypi.python.org/pypi/Unidecode)
+
+*   uniout：打印可读的字符，而不是转义的字符串。[官网](https://link.jianshu.com?t=https://github.com/moskytw/uniout)
+
+*   xpinyin：一个用于把汉字转换为拼音的库。[官网](https://link.jianshu.com?t=https://github.com/lxneng/xpinyin)
+
+*   simplejson：Python的JSON编码、解码器。[官网](https://link.jianshu.com?t=https://simplejson.readthedocs.io/en/latest/)、[GitHub](https://link.jianshu.com?t=https://github.com/simplejson/simplejson)
+
+*   Slug化
+
+*   awesome-slugify：一个 Python slug 化库，可以保持 Unicode。[官网](https://link.jianshu.com?t=https://github.com/dimka665/awesome-slugify)
+
+*   python-slugify：Python slug 化库，可以把 unicode 转化为 ASCII。[官网](https://link.jianshu.com?t=https://github.com/un33k/python-slugify)
+
+*   unicode-slugify：一个 slug 工具，可以生成 unicode slugs ,需要依赖 Django 。[官网](https://link.jianshu.com?t=https://github.com/mozilla/unicode-slugify)
+
+*   解析器
+
+*   phonenumbers：解析，格式化，储存，验证电话号码。[官网](https://link.jianshu.com?t=https://github.com/daviddrysdale/python-phonenumbers)
+
+*   PLY：lex 和 yacc 解析工具的 Python 实现。[官网](https://link.jianshu.com?t=http://www.dabeaz.com/ply/)
+
+*   Pygments：通用语法高亮工具。[官网](https://link.jianshu.com?t=http://pygments.org/)
+
+*   pyparsing：生成通用解析器的框架。[官网](https://link.jianshu.com?t=http://pyparsing.wikispaces.com/)
+
+*   python-nameparser：把一个人名分解为几个独立的部分。[官网](https://link.jianshu.com?t=https://github.com/derek73/python-nameparser)
+
+*   python-user-agents：浏览器 user agent 解析器。[官网](https://link.jianshu.com?t=https://github.com/selwin/python-user-agents)
+
+*   sqlparse：一个无验证的 SQL 解析器。[官网](https://link.jianshu.com?t=https://sqlparse.readthedocs.org/en/latest/)
+
+### 特殊文本格式处理
+
+一些用来解析和操作特殊文本格式的库。
+
+*   通用
+
+*   tablib：一个用来处理中表格数据的模块。[官网](https://link.jianshu.com?t=https://github.com/kennethreitz/tablib)
+
+*   Office
+
+*   Marmir：把输入的Python 数据结构转换为电子表单。[官网](https://link.jianshu.com?t=https://github.com/brianray/mm)
+
+*   openpyxl：一个用来读写 Excel 2010 xlsx/xlsm/xltx/xltm 文件的库。[官网](https://link.jianshu.com?t=https://openpyxl.readthedocs.org/en/latest/)
+
+*   python-docx：读取，查询以及修改 Microsoft Word 2007/2008 docx 文件。[官网](https://link.jianshu.com?t=https://github.com/python-openxml/python-docx)
+
+*   unoconv：在 LibreOffice/OpenOffice 支持的任意文件格式之间进行转换。[官网](https://link.jianshu.com?t=https://github.com/dagwieers/unoconv)
+
+*   XlsxWriter：一个用于创建 Excel .xlsx 文件的 Python 模块。[官网](https://link.jianshu.com?t=https://xlsxwriter.readthedocs.org/en/latest/)
+
+*   xlwings：一个使得在 Excel 中方便调用 Python 的库（反之亦然），基于 BSD 协议。[官网](https://link.jianshu.com?t=http://xlwings.org/)
+
+*   [xlwt](https://link.jianshu.com?t=http://hao.jobbole.com/xlwt/)：读写 Excel 文件的数据和格式信息。[官网](https://link.jianshu.com?t=https://github.com/python-excel/xlwt) / [xlrd](https://link.jianshu.com?t=https://github.com/python-excel/xlrd)
+
+*   relatorio：模板化OpenDocument 文件。[官网](https://link.jianshu.com?t=http://relatorio.tryton.org/)
+
+*   PDF
+
+*   PDFMiner：一个用于从PDF文档中抽取信息的工具。[官网](https://link.jianshu.com?t=https://github.com/euske/pdfminer)
+
+*   PyPDF2：一个可以分割，合并和转换 PDF 页面的库。[官网](https://link.jianshu.com?t=https://github.com/mstamy2/PyPDF2)
+
+*   ReportLab：快速创建富文本 PDF 文档。[官网](https://link.jianshu.com?t=http://www.reportlab.com/opensource/)
+
+*   Markdown
+
+*   Mistune：快速并且功能齐全的纯 Python 实现的 Markdown 解析器。[官网](https://link.jianshu.com?t=https://github.com/lepture/mistune)
+
+*   Python-Markdown：John Gruber’s Markdown 的 Python 版实现。[官网](https://link.jianshu.com?t=https://github.com/waylan/Python-Markdown)
+
+*   Python-Markdiwn2：纯 Python 实现的 Markdown 解析器，比 Python-Markdown 更快，更准确，可扩展。[官网](https://link.jianshu.com?t=https://github.com/trentm/python-markdown2)
+
+*   YAML
+
+*   PyYAML：Python 版本的 YAML 解析器。[官网](https://link.jianshu.com?t=http://pyyaml.org/)
+
+*   CSV
+
+*   csvkit：用于转换和操作 CSV 的工具。[官网](https://link.jianshu.com?t=https://github.com/wireservice/csvkit)
+
+*   Archive
+
+*   unp：一个用来方便解包归档文件的命令行工具。[官网](https://link.jianshu.com?t=https://github.com/mitsuhiko/unp)
+
+### 自然语言处理
+
+用来处理人类语言的库。
+
+*   [NLTK](https://link.jianshu.com?t=http://hao.jobbole.com/nltk/)：一个先进的平台，用以构建处理人类语言数据的 Python 程序。[官网](https://link.jianshu.com?t=http://www.nltk.org/)
+
+*   jieba：中文分词工具。[官网](https://link.jianshu.com?t=https://github.com/fxsjy/jieba)
+
+*   langid.py：独立的语言识别系统。[官网](https://link.jianshu.com?t=https://github.com/saffsd/langid.py)
+
+*   Pattern：Python 网络信息挖掘模块。[官网](https://link.jianshu.com?t=http://www.clips.ua.ac.be/pattern)
+
+*   SnowNLP：一个用来处理中文文本的库。[官网](https://link.jianshu.com?t=https://github.com/isnowfy/snownlp)
+
+*   TextBlob：为进行普通自然语言处理任务提供一致的 API。[官网](https://link.jianshu.com?t=http://textblob.readthedocs.org/en/latest/)
+
+*   TextGrocery：一简单高效的短文本分类工具，基于 LibLinear 和 Jieba。[官网](https://link.jianshu.com?t=https://github.com/2shou/TextGrocery)
+
+### 文档
+
+用以生成项目文档的库。
+
+*   [Sphinx](https://link.jianshu.com?t=http://hao.jobbole.com/sphinx/)：Python 文档生成器。[官网](https://link.jianshu.com?t=http://www.sphinx-doc.org/en/latest/)
+
+*   awesome-sphinxdoc：[官网](https://link.jianshu.com?t=https://github.com/yoloseem/awesome-sphinxdoc)
+
+*   MkDocs：对 Markdown 友好的文档生成器。[官网](https://link.jianshu.com?t=http://www.mkdocs.org/)
+
+*   pdoc：一个可以替换Epydoc 的库，可以自动生成 Python 库的 API 文档。[官网](https://link.jianshu.com?t=https://github.com/BurntSushi/pdoc)
+
+*   Pycco：文学编程（literate-programming）风格的文档生成器。[官网](https://link.jianshu.com?t=https://github.com/pycco-docs/pycco)
+
+### 配置
+
+用来保存和解析配置的库。
+
+*   config：[logging](https://link.jianshu.com?t=https://docs.python.org/2/library/logging.html) 模块作者写的分级配置模块。[官网](https://link.jianshu.com?t=https://www.red-dove.com/config-doc/)
+
+*   ConfigObj：INI 文件解析器，带验证功能。[官网](https://link.jianshu.com?t=http://www.voidspace.org.uk/python/configobj.html)
+
+*   ConfigParser：(Python 标准库) INI 文件解析器。[官网](https://link.jianshu.com?t=https://docs.python.org/2/library/configparser.html)
+
+*   profig：通过多种格式进行配置，具有数值转换功能。[官网](https://link.jianshu.com?t=http://profig.readthedocs.org/en/default/)
+
+*   python-decouple：将设置和代码完全隔离。[官网](https://link.jianshu.com?t=https://github.com/henriquebastos/python-decouple)
+
+### 命令行工具
+
+用于创建命令行程序的库。
+
+*   命令行程序开发
+
+*   asciimatics：跨平台，全屏终端包（即鼠标/键盘输入和彩色，定位文本输出），完整的复杂动画和特殊效果的高级API。[官网](https://link.jianshu.com?t=https://github.com/peterbrittain/asciimatics)
+
+*   cement：Python 的命令行程序框架。[官网](https://link.jianshu.com?t=http://builtoncement.com/)
+
+*   click：一个通过组合的方式来创建精美命令行界面的包。[官网](https://link.jianshu.com?t=http://click.pocoo.org/dev/)
+
+*   cliff：一个用于创建命令行程序的框架，可以创建具有多层命令的命令行程序。[官网](https://link.jianshu.com?t=http://docs.openstack.org/developer/cliff/)
+
+*   clint：Python 命令行程序工具。[官网](https://link.jianshu.com?t=https://github.com/kennethreitz/clint)
+
+*   colorama：跨平台彩色终端文本。[官网](https://link.jianshu.com?t=https://pypi.python.org/pypi/colorama)
+
+*   docopt：Python 风格的命令行参数解析器。[官网](https://link.jianshu.com?t=http://docopt.org/)
+
+*   Gooey：一条命令，将命令行程序变成一个 GUI 程序。[官网](https://link.jianshu.com?t=https://github.com/chriskiehl/Gooey)
+
+*   python-prompt-toolkit：一个用于构建强大的交互式命令行程序的库。[官网](https://link.jianshu.com?t=https://github.com/jonathanslenders/python-prompt-toolkit)
+
+*   [Pythonpy](https://link.jianshu.com?t=http://hao.jobbole.com/pythonpy/)：在命令行中直接执行任何Python指令。[官网](https://link.jianshu.com?t=https://github.com/Russell91/pythonpy/wiki)
+
+*   生产力工具
+
+*   aws-cli：Amazon Web Services 的通用命令行界面。[官网](https://link.jianshu.com?t=https://github.com/aws/aws-cli)
+
+*   bashplotlib：在终端中进行基本绘图。[官网](https://link.jianshu.com?t=https://github.com/glamp/bashplotlib)
+
+*   caniusepython3：判断是哪个项目妨碍你你移植到 Python 3。[官网](https://link.jianshu.com?t=https://github.com/brettcannon/caniusepython3)
+
+*   cookiecutter：从 cookiecutters（项目模板）创建项目的一个命令行工具。[官网](https://link.jianshu.com?t=https://github.com/audreyr/cookiecutter)
+
+*   doitlive：一个用来在终端中进行现场演示的工具。[官网](https://link.jianshu.com?t=https://github.com/sloria/doitlive)
+
+*   howdoi：通过命令行获取即时的编程问题解答。[官网](https://link.jianshu.com?t=https://github.com/gleitz/howdoi)
+
+*   httpie：一个命令行HTTP 客户端，cURL 的替代品，易用性更好。[官网](https://link.jianshu.com?t=https://github.com/jkbrzt/httpie)
+
+*   PathPicker：从bash输出中选出文件。[官网](https://link.jianshu.com?t=https://github.com/facebook/PathPicker)
+
+*   percol：向UNIX shell 传统管道概念中加入交互式选择功能。[官网](https://link.jianshu.com?t=https://github.com/mooz/percol)
+
+*   SAWS：一个加强版的 AWS 命令行。[官网](https://link.jianshu.com?t=https://github.com/donnemartin/saws)
+
+*   thefuck：修正你之前的命令行指令。[官网](https://link.jianshu.com?t=https://github.com/nvbn/thefuck)
+
+*   mycli：一个 MySQL 命令行客户端，具有自动补全和语法高亮功能。[官网](https://link.jianshu.com?t=https://github.com/dbcli/mycli)
+
+*   pgcli：Postgres 命令行工具，具有自动补全和语法高亮功能。[官网](https://link.jianshu.com?t=https://github.com/dbcli/pgcli)
+
+*   try：一个从来没有更简单的命令行工具，用来试用python库。[官网](https://link.jianshu.com?t=https://github.com/timofurrer/try)
+
+### 下载器
+
+用来进行下载的库.
+
+*   s3cmd：一个用来管理Amazon S3 和 CloudFront 的命令行工具。[官网](https://link.jianshu.com?t=https://github.com/s3tools/s3cmd)
+
+*   s4cmd：超级 S3 命令行工具，性能更加强劲。[官网](https://link.jianshu.com?t=https://github.com/bloomreach/s4cmd)
+
+*   you-get：一个 YouTube/Youku/Niconico 视频下载器，使用 Python3 编写。[官网](https://link.jianshu.com?t=https://www.soimort.org/you-get/)
+
+*   youtube-dl：一个小巧的命令行程序，用来下载 YouTube 视频。[官网](https://link.jianshu.com?t=http://rg3.github.io/youtube-dl/)
+
+### 图像处理
+
+用来操作图像的库.
+
+*   [pillow](https://link.jianshu.com?t=http://hao.jobbole.com/pillow/)：Pillow 是一个更加易用版的 [PIL](https://link.jianshu.com?t=http://www.pythonware.com/products/pil/)。[官网](https://link.jianshu.com?t=http://pillow.readthedocs.org/en/latest/)
+
+*   hmap：图像直方图映射。[官网](https://link.jianshu.com?t=https://github.com/rossgoodwin/hmap)
+
+*   imgSeek：一个使用视觉相似性搜索一组图片集合的项目。[官网](https://link.jianshu.com?t=https://sourceforge.net/projects/imgseek/)
+
+*   nude.py：裸体检测。[官网](https://link.jianshu.com?t=https://github.com/hhatto/nude.py)
+
+*   pyBarcode：不借助 PIL 库在 Python 程序中生成条形码。[官网](https://link.jianshu.com?t=https://pythonhosted.org/pyBarcode/)
+
+*   pygram：类似 Instagram 的图像滤镜。[官网](https://link.jianshu.com?t=https://github.com/ajkumar25/pygram)
+
+*   python-qrcode：一个纯 Python 实现的二维码生成器。[官网](https://link.jianshu.com?t=https://github.com/lincolnloop/python-qrcode)
+
+*   Quads：基于四叉树的计算机艺术。[官网](https://link.jianshu.com?t=https://github.com/fogleman/Quads)
+
+*   scikit-image：一个用于（科学）图像处理的 Python 库。[官网](https://link.jianshu.com?t=http://scikit-image.org/)
+
+*   thumbor：一个小型图像服务，具有剪裁，尺寸重设和翻转功能。[官网](https://link.jianshu.com?t=https://github.com/thumbor/thumbor)
+
+*   wand：[MagickWand](https://link.jianshu.com?t=http://www.imagemagick.org/script/magick-wand.php)的Python 绑定。MagickWand 是 ImageMagick的 C API 。[官网](https://link.jianshu.com?t=https://github.com/dahlia/wand)
+
+### OCR
+
+光学字符识别库。
+
+*   pyocr：Tesseract 和 Cuneiform 的一个封装(wrapper)。[官网](https://link.jianshu.com?t=https://github.com/jflesch/pyocr)
+
+*   [pytesseract](https://link.jianshu.com?t=http://hao.jobbole.com/pytesseract/)：[Google Tesseract OCR](https://link.jianshu.com?t=https://github.com/tesseract-ocr) 的另一个封装(wrapper)。[官网](https://link.jianshu.com?t=https://github.com/madmaze/pytesseract)
+
+*   python-tesseract - [Google Tesseract OCR](https://link.jianshu.com?t=https://github.com/tesseract-ocr) 的一个包装类。
+
+### 音频
+
+用来操作音频的库
+
+*   audiolazy：Python 的数字信号处理包。[官网](https://link.jianshu.com?t=https://github.com/danilobellini/audiolazy)
+
+*   audioread：交叉库 (GStreamer + Core Audio + MAD + FFmpeg) 音频解码。[官网](https://link.jianshu.com?t=https://github.com/beetbox/audioread)
+
+*   beets：一个音乐库管理工具及 [MusicBrainz](https://link.jianshu.com?t=https://musicbrainz.org/) 标签添加工具[官网](https://link.jianshu.com?t=http://beets.io/)
+
+*   dejavu：音频指纹提取和识别[官网](https://link.jianshu.com?t=https://github.com/worldveil/dejavu)
+
+*   [django-elastic-transcoder](https://link.jianshu.com?t=http://hao.jobbole.com/django-elastic-transcoder/)：Django + [Amazon Elastic Transcoder](https://link.jianshu.com?t=http://aws.amazon.com/elastictranscoder/)。[官网](https://link.jianshu.com?t=https://github.com/StreetVoice/django-elastic-transcoder)
+
+*   eyeD3：一个用来操作音频文件的工具，具体来讲就是包含 ID3 元信息的 MP3 文件。[官网](https://link.jianshu.com?t=http://eyed3.nicfit.net/)
+
+*   id3reader：一个用来读取 MP3 元数据的 Python 模块。[官网](https://link.jianshu.com?t=http://nedbatchelder.com/code/modules/id3reader.py)
+
+*   m3u8：一个用来解析 m3u8 文件的模块。[官网](https://link.jianshu.com?t=https://github.com/globocom/m3u8)
+
+*   mutagen：一个用来处理音频元数据的 Python 模块。[官网](https://link.jianshu.com?t=https://bitbucket.org/lazka/mutagen)
+
+*   pydub：通过简单、简洁的高层接口来操作音频文件。[官网](https://link.jianshu.com?t=https://github.com/jiaaro/pydub)
+
+*   pyechonest：[Echo Nest](https://link.jianshu.com?t=http://developer.echonest.com/) API 的 Python 客户端[官网](https://link.jianshu.com?t=https://github.com/echonest/pyechonest)
+
+*   talkbox：一个用来处理演讲/信号的 Python 库[官网](https://link.jianshu.com?t=http://scikits.appspot.com/talkbox)
+
+*   TimeSide：开源 web 音频处理框架。[官网](https://link.jianshu.com?t=https://github.com/Parisson/TimeSide)
+
+*   tinytag：一个用来读取MP3, OGG, FLAC 以及 Wave 文件音乐元数据的库。[官网](https://link.jianshu.com?t=https://github.com/devsnd/tinytag)
+
+*   mingus：一个高级音乐理论和曲谱包，支持 MIDI 文件和回放功能。[官网](https://link.jianshu.com?t=http://bspaans.github.io/python-mingus/)
+
+### Video
+
+用来操作视频和GIF的库。
+
+*   moviepy：一个用来进行基于脚本的视频编辑模块，适用于多种格式，包括动图 GIFs。[官网](https://link.jianshu.com?t=http://zulko.github.io/moviepy/)
+
+*   scikit-video：SciPy 视频处理常用程序。[官网](https://link.jianshu.com?t=https://github.com/aizvorski/scikit-video)
+
+### 地理位置
+
+地理编码地址以及用来处理经纬度的库。
+
+*   GeoDjango：世界级地理图形 web 框架。[官网](https://link.jianshu.com?t=https://docs.djangoproject.com/en/dev/ref/contrib/gis/)
+
+*   GeoIP：MaxMind GeoIP Legacy 数据库的 Python API。[官网](https://link.jianshu.com?t=https://github.com/maxmind/geoip-api-python)
+
+*   geojson：GeoJSON 的 Python 绑定及工具。[官网](https://link.jianshu.com?t=https://github.com/frewsxcv/python-geojson)
+
+*   geopy：Python 地址编码工具箱。[官网](https://link.jianshu.com?t=https://github.com/geopy/geopy)
+
+*   pygeoip：纯 Python GeoIP API。[官网](https://link.jianshu.com?t=https://github.com/appliedsec/pygeoip)
+
+*   django-countries：一个 Django 应用程序，提供用于表格的国家选择功能，国旗图标静态文件以及模型中的国家字段。[官网](https://link.jianshu.com?t=https://github.com/SmileyChris/django-countries)
+
+### HTTP
+
+使用HTTP的库。
+
+*   requests：人性化的HTTP请求库。[官网](https://link.jianshu.com?t=http://docs.python-requests.org/en/latest/)
+
+*   grequests：requests 库 + gevent ，用于异步 HTTP 请求.[官网](https://link.jianshu.com?t=https://github.com/kennethreitz/grequests)
+
+*   httplib2：全面的 HTTP 客户端库。[官网](https://link.jianshu.com?t=https://github.com/jcgregorio/httplib2)
+
+*   treq：类似 requests 的Python API 构建于 Twisted HTTP 客户端之上。[官网](https://link.jianshu.com?t=https://github.com/twisted/treq)
+
+*   urllib3：一个具有线程安全连接池，支持文件 post，清晰友好的 HTTP 库。[官网](https://link.jianshu.com?t=https://github.com/shazow/urllib3)
+
+### 数据库
+
+Python实现的数据库。
+
+*   pickleDB：一个简单，轻量级键值储存数据库。[官网](https://link.jianshu.com?t=https://pythonhosted.org/pickleDB/)
+
+*   PipelineDB：流式 SQL 数据库。[官网](https://link.jianshu.com?t=https://www.pipelinedb.com/)
+
+*   TinyDB：一个微型的，面向文档型数据库。[官网](https://link.jianshu.com?t=https://github.com/msiemens/tinydb)
+
+*   ZODB：一个 Python 原生对象数据库。一个键值和对象图数据库。[官网](https://link.jianshu.com?t=http://www.zodb.org/en/latest/)
+
+### 数据库驱动
+
+用来连接和操作数据库的库。
+
+*   MySQL：[awesome-mysql](https://link.jianshu.com?t=http://shlomi-noach.github.io/awesome-mysql/)系列
+
+*   mysql-python：Python 的 MySQL 数据库连接器。[官网](https://link.jianshu.com?t=https://sourceforge.net/projects/mysql-python/)
+
+*   ysqlclient：[mysql-python](https://link.jianshu.com?t=https://github.com/PyMySQL/mysqlclient-python) 分支，支持 Python 3。
+
+*   oursql：一个更好的 MySQL 连接器，支持原生预编译指令和 BLOBs.[官网](https://link.jianshu.com?t=https://pythonhosted.org/oursql/)
+
+*   PyMySQL：纯 Python MySQL 驱动，兼容 mysql-python。[官网](https://link.jianshu.com?t=https://github.com/PyMySQL/PyMySQL)
+
+*   PostgreSQL
+
+*   psycopg2：Python 中最流行的 PostgreSQL 适配器。[官网](https://link.jianshu.com?t=http://initd.org/psycopg/)
+
+*   queries：psycopg2 库的封装，用来和 PostgreSQL 进行交互。[官网](https://link.jianshu.com?t=https://github.com/gmr/queries)
+
+*   txpostgres：基于 Twisted 的异步 PostgreSQL 驱动。[官网](https://link.jianshu.com?t=http://txpostgres.readthedocs.org/en/latest/)
+
+*   其他关系型数据库
+
+*   apsw：另一个 Python SQLite封装。[官网](https://link.jianshu.com?t=http://rogerbinns.github.io/apsw/)
+
+*   dataset：在数据库中存储Python字典
+
+*   pymssql：一个简单的Microsoft SQL Server数据库接口。[官网](https://link.jianshu.com?t=http://www.pymssql.org/en/latest/)
+
+*   NoSQL 数据库
+
+*   cassandra-python-driver：Cassandra 的 Python 驱动。[官网](https://link.jianshu.com?t=https://github.com/datastax/python-driver)
+
+*   HappyBase：一个为 Apache HBase 设计的，对开发者友好的库。[官网](https://link.jianshu.com?t=http://happybase.readthedocs.org/en/latest/)
+
+*   Plyvel：一个快速且功能丰富的 LevelDB 的 Python 接口。[官网](https://link.jianshu.com?t=https://plyvel.readthedocs.org/en/latest/)
+
+*   py2neo：Neo4j restful 接口的Python 封装客户端。[官网](https://link.jianshu.com?t=http://py2neo.org/2.0/)
+
+*   pycassa：Cassandra 的 Python Thrift 驱动。[官网](https://link.jianshu.com?t=https://github.com/pycassa/pycassa)
+
+*   PyMongo：MongoDB 的官方 Python 客户端。[官网](https://link.jianshu.com?t=https://docs.mongodb.org/ecosystem/drivers/python/)
+
+*   redis-py：Redis 的 Python 客户端。[官网](https://link.jianshu.com?t=https://github.com/andymccurdy/redis-py)
+
+*   telephus：基于 Twisted 的 Cassandra 客户端。[官网](https://link.jianshu.com?t=https://github.com/driftx/Telephus)
+
+*   txRedis：基于 Twisted 的 Redis 客户端。[官网](https://link.jianshu.com?t=https://github.com/deldotdr/txRedis)
+
+### ORM
+
+实现对象关系映射或数据映射技术的库。
+
+*   关系型数据库
+
+*   Django Models：Django 的一部分。[官网](https://link.jianshu.com?t=https://docs.djangoproject.com/en/dev/topics/db/models/)
+
+*   SQLAlchemy：Python SQL 工具以及对象关系映射工具。[官网](https://link.jianshu.com?t=http://www.sqlalchemy.org/)
+
+*   [awesome-sqlalchemy](https://link.jianshu.com?t=https://github.com/dahlia/awesome-sqlalchemy)系列
+
+*   [Peewee](https://link.jianshu.com?t=http://hao.jobbole.com/peewee/)：一个小巧，富有表达力的 ORM。[官网](https://link.jianshu.com?t=https://github.com/coleifer/peewee)
+
+*   PonyORM：提供面向生成器的 SQL 接口的 ORM。[官网](https://link.jianshu.com?t=https://ponyorm.com/)
+
+*   python-sql：编写 Python 风格的 SQL 查询。[官网](https://link.jianshu.com?t=https://pypi.python.org/pypi/python-sql)
+
+*   NoSQL 数据库
+
+*   django-mongodb-engine：Django MongoDB 后端。[官网](https://link.jianshu.com?t=https://github.com/django-nonrel/mongodb-engine)
+
+*   PynamoDB：[Amazon DynamoDB](https://link.jianshu.com?t=https://aws.amazon.com/dynamodb/) 的一个 Python 风格接口。[官网](https://link.jianshu.com?t=https://github.com/jlafon/PynamoDB)
+
+*   flywheel：Amazon DynamoDB 的对象映射工具。[官网](https://link.jianshu.com?t=https://github.com/mathcamp/flywheel)
+
+*   MongoEngine：一个Python 对象文档映射工具，用于 MongoDB。[官网](https://link.jianshu.com?t=http://mongoengine.org/)
+
+*   hot-redis：为 Redis 提供 Python 丰富的数据类型。[官网](https://link.jianshu.com?t=https://github.com/stephenmcd/hot-redis)
+
+*   redisco：一个 Python 库，提供可以持续存在在 Redis 中的简单模型和容器。[官网](https://link.jianshu.com?t=https://github.com/kiddouk/redisco)
+
+*   其他
+
+*   butterdb：Google Drive 电子表格的 Python ORM。[官网](https://link.jianshu.com?t=https://github.com/Widdershin/butterdb)
+
+### Web 框架
+
+全栈 Web 框架。
+
+*   [Django](https://link.jianshu.com?t=http://hao.jobbole.com/django/)：Python 界最流行的 web 框架。[官网](https://link.jianshu.com?t=https://www.djangoproject.com/)
+
+*   [awesome-django](https://link.jianshu.com?t=https://github.com/rosarior/awesome-django)系列
+
+*   [Flask](https://link.jianshu.com?t=http://hao.jobbole.com/flask/)：一个 Python 微型框架。[官网](https://link.jianshu.com?t=http://flask.pocoo.org/)
+
+*   [awesome-flask](https://link.jianshu.com?t=https://github.com/humiaozuzu/awesome-flask)系列
+
+*   pyramid：一个小巧，快速，接地气的开源Python web 框架。
+
+*   [awesome-pyramid](https://link.jianshu.com?t=https://github.com/uralbash/awesome-pyramid)系列
+
+*   [Bottle](https://link.jianshu.com?t=http://hao.jobbole.com/bottle/)：一个快速小巧，轻量级的 WSGI 微型 web 框架。[官网](https://link.jianshu.com?t=http://bottlepy.org/docs/dev/index.html)
+
+*   CherryPy：一个极简的 Python web 框架，服从 HTTP/1.1 协议且具有WSGI 线程池。[官网](https://link.jianshu.com?t=http://www.cherrypy.org/)
+
+*   TurboGears：一个可以扩展为全栈解决方案的微型框架。[官网](https://link.jianshu.com?t=http://www.turbogears.org/)
+
+*   [web.py](https://link.jianshu.com?t=http://hao.jobbole.com/python-webpy/)：一个 Python 的 web 框架，既简单，又强大。[官网](https://link.jianshu.com?t=http://webpy.org/)
+
+*   web2py：一个全栈 web 框架和平台，专注于简单易用。[官网](https://link.jianshu.com?t=http://www.web2py.com/)
+
+*   [Tornado](https://link.jianshu.com?t=http://hao.jobbole.com/tornado/)：一个web 框架和异步网络库。[官网](https://link.jianshu.com?t=http://www.tornadoweb.org/en/latest/)
+
+### 权限
+
+允许或拒绝用户访问数据或功能的库。
+
+*   Carteblanche：Module to align code with thoughts of users and designers. Also magically handles navigation and permissions.[官网](https://link.jianshu.com?t=https://github.com/neuman/python-carteblanche/)
+
+*   django-guardian：Django 1.2+ 实现了单个对象权限。[官网](https://link.jianshu.com?t=https://github.com/django-guardian/django-guardian)
+
+*   django-rules：一个小巧但是强大的应用，提供对象级别的权限管理，且不需要使用数据库。[官网](https://link.jianshu.com?t=https://github.com/dfunckt/django-rules)
+
+### CMS
+
+内容管理系统
+
+*   odoo-cms: 一个开源的，企业级 CMS，基于odoo。[官网](https://link.jianshu.com?t=http://www.odoo.com)
+
+*   django-cms：一个开源的，企业级 CMS，基于 Django。[官网](https://link.jianshu.com?t=http://www.django-cms.org/en/)
+
+*   djedi-cms：一个轻量级但却非常强大的 Django CMS ，考虑到了插件，内联编辑以及性能。[官网](https://link.jianshu.com?t=http://djedi-cms.org/)
+
+*   FeinCMS：基于 Django 构建的最先进的内容管理系统之一。[官网](https://link.jianshu.com?t=http://www.feincms.org/)
+
+*   Kotti：一个高级的，Python 范的 web 应用框架，基于 Pyramid 构建。[官网](https://link.jianshu.com?t=http://kotti.pylonsproject.org/)
+
+*   Mezzanine：一个强大的，持续的，灵活的内容管理平台。[官网](https://link.jianshu.com?t=http://mezzanine.jupo.org/)
+
+*   Opps：一个为杂志，报纸网站以及大流量门户网站设计的 CMS 平台，基于 Django。[官网](https://link.jianshu.com?t=http://opps.github.io/opps/)
+
+*   Plone：一个构建于开源应用服务器 Zope 之上的 CMS。[官网](https://link.jianshu.com?t=https://plone.org/)
+
+*   Quokka：灵活，可扩展的小型 CMS，基于 Flask 和 MongoDB。[官网](https://link.jianshu.com?t=http://quokkaproject.org/)
+
+*   [Wagtail](https://link.jianshu.com?t=http://hao.jobbole.com/wagtail/)：一个 Django 内容管理系统。[官网](https://link.jianshu.com?t=https://wagtail.io/)
+
+*   Widgy：最新的 CMS 框架，基于 Django。[官网](https://link.jianshu.com?t=https://wid.gy/)
+
+### 电子商务
+
+用于电子商务以及支付的框架和库。
+
+*   django-oscar：一个用于 Django 的开源的电子商务框架。[官网](https://link.jianshu.com?t=http://oscarcommerce.com/)
+
+*   django-shop：一个基于 Django 的店铺系统。[官网](https://link.jianshu.com?t=https://github.com/awesto/django-shop)
+
+*   Cartridge：一个基于 Mezzanine 构建的购物车应用。[官网](https://link.jianshu.com?t=https://github.com/stephenmcd/cartridge)
+
+*   shoop：一个基于 Django 的开源电子商务平台。[官网](https://link.jianshu.com?t=https://www.shoop.io/en/)
+
+*   alipay：非官方的 Python 支付宝 API。[官网](https://link.jianshu.com?t=https://github.com/lxneng/alipay)
+
+*   merchant：一个可以接收来自多种支付平台支付的 Django 应用。[官网](https://link.jianshu.com?t=https://github.com/agiliq/merchant)
+
+*   money：货币类库with optional CLDR-backed locale-aware formatting and an extensible currency exchange solution.[官网](https://link.jianshu.com?t=https://github.com/carlospalol/money)
+
+*   python-currencies：显示货币格式以及它的数值。[官网](https://link.jianshu.com?t=https://github.com/Alir3z4/python-currencies)
+
+### RESTful API
+
+用来开发RESTful APIs的库
+
+*   Django
+
+*   [django-rest-framework](https://link.jianshu.com?t=http://hao.jobbole.com/django-rest-framework/)：一个强大灵活的工具，用来构建 web API。[官网](https://link.jianshu.com?t=http://www.django-rest-framework.org/)
+
+*   django-tastypie：为Django 应用开发API。[官网](https://link.jianshu.com?t=http://tastypieapi.org/)
+
+*   django-formapi：为 Django 的表单验证，创建 JSON APIs 。[官网](https://link.jianshu.com?t=https://github.com/5monkeys/django-formapi)
+
+*   Flask
+
+*   flask-api：为 flask 开发的，可浏览 Web APIs 。[官网](https://link.jianshu.com?t=http://www.flaskapi.org/)
+
+*   flask-restful：为 flask 快速创建REST APIs 。[官网](https://link.jianshu.com?t=http://flask-restful.readthedocs.org/en/latest/)
+
+*   flask-restless：为 SQLAlchemy 定义的数据库模型创建 RESTful APIs 。[官网](https://link.jianshu.com?t=https://flask-restless.readthedocs.org/en/latest/)
+
+*   flask-api-utils：为 Flask 处理 API 表示和验证。[官网](https://link.jianshu.com?t=https://github.com/marselester/flask-api-utils)
+
+*   eve：REST API 框架，由 Flask, MongoDB 等驱动。[官网](https://link.jianshu.com?t=https://github.com/nicolaiarocci/eve)
+
+*   Pyramid
+
+*   cornice：一个Pyramid 的 REST 框架 。[官网](https://link.jianshu.com?t=https://cornice.readthedocs.org/en/latest/)
+
+*   与框架无关的
+
+*   falcon：一个用来建立云 API 和 web app 后端的高性能框架。[官网](https://link.jianshu.com?t=http://falconframework.org/)
+
+*   sandman：为现存的数据库驱动系统自动创建 REST APIs 。[官网](https://link.jianshu.com?t=https://github.com/jeffknupp/sandman)
+
+*   restless：框架无关的 REST 框架 ，基于从 Tastypie 学到的知识。[官网](https://link.jianshu.com?t=http://restless.readthedocs.org/en/latest/)
+
+*   ripozo：快速创建 REST/HATEOAS/Hypermedia APIs。[官网](https://link.jianshu.com?t=https://github.com/vertical-knowledge/ripozo)
+
+### 验证
+
+实现验证方案的库。
+
+*   OAuth
+
+*   Authomatic：简单但是强大的框架，身份验证/授权客户端。[官网](https://link.jianshu.com?t=http://peterhudec.github.io/authomatic/)
+
+*   django-allauth：Django 的验证应用。[官网](https://link.jianshu.com?t=https://github.com/pennersr/django-allauth)
+
+*   django-oauth-toolkit：为 Django 用户准备的 OAuth2。[官网](https://link.jianshu.com?t=https://github.com/evonove/django-oauth-toolkit)
+
+*   django-oauth2-provider：为 Django 应用提供 OAuth2 接入。[官网](https://link.jianshu.com?t=https://github.com/caffeinehit/django-oauth2-provider)
+
+*   Flask-OAuthlib：OAuth 1.0/a, 2.0 客户端实现，供 Flask 使用。[官网](https://link.jianshu.com?t=https://github.com/lepture/flask-oauthlib)
+
+*   OAuthLib：一个 OAuth 请求-签名逻辑通用、 完整的实现。[官网](https://link.jianshu.com?t=https://github.com/IDAn/oauthlib)
+
+*   python-oauth2：一个完全测试的抽象接口。用来创建 OAuth 客户端和服务端。[官网](https://link.jianshu.com?t=https://github.com/joestump/python-oauth2)
+
+*   python-social-auth：一个设置简单的社会化验证方式。[官网](https://link.jianshu.com?t=https://github.com/omab/python-social-auth)
+
+*   rauth：OAuth 1.0/a, 2.0, 和 Ofly 的 Python 库。[官网](https://link.jianshu.com?t=https://github.com/litl/rauth)
+
+*   sanction：一个超级简单的OAuth2 客户端实现。[官网](https://link.jianshu.com?t=https://github.com/demianbrecht/sanction)
+
+*   其他
+
+*   jose：JavaScript 对象签名和加密草案的实现。[官网](https://link.jianshu.com?t=https://github.com/demonware/jose)
+
+*   PyJWT：JSON Web 令牌草案 01。[官网](https://link.jianshu.com?t=https://github.com/jpadilla/pyjwt)
+
+*   python-jws：JSON Web 签名草案 02 的实现。[官网](https://link.jianshu.com?t=https://github.com/brianloveswords/python-jws)
+
+*   python-jwt：一个用来生成和验证 JSON Web 令牌的模块。[官网](https://link.jianshu.com?t=https://github.com/davedoesdev/python-jwt)
+
+### 模板引擎
+
+模板生成和词法解析的库和工具。
+
+*   [Jinja2](https://link.jianshu.com?t=http://hao.jobbole.com/jinja2/)：一个现代的，对设计师友好的模板引擎。[官网](https://link.jianshu.com?t=https://github.com/pallets/jinja)
+
+*   Chameleon：一个 HTML/XML 模板引擎。 模仿了 ZPT（Zope Page Templates）, 进行了速度上的优化。[官网](https://link.jianshu.com?t=https://chameleon.readthedocs.org/en/latest/)
+
+*   Genshi：Python 模板工具，用以生成 web 感知的结果。[官网](https://link.jianshu.com?t=https://genshi.edgewall.org/)
+
+*   Mako：Python 平台的超高速轻量级模板。[官网](https://link.jianshu.com?t=http://www.makotemplates.org/)
+
+### Queue
+
+处理事件以及任务队列的库。
+
+*   celery：一个异步任务队列/作业队列，基于分布式消息传递。[官网](https://link.jianshu.com?t=http://www.celeryproject.org/)
+
+*   huey：小型多线程任务队列。[官网](https://link.jianshu.com?t=https://github.com/coleifer/huey)
+
+*   [mrq](https://link.jianshu.com?t=http://hao.jobbole.com/mrq/)：Mr. Queue -一个 Python 的分布式 worker 任务队列， 使用 Redis 和 gevent。[官网](https://link.jianshu.com?t=https://github.com/pricingassistant/mrq)
+
+*   rq：简单的 Python 作业队列。[官网](https://link.jianshu.com?t=http://python-rq.org/)
+
+*   simpleq：一个简单的，可无限扩张的，基于亚马逊 SQS 的队列。[官网](https://link.jianshu.com?t=https://github.com/rdegges/simpleq)
+
+### 搜索
+
+对数据进行索引和执行搜索查询的库和软件。
+
+*   django-haystack：Django 模块化搜索。[官网](https://link.jianshu.com?t=https://github.com/django-haystack/django-haystack)
+
+*   elasticsearch-py：Elasticsearch 的官方底层 Python 客户端。[官网](https://link.jianshu.com?t=https://www.elastic.co/guide/en/elasticsearch/client/python-api/current/index.html)
+
+*   elasticsearch-dsl-py：Elasticsearch 的官方高级 Python 客户端。[官网](https://link.jianshu.com?t=https://github.com/elastic/elasticsearch-dsl-py)
+
+*   solrpy：[solr](https://link.jianshu.com?t=http://lucene.apache.org/solr/)的 Python 客户端。[官网](https://link.jianshu.com?t=https://github.com/edsu/solrpy)
+
+*   Whoosh：一个快速的纯 Python 搜索引擎库。[官网](https://link.jianshu.com?t=http://whoosh.readthedocs.org/en/latest/)
+
+### 动态消息
+
+用来创建用户活动的库。
+
+*   django-activity-stream：从你的站点行为中生成通用活动信息流。[官网](https://link.jianshu.com?t=https://github.com/justquick/django-activity-stream)
+
+*   Stream-Framework：使用 Cassandra 和 Redis 创建动态消息和通知系统。[官网](https://link.jianshu.com?t=https://github.com/tschellenbach/Stream-Framework)
+
+### 资源管理
+
+管理、压缩、缩小网站资源的工具。
+
+*   django-compressor：将链接和内联的 JavaScript 或 CSS 压缩到一个单独的缓存文件中。[官网](https://link.jianshu.com?t=https://github.com/django-compressor/django-compressor)
+
+*   django-storages：一个针对 Django 的自定义存储后端的工具集合。[官网](https://link.jianshu.com?t=http://django-storages.readthedocs.org/en/latest/)
+
+*   fanstatic：打包、优化，并且把静态文件依赖作为 Python 的包来提供。[官网](https://link.jianshu.com?t=http://www.fanstatic.org/en/latest/)
+
+*   File Conveyor：一个后台驻留的程序，用来发现和同步文件到 CDNs, S3 和 FTP。[官网](https://link.jianshu.com?t=http://fileconveyor.org/)
+
+*   Flask-Assets：帮你将 web 资源整合到你的 Flask app 中。[官网](https://link.jianshu.com?t=http://flask-assets.readthedocs.org/en/latest/)
+
+*   jinja-assets-compressor：一个 Jinja 扩展，用来编译和压缩你的资源。[官网](https://link.jianshu.com?t=https://github.com/jaysonsantos/jinja-assets-compressor)
+
+*   webassets：为你的静态资源打包、优化和管理生成独一无二的缓存 URL。[官网](https://link.jianshu.com?t=http://webassets.readthedocs.org/en/latest/)
+
+### 缓存
+
+缓存数据的库。
+
+*   Beaker：一个缓存和会话库，可以用在 web 应用和独立 Python脚本和应用上。[官网](https://link.jianshu.com?t=http://beaker.readthedocs.org/en/latest/)
+
+*   django-cache-machine：Django 模型的自动缓存和失效。[官网](https://link.jianshu.com?t=https://github.com/django-cache-machine/django-cache-machine)
+
+*   django-cacheops：具有自动颗粒化事件驱动失效功能的 ORM。[官网](https://link.jianshu.com?t=https://github.com/Suor/django-cacheops)
+
+*   django-viewlet：渲染模板，同时具有额外的缓存控制功能。[官网](https://link.jianshu.com?t=https://github.com/5monkeys/django-viewlet)
+
+*   dogpile.cache：dogpile.cache 是 Beaker 的下一代替代品，由同一作者开发。[官网](https://link.jianshu.com?t=http://dogpilecache.readthedocs.org/en/latest/)
+
+*   HermesCache：Python 缓存库，具有基于标签的失效和 dogpile effect 保护功能。[官网](https://link.jianshu.com?t=https://pypi.python.org/pypi/HermesCache)
+
+*   johnny-cache：django应用缓存框架。[官网](https://link.jianshu.com?t=https://github.com/jmoiron/johnny-cache)
+
+*   pylibmc：[libmemcached](https://link.jianshu.com?t=http://libmemcached.org/libMemcached.html) 接口的 Python 封装。[官网](https://link.jianshu.com?t=https://github.com/lericson/pylibmc)
+
+### 电子邮件
+
+用来发送和解析电子邮件的库。
+
+*   django-celery-ses：带有 AWS SES 和 Celery 的 Django email 后端。[官网](https://link.jianshu.com?t=https://github.com/StreetVoice/django-celery-ses)
+
+*   envelopes：供人类使用的电子邮件库。[官网](https://link.jianshu.com?t=http://tomekwojcik.github.io/envelopes/)
+
+*   flanker：一个 email 地址和 Mime 解析库。[官网](https://link.jianshu.com?t=https://github.com/mailgun/flanker)
+
+*   imbox：Python IMAP 库[官网](https://link.jianshu.com?t=https://github.com/martinrusev/imbox)
+
+*   inbox.py：Python SMTP 服务器。[官网](https://link.jianshu.com?t=https://github.com/kennethreitz/inbox.py)
+
+*   inbox：一个开源电子邮件工具箱。[官网](https://link.jianshu.com?t=https://github.com/nylas/sync-engine)
+
+*   lamson：Python 风格的 SMTP 应用服务器。[官网](https://link.jianshu.com?t=https://github.com/zedshaw/lamson)
+
+*   mailjet：Mailjet API 实现，用来提供批量发送邮件，统计等功能。[官网](https://link.jianshu.com?t=https://github.com/WoLpH/mailjet)
+
+*   marrow.mailer：高性能可扩展邮件分发框架。[官网](https://link.jianshu.com?t=https://github.com/marrow/mailer)
+
+*   modoboa：一个邮件托管和管理平台，具有现代的、简约的 Web UI。[官网](https://link.jianshu.com?t=https://github.com/tonioo/modoboa)
+
+*   pyzmail：创建，发送和解析电子邮件。[官网](https://link.jianshu.com?t=http://www.magiksys.net/pyzmail/)
+
+*   Talon：Mailgun 库，用来抽取信息和签名。[官网](https://link.jianshu.com?t=https://github.com/mailgun/talon)
+
+### 国际化
+
+用来进行国际化的库。
+
+*   Babel：一个Python 的国际化库。[官网](https://link.jianshu.com?t=http://babel.pocoo.org/en/latest/)
+
+*   Korean：一个韩语词态库。[官网](https://link.jianshu.com?t=https://korean.readthedocs.org/en/latest/)
+
+### URL处理
+
+解析URLs的库
+
+*   furl：一个让处理 URL 更简单小型 Python 库。[官网](https://link.jianshu.com?t=https://github.com/gruns/furl)
+
+*   purl：一个简单的，不可变的URL类，具有简洁的 API 来进行询问和处理。[官网](https://link.jianshu.com?t=https://github.com/codeinthehole/purl)
+
+*   pyshorteners：一个纯 Python URL 缩短库。[官网](https://link.jianshu.com?t=https://github.com/ellisonleao/pyshorteners)
+
+*   shorturl：生成短小 URL 和类似 bit.ly 短链的Python 实现。[官网](https://link.jianshu.com?t=https://github.com/Alir3z4/python-shorturl)
+
+*   webargs：一个解析 HTTP 请求参数的库，内置对流行 web 框架的支持，包括 Flask, Django, Bottle, Tornado和 Pyramid。[官网](https://link.jianshu.com?t=https://github.com/sloria/webargs)
+
+### HTML处理
+
+处理 HTML和XML的库。
+
+*   BeautifulSoup：以 Python 风格的方式来对 HTML 或 XML 进行迭代，搜索和修改。[官网](https://link.jianshu.com?t=http://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+
+*   bleach：一个基于白名单的 HTML 清理和文本链接库。[官网](https://link.jianshu.com?t=http://bleach.readthedocs.org/en/latest/)
+
+*   cssutils：一个 Python 的 CSS 库。[官网](https://link.jianshu.com?t=https://pypi.python.org/pypi/cssutils/)
+
+*   html5lib：一个兼容标准的 HTML 文档和片段解析及序列化库。[官网](https://link.jianshu.com?t=https://github.com/html5lib/html5lib-python)
+
+*   lxml：一个非常快速，简单易用，功能齐全的库，用来处理 HTML 和 XML。[官网](https://link.jianshu.com?t=http://lxml.de/)
+
+*   MarkupSafe：为Python 实现 XML/HTML/XHTML 标记安全字符串。[官网](https://link.jianshu.com?t=https://github.com/pallets/markupsafe)
+
+*   pyquery：一个解析 HTML 的库，类似 jQuery。[官网](https://link.jianshu.com?t=https://github.com/gawel/pyquery)
+
+*   untangle：将XML文档转换为Python对象，使其可以方便的访问。[官网](https://link.jianshu.com?t=https://github.com/stchris/untangle)
+
+*   xhtml2pdf：HTML/CSS 转 PDF 工具。[官网](https://link.jianshu.com?t=https://github.com/xhtml2pdf/xhtml2pdf)
+
+*   xmltodict：像处理 JSON 一样处理 XML。[官网](https://link.jianshu.com?t=https://github.com/martinblech/xmltodict)
+
+爬取网络站点的库
+
+*   Scrapy：一个快速高级的屏幕爬取及网页采集框架。[官网](https://link.jianshu.com?t=http://scrapy.org/)
+
+*   cola：一个分布式爬虫框架。[官网](https://link.jianshu.com?t=https://github.com/chineking/cola)
+
+*   Demiurge：基于PyQuery 的爬虫微型框架。[官网](https://link.jianshu.com?t=https://github.com/matiasb/demiurge)
+
+*   feedparser：通用 feed 解析器。[官网](https://link.jianshu.com?t=http://pythonhosted.org/feedparser/)
+
+*   Grab：站点爬取框架。[官网](https://link.jianshu.com?t=http://grablib.org/)
+
+*   MechanicalSoup：用于自动和网络站点交互的 Python 库。[官网](https://link.jianshu.com?t=https://github.com/hickford/MechanicalSoup)
+
+*   portia：Scrapy 可视化爬取。[官网](https://link.jianshu.com?t=https://github.com/scrapinghub/portia)
+
+*   pyspider：一个强大的爬虫系统。[官网](https://link.jianshu.com?t=https://github.com/binux/pyspider)
+
+*   RoboBrowser：一个简单的，Python 风格的库，用来浏览网站，而不需要一个独立安装的浏览器。[官网](https://link.jianshu.com?t=https://github.com/jmcarp/robobrowser)
+
+### 网页内容提取
+
+用于进行网页内容提取的库。
+
+*   Haul：一个可以扩展的图像爬取工具。[官网](https://link.jianshu.com?t=https://github.com/vinta/Haul)
+
+*   html2text：将 HTML 转换为 Markdown 格式文本[官网](https://link.jianshu.com?t=https://github.com/Alir3z4/html2text)
+
+*   lassie：人性化的网页内容检索库。[官网](https://link.jianshu.com?t=https://github.com/michaelhelmick/lassie)
+
+*   micawber：一个小型网页内容提取库，用来从 URLs 提取富内容。[官网](https://link.jianshu.com?t=https://github.com/coleifer/micawber)
+
+*   [newspaper](https://link.jianshu.com?t=http://hao.jobbole.com/python-newspaper/)：使用 Python 进行新闻提取，文章提取以及内容策展。[官网](https://link.jianshu.com?t=https://github.com/codelucas/newspaper)
+
+*   opengraph：一个用来解析开放内容协议(Open Graph Protocol)的 Python模块。[官网](https://link.jianshu.com?t=https://github.com/erikriver/opengraph)
+
+*   [python-goose](https://link.jianshu.com?t=http://hao.jobbole.com/python-goose/)：HTML内容/文章提取器。[官网](https://link.jianshu.com?t=https://github.com/grangier/python-goose)
+
+*   python-readability：arc90 公司 readability 工具的 Python 高速端口。[官网](https://link.jianshu.com?t=https://github.com/buriy/python-readability)
+
+*   sanitize：为杂乱的数据世界带来调理性。[官网](https://link.jianshu.com?t=https://github.com/Alir3z4/python-sanitize)
+
+*   sumy：一个为文本文件和 HTML 页面进行自动摘要的模块。[官网](https://link.jianshu.com?t=https://github.com/miso-belica/sumy)
+
+*   textract：从任何格式的文档中提取文本，Word，PowerPoint，PDFs 等等。[官网](https://link.jianshu.com?t=https://github.com/deanmalmgren/textract)
+
+### 表单
+
+进行表单操作的库。
+
+*   Deform：Python HTML 表单生成库，受到了 formish 表单生成库的启发。[官网](https://link.jianshu.com?t=http://deform.readthedocs.org/en/latest/)
+
+*   django-bootstrap3：集成了 Bootstrap 3 的 Django。[官网](https://link.jianshu.com?t=https://github.com/dyve/django-bootstrap3)
+
+*   django-crispy-forms：一个 Django 应用，他可以让你以一种非常优雅且 DRY（Don't repeat yourself） 的方式来创建美观的表单。[官网](https://link.jianshu.com?t=http://django-crispy-forms.readthedocs.org/en/latest/)
+
+*   django-remote-forms：一个平台独立的 Django 表单序列化工具。[官网](https://link.jianshu.com?t=https://github.com/WiserTogether/django-remote-forms)
+
+*   WTForms：一个灵活的表单验证和呈现库。[官网](https://link.jianshu.com?t=http://wtforms.readthedocs.org/en/latest/)
+
+*   WTForms-JSON：一个 WTForms 扩展，用来处理 JSON 数据。[官网](https://link.jianshu.com?t=http://wtforms-json.readthedocs.org/en/latest/)
+
+### 数据验证
+
+数据验证库。多用于表单验证。
+
+*   Cerberus：A mappings-validator with a variety of rules, normalization-features and simple customization that uses a pythonic schema-definition.[官网](https://link.jianshu.com?t=http://docs.python-cerberus.org/en/stable/)
+
+*   colander：一个用于对从 XML, JSON，HTML 表单获取的数据或其他同样简单的序列化数据进行验证和反序列化的系统。[官网](https://link.jianshu.com?t=http://docs.pylonsproject.org/projects/colander/en/latest/)
+
+*   kmatch：一种用于匹配/验证/筛选 Python 字典的语言。[官网](https://link.jianshu.com?t=https://github.com/ambitioninc/kmatch)
+
+*   schema：一个用于对 Python 数据结构进行验证的库。[官网](https://link.jianshu.com?t=https://github.com/keleshev/schema)
+
+*   Schematics：数据结构验证。[官网](https://link.jianshu.com?t=https://github.com/schematics/schematics)
+
+*   valideer：轻量级可扩展的数据验证和适配库。[官网](https://link.jianshu.com?t=https://github.com/podio/valideer)
+
+*   voluptuous：一个 Python 数据验证库。主要是为了验证传入 Python的 JSON，YAML 等数据。[官网](https://link.jianshu.com?t=https://github.com/alecthomas/voluptuous)
+
+### 反垃圾技术
+
+帮助你和电子垃圾进行战斗的库。
+
+*   django-simple-captcha：一个简单、高度可定制的Django 应用，可以为任何Django表单添加验证码。[官网](https://link.jianshu.com?t=https://github.com/mbi/django-simple-captcha)
+
+*   django-simple-spam-blocker：一个用于Django的简单的电子垃圾屏蔽工具。[官网](https://link.jianshu.com?t=https://github.com/moqada/django-simple-spam-blocker)
+
+### 标记
+
+用来进行标记的库。
+
+*   django-taggit：简单的 Django 标记工具。[官网](https://link.jianshu.com?t=https://github.com/alex/django-taggit)
+
+### 管理面板
+
+管理界面库。
+
+*   Ajenti：一个你的服务器值得拥有的管理面板。[官网](https://link.jianshu.com?t=https://github.com/Eugeny/ajenti)
+
+*   django-suit：Django 管理界面的一个替代品 (仅对于非商业用途是免费的)。[官网](https://link.jianshu.com?t=http://djangosuit.com/)
+
+*   django-xadmin：Django admin 的一个替代品，具有很多不错的功能。[官网](https://link.jianshu.com?t=https://github.com/sshwsfc/django-xadmin)
+
+*   flask-admin：一个用于 Flask 的简单可扩展的管理界面框架。[官网](https://link.jianshu.com?t=https://github.com/flask-admin/flask-admin)
+
+*   flower：一个对 Celery 集群进行实时监控和提供 web 管理界面的工具。[官网](https://link.jianshu.com?t=https://github.com/mher/flower)
+
+*   Grappelli：Django 管理界面的一个漂亮的皮肤。[官网](https://link.jianshu.com?t=http://grappelliproject.com/)
+
+*   Wooey：一个 Django 应用，可以为 Python 脚本创建 web 用户界面。[官网](https://link.jianshu.com?t=https://github.com/wooey/wooey)
+
+### 静态站点生成器
+
+静态站点生成器是一个软件，它把文本和模板作为输入，然后输出HTML文件。
+
+*   Pelican：使用 Markdown 或 ReST 来处理内容， Jinja 2 来制作主题。支持 DVCS, Disqus.。AGPL 许可。[官网](https://link.jianshu.com?t=http://blog.getpelican.com/)
+
+*   Cactus：为设计师设计的静态站点生成器。[官网](https://link.jianshu.com?t=https://github.com/koenbok/Cactus/)
+
+*   Hyde：基于 Jinja2 的静态站点生成器。[官网](https://link.jianshu.com?t=http://hyde.github.io/)
+
+*   Nikola：一个静态网站和博客生成器。[官网](https://link.jianshu.com?t=https://www.getnikola.com/)
+
+*   Tinkerer：Tinkerer 是一个博客引擎/静态站点生成器，由Sphinx驱动。[官网](https://link.jianshu.com?t=http://tinkerer.me/)
+
+*   Lektor：一个简单易用的静态 CMS 和博客引擎。[官网](https://link.jianshu.com?t=https://www.getlektor.com/)
+
+### 进程
+
+操作系统进程启动及通信库。
+
+*   envoy：比 Python [subprocess](https://link.jianshu.com?t=https://docs.python.org/2/library/subprocess.html) 模块更人性化。[官网](https://link.jianshu.com?t=https://github.com/kennethreitz/envoy)
+
+*   sarge：另一 种 subprocess 模块的封装。[官网](https://link.jianshu.com?t=http://sarge.readthedocs.org/en/latest/)
+
+*   sh：一个完备的 subprocess 替代库。[官网](https://link.jianshu.com?t=https://github.com/amoffat/sh)
+
+### 并发和并行
+
+用以进行并发和并行操作的库。
+
+*   multiprocessing：(Python 标准库) 基于进程的“线程”接口。[官网](https://link.jianshu.com?t=https://docs.python.org/2/library/multiprocessing.html)
+
+*   threading：(Python 标准库)更高层的线程接口。[官网](https://link.jianshu.com?t=https://docs.python.org/2/library/threading.html)
+
+*   eventlet：支持 WSGI 的异步框架。[官网](https://link.jianshu.com?t=http://eventlet.net/)
+
+*   gevent：一个基于协程的 Python 网络库，使用[greenlet](https://link.jianshu.com?t=https://github.com/python-greenlet/greenlet)。[官网](https://link.jianshu.com?t=http://www.gevent.org/)
+
+*   Tomorrow：用于产生异步代码的神奇的装饰器语法实现。[官网](https://link.jianshu.com?t=https://github.com/madisonmay/Tomorrow)
+
+*   uvloop：在libuv之上超快速实现asyncio事件循环。[官网](https://link.jianshu.com?t=https://github.com/MagicStack/uvloop)
+
+### 网络
+
+用于网络编程的库。
+
+*   asyncio：(Python 标准库) 异步 I/O, 事件循环, 协程以及任务。[官网](https://link.jianshu.com?t=https://docs.python.org/3/library/asyncio.html)
+
+*   [Twisted](https://link.jianshu.com?t=http://hao.jobbole.com/twisted/)：一个事件驱动的网络引擎。[官网](https://link.jianshu.com?t=https://twistedmatrix.com/trac/)
+
+*   pulsar：事件驱动的并发框架。[官网](https://link.jianshu.com?t=https://github.com/quantmind/pulsar)
+
+*   diesel：基于Greenlet 的事件 I/O 框架。[官网](https://link.jianshu.com?t=https://github.com/dieseldev/diesel)
+
+*   pyzmq：一个 ZeroMQ 消息库的 Python 封装。[官网](https://link.jianshu.com?t=http://zeromq.github.io/pyzmq/)
+
+*   txZMQ：基于 Twisted 的 ZeroMQ 消息库的 Python 封装。[官网](https://link.jianshu.com?t=https://github.com/smira/txZMQ)
+
+### WebSocket
+
+帮助使用WebSocket的库。
+
+*   AutobahnPython：给 Python 、使用的 WebSocket &amp; WAMP 基于 Twisted 和 [asyncio](https://link.jianshu.com?t=https://docs.python.org/3/library/asyncio.html)。[官网](https://link.jianshu.com?t=https://github.com/crossbario/autobahn-python)
+
+*   Crossbar：开源统一应用路由(Websocket &amp; WAMP for Python on Autobahn).[官网](https://link.jianshu.com?t=https://github.com/crossbario/crossbar/)
+
+*   django-socketio：给 Django 用的 WebSockets。[官网](https://link.jianshu.com?t=https://github.com/stephenmcd/django-socketio)
+
+*   WebSocket-for-Python：为Python2/3 以及 PyPy 编写的 WebSocket 客户端和服务器库。[官网](https://link.jianshu.com?t=https://github.com/Lawouach/WebSocket-for-Python)
+
+### WSGI 服务器
+
+兼容 WSGI 的 web 服务器
+
+*   gunicorn：Pre-forked, 部分是由 C 语言编写的。[官网](https://link.jianshu.com?t=https://pypi.python.org/pypi/gunicorn)
+
+*   uwsgi：uwsgi 项目的目的是开发一组全栈工具，用来建立托管服务， 由 C 语言编写。[官网](https://link.jianshu.com?t=https://uwsgi-docs.readthedocs.org/en/latest/)
+
+*   [bjoern](https://link.jianshu.com?t=http://hao.jobbole.com/bjoern/)：异步，非常快速，由 C 语言编写。[官网](https://link.jianshu.com?t=https://pypi.python.org/pypi/bjoern)
+
+*   fapws3：异步 (仅对于网络端)，由 C 语言编写。[官网](https://link.jianshu.com?t=http://www.fapws.org/)
+
+*   meinheld：异步，部分是由 C 语言编写的。[官网](https://link.jianshu.com?t=https://pypi.python.org/pypi/meinheld)
+
+*   netius：异步，非常快速。[官网](https://link.jianshu.com?t=https://github.com/hivesolutions/netius)
+
+*   paste：多线程，稳定，久经考验。[官网](https://link.jianshu.com?t=http://pythonpaste.org/)
+
+*   rocket：多线程。[官网](https://link.jianshu.com?t=https://pypi.python.org/pypi/rocket)
+
+*   waitress：多线程, 是它驱动着 Pyramid 框架。[官网](https://link.jianshu.com?t=https://waitress.readthedocs.org/en/latest/)
+
+*   Werkzeug：一个 WSGI 工具库，驱动着 Flask ，而且可以很方便大嵌入到你的项目中去。[官网](https://link.jianshu.com?t=http://werkzeug.pocoo.org/)
+
+### RPC 服务器
+
+兼容 RPC 的服务器。
+
+*   SimpleJSONRPCServer：这个库是 JSON-RPC 规范的一个实现。[官网](https://link.jianshu.com?t=https://github.com/joshmarshall/jsonrpclib/)
+
+*   SimpleXMLRPCServer：(Python 标准库) 简单的 XML-RPC 服务器实现，单线程。[官网](https://link.jianshu.com?t=https://docs.python.org/2/library/simplexmlrpcserver.html)
+
+*   zeroRPC：zerorpc 是一个灵活的 RPC 实现，基于 ZeroMQ 和 MessagePack。[官网](https://link.jianshu.com?t=https://github.com/0rpc/zerorpc-python)
+
+### 密码学
+
+*   cryptography：这个软件包意在提供密码学基本内容和方法提供给 Python 开发者。[官网](https://link.jianshu.com?t=https://cryptography.io/en/latest/)
+
+*   hashids：在 Python 中实现 [hashids](https://link.jianshu.com?t=http://hashids.org/) 。[官网](https://link.jianshu.com?t=https://github.com/davidaurelio/hashids-python)
+
+*   Paramiko：SSHv2 协议的 Python (2.6+, 3.3+) ，提供客户端和服务端的功能。[官网](https://link.jianshu.com?t=http://www.paramiko.org/)
+
+*   Passlib：安全密码存储／哈希库，[官网](https://link.jianshu.com?t=https://pythonhosted.org/passlib/)
+
+*   PyCrypto：Python 密码学工具箱。[官网](https://link.jianshu.com?t=https://www.dlitz.net/software/pycrypto/)
+
+*   PyNacl：网络和密码学(NaCl) 库的 Python 绑定。[官网](https://link.jianshu.com?t=https://github.com/pyca/pynacl)
+
+### 图形用户界面
+
+用来创建图形用户界面程序的库。
+
+*   curses：内建的 [ncurses](https://link.jianshu.com?t=http://www.gnu.org/software/ncurses/) 封装，用来创建终端图形用户界面。[官网](https://link.jianshu.com?t=https://docs.python.org/2/library/curses.html#module-curses)
+
+*   enaml：使用类似 QML 的Declaratic语法来创建美观的用户界面。[官网](https://link.jianshu.com?t=https://github.com/nucleic/enaml)
+
+*   [kivy](https://link.jianshu.com?t=http://hao.jobbole.com/kivy/)：一个用来创建自然用户交互（NUI）应用程序的库，可以运行在 Windows, Linux, Mac OS X, Android 以及 iOS平台上。[官网](https://link.jianshu.com?t=https://kivy.org/)
+
+*   pyglet：一个Python 的跨平台窗口及多媒体库。[官网](https://link.jianshu.com?t=https://bitbucket.org/pyglet/pyglet/wiki/Home)
+
+*   PyQt：跨平台用户界面框架 [Qt](https://link.jianshu.com?t=http://www.qt.io/) 的 Python 绑定 ，支持Qt v4 和 Qt v5。[官网](https://link.jianshu.com?t=https://riverbankcomputing.com/software/pyqt/intro)
+
+*   PySide：P跨平台用户界面框架 [Qt](https://link.jianshu.com?t=http://www.qt.io/) 的 Python 绑定 ，支持Qt v4。[官网](https://link.jianshu.com?t=https://wiki.qt.io/PySide)
+
+*   Tkinter：Tkinter 是 Python GUI 的一个事实标准库。[官网](https://link.jianshu.com?t=https://wiki.python.org/moin/TkInter)
+
+*   Toga：一个 Python 原生的, 操作系统原生的 GUI工具包。[官网](https://link.jianshu.com?t=https://github.com/pybee/toga)
+
+*   urwid：一个用来创建终端 GUI 应用的库，支持组件，事件和丰富的色彩等。[官网](https://link.jianshu.com?t=http://urwid.org/)
+
+*   wxPython：wxPython 是 wxWidgets C++ 类库和 Python 语言混合的产物。[官网](https://link.jianshu.com?t=http://wxpython.org/)
+
+*   PyGObject：GLib/GObject/GIO/GTK+ (GTK+3) 的 Python 绑定[官网](https://link.jianshu.com?t=https://wiki.gnome.org/Projects/PyGObject)
+
+*   Flexx：Flexx 是一个纯 Python 语言编写的用来创建 GUI 程序的工具集，它使用 web 技术进行界面的展示。[官网](https://link.jianshu.com?t=https://github.com/zoofIO/flexx)
+
+### 游戏开发
+
+超赞的游戏开发库。
+
+*   Cocos2d：cocos2d 是一个用来开发 2D 游戏， 示例和其他图形/交互应用的框架。基于 pyglet。[官网](https://link.jianshu.com?t=http://cocos2d.org/)
+
+*   Panda3D：由迪士尼开发的 3D 游戏引擎，并由卡内基梅陇娱乐技术中心负责维护。使用C++编写, 针对 Python 进行了完全的封装。[官网](https://link.jianshu.com?t=https://www.panda3d.org/)
+
+*   Pygame：Pygame 是一组 Python 模块，用来编写游戏。[官网](https://link.jianshu.com?t=http://www.pygame.org/news.html)
+
+*   PyOgre：Ogre 3D 渲染引擎的 Python 绑定，可以用来开发游戏和仿真程序等任何 3D 应用。[官网](https://link.jianshu.com?t=http://www.ogre3d.org/tikiwiki/PyOgre)
+
+*   PyOpenGL：OpenGL 的 Python 绑定及其相关 APIs。[官网](https://link.jianshu.com?t=http://pyopengl.sourceforge.net/)
+
+*   PySDL2：SDL2 库的封装，基于 ctypes。[官网](https://link.jianshu.com?t=http://pysdl2.readthedocs.org/en/latest/)
+
+*   RenPy：一个视觉小说（visual novel）引擎。[官网](https://link.jianshu.com?t=https://www.renpy.org/)
+
+### 日志
+
+用来生成和操作日志的库。
+
+*   logging：(Python 标准库) 为 Python 提供日志功能。[官网](https://link.jianshu.com?t=https://docs.python.org/2/library/logging.html)
+
+*   logbook：Logging 库的替代品。[官网](https://link.jianshu.com?t=http://pythonhosted.org/Logbook/)
+
+*   Eliot：为复杂的和分布式系统创建日志。[官网](https://link.jianshu.com?t=https://eliot.readthedocs.org/en/latest/)
+
+*   Raven：Sentry的 Python 客户端。[官网](https://link.jianshu.com?t=http://raven.readthedocs.org/en/latest/)
+
+*   Sentry：实时记录和收集日志的服务器。[官网](https://link.jianshu.com?t=https://pypi.python.org/pypi/sentry)
+
+### Testing
+
+进行代码库测试和生成测试数据的库。
+
+*   测试框架
+
+*   unittest：(Python 标准库) 单元测试框架。[官网](https://link.jianshu.com?t=https://docs.python.org/2/library/unittest.html)
+
+*   nose：nose 扩展了 unittest 的功能。[官网](https://link.jianshu.com?t=https://nose.readthedocs.org/en/latest/)
+
+*   contexts：一个 Python 3.3+ 的 BDD 框架。受到C# – Machine.Specifications的启发。[官网](https://link.jianshu.com?t=https://github.com/benjamin-hodgson/Contexts)
+
+*   hypothesis：Hypothesis 是一个基于先进的 Quickcheck 风格特性的测试库。[官网](https://link.jianshu.com?t=https://github.com/DRMacIver/hypothesis)
+
+*   mamba：Python 的终极测试工具， 拥护BDD。[官网](https://link.jianshu.com?t=http://nestorsalceda.github.io/mamba/)
+
+*   PyAutoGUI：PyAutoGUI 是一个人性化的跨平台 GUI 自动测试模块。[官网](https://link.jianshu.com?t=https://github.com/asweigart/pyautogui)
+
+*   pyshould：Should 风格的断言，基于 [PyHamcrest](https://link.jianshu.com?t=https://github.com/hamcrest/PyHamcrest)。[官网](https://link.jianshu.com?t=https://github.com/drslump/pyshould)
+
+*   pytest：一个成熟的全功能 Python 测试工具。[官网](https://link.jianshu.com?t=http://pytest.org/latest/)
+
+*   green：干净，多彩的测试工具。[官网](https://link.jianshu.com?t=https://github.com/CleanCut/green)
+
+*   pyvows：BDD 风格的测试工具，受Vows.js的启发。[官网](https://link.jianshu.com?t=http://heynemann.github.io/pyvows/)-
+
+*   Robot Framework：一个通用的自动化测试框架。[官网](https://link.jianshu.com?t=https://github.com/robotframework/robotframework)
+
+*   Web 测试
+
+*   Selenium：[Selenium](https://link.jianshu.com?t=http://www.seleniumhq.org/) WebDriver 的 Python 绑定。[官网](https://link.jianshu.com?t=https://pypi.python.org/pypi/selenium)
+
+*   locust：使用 Python 编写的，可扩展的用户加载测试工具。[官网](https://link.jianshu.com?t=https://github.com/locustio/locust)
+
+*   sixpack：一个和语言无关的 A/B 测试框架。[官网](https://link.jianshu.com?t=https://github.com/seatgeek/sixpack)
+
+*   splinter：开源的 web 应用测试工具。[官网](https://link.jianshu.com?t=https://splinter.readthedocs.org/en/latest/)
+
+*   Mock测试
+
+*   mock：(Python 标准库) 一个用于伪造测试的库。[官网](https://link.jianshu.com?t=https://docs.python.org/3/library/unittest.mock.html)
+
+*   doublex：Python 的一个功能强大的 doubles  测试框架。[官网](https://link.jianshu.com?t=https://pypi.python.org/pypi/doublex)
+
+*   freezegun：通过伪造日期模块来生成不同的时间。[官网](https://link.jianshu.com?t=https://github.com/spulec/freezegun)
+
+*   httmock：针对 Python 2.6+ 和 3.2+ 生成 伪造请求的库。[官网](https://link.jianshu.com?t=https://github.com/patrys/httmock)
+
+*   httpretty：Python 的 HTTP 请求 mock 工具。[官网](https://link.jianshu.com?t=http://falcao.it/HTTPretty/)
+
+*   responses：伪造 Python 中的 requests 库的一个通用库。[官网](https://link.jianshu.com?t=https://github.com/getsentry/responses)
+
+*   VCR.py：在你的测试中记录和重放 HTTP 交互。[官网](https://link.jianshu.com?t=https://github.com/kevin1024/vcrpy)
+
+*   对象工厂
+
+*   factoryboy：一个 Python 用的测试固件 (test fixtures) 替代库。[官网](https://link.jianshu.com?t=https://github.com/rbarrois/factoryboy)
+
+*   mixer：另外一个测试固件 (test fixtures) 替代库，支持 Django, Flask, SQLAlchemy, Peewee 等。[官网](https://link.jianshu.com?t=https://github.com/klen/mixer)
+
+*   modelmommy：为 Django 测试创建随机固件[官网](https://link.jianshu.com?t=https://github.com/vandersonmota/modelmommy)
+
+*   代码覆盖率
+
+*   coverage：代码覆盖率测量。[官网](https://link.jianshu.com?t=https://pypi.python.org/pypi/coverage)
+
+*   伪数据
+
+*   faker：一个 Python 库，用来生成伪数据。[官网](https://link.jianshu.com?t=http://www.joke2k.net/faker/)
+
+*   fake2db：伪数据库生成器。[官网](https://link.jianshu.com?t=https://github.com/emirozer/fake2db)
+
+*   radar：生成随机的日期/时间。[官网](https://link.jianshu.com?t=https://pypi.python.org/pypi/radar)
+
+*   错误处理
+
+*   FuckIt.py：FuckIt.py 使用最先进的技术来保证你的 Python 代码无论对错都能继续运行。[官网](https://link.jianshu.com?t=https://github.com/ajalt/fuckitpy)
+
+### 代码分析和Lint工具
+
+进行代码分析，解析和操作代码库的库和工具。
+
+*   代码分析
+
+*   coala：语言独立和易于扩展的代码分析应用程序。[官网](https://link.jianshu.com?t=http://coala-analyzer.org/)
+
+*   code2flow：把你的 Python 和 JavaScript 代码转换为流程图。[官网](https://link.jianshu.com?t=https://github.com/scottrogowski/code2flow)
+
+*   pycallgraph：这个库可以把你的Python 应用的流程(调用图)进行可视化。[官网](https://link.jianshu.com?t=https://github.com/gak/pycallgraph)
+
+*   pysonar2：Python 类型推断和检索工具。[官网](https://link.jianshu.com?t=https://github.com/yinwang0/pysonar2)
+
+*   Lint工具
+
+*   Flake8：模块化源码检查工具: pep8, pyflakes 以及 co。[官网](https://link.jianshu.com?t=https://pypi.python.org/pypi/flake8)
+
+*   Pylint：一个完全可定制的源码分析器。[官网](https://link.jianshu.com?t=https://www.pylint.org/)
+
+*   pylama：Python 和 JavaScript 的代码审查工具。[官网](https://link.jianshu.com?t=https://pylama.readthedocs.org/en/latest/)
+
+*   代码格式化
+
+*   autopep8：自动格式化 Python 代码，以使其符合 PEP8 规范。[官网](https://link.jianshu.com?t=https://github.com/hhatto/autopep8)
+
+### Debugging Tools
+
+用来进行代码调试的库。
+
+*   调试器
+
+*   ipdb：IPython 启用的 [pdb](https://link.jianshu.com?t=https://docs.python.org/2/library/pdb.html)。[官网](https://link.jianshu.com?t=https://pypi.python.org/pypi/ipdb)
+
+*   pudb：全屏，基于控制台的 Python 调试器。[官网](https://link.jianshu.com?t=https://pypi.python.org/pypi/pudb)
+
+*   pyringe：可以在 Python 进程中附加和注入代码的调试器。[官网](https://link.jianshu.com?t=https://github.com/google/pyringe)
+
+*   wdb：一个奇异的 web 调试器，通过 WebSockets 工作。[官网](https://link.jianshu.com?t=https://github.com/Kozea/wdb)
+
+*   winpdb：一个具有图形用户界面的 Python 调试器，可以进行远程调试，基于 rpdb2。[官网](https://link.jianshu.com?t=http://winpdb.org/)
+
+*   django-debug-toolbar：为 Django 显示各种调试信息。[官网](https://link.jianshu.com?t=https://github.com/django-debug-toolbar/django-debug-toolbar)
+
+*   django-devserver：一个 Django 运行服务器的替代品。[官网](https://link.jianshu.com?t=https://github.com/dcramer/django-devserver)
+
+*   flask-debugtoolbar：django-debug-toolbar 的 flask 版。[官网](https://link.jianshu.com?t=https://github.com/mgood/flask-debugtoolbar)
+
+*   性能分析器
+
+*   lineprofiler：逐行性能分析。[官网](https://link.jianshu.com?t=https://github.com/rkern/lineprofiler)
+
+*   [Memory Profiler](https://link.jianshu.com?t=http://hao.jobbole.com/memory_profiler/)：监控 Python 代码的内存使用。[官网](https://link.jianshu.com?t=http://pypi.python.org/pypi/memory_profiler)、[内存](https://link.jianshu.com?t=https://github.com/fabianp/memoryprofiler)
+
+*   profiling：一个交互式 Python 性能分析工具。[官网](https://link.jianshu.com?t=https://github.com/what-studio/profiling)
+
+*   其他
+
+*   pyelftools：解析和分析 ELF 文件以及 DWARF 调试信息。[官网](https://link.jianshu.com?t=https://github.com/eliben/pyelftools)
+
+*   python-statsd：[statsd](https://link.jianshu.com?t=https://github.com/etsy/statsd/) 服务器的 Python 客户端。[官网](https://link.jianshu.com?t=https://github.com/WoLpH/python-statsd)
+
+### Science and Data Analysis
+
+用来进行科学计算和数据分析的库。
+
+*   astropy：一个天文学 Python 库。[官网](https://link.jianshu.com?t=http://www.astropy.org/)
+
+*   [bcbio-nextgen](https://link.jianshu.com?t=http://hao.jobbole.com/bcbio-nextgen/)：这个工具箱为全自动高通量测序分析提供符合最佳实践的处理流程。[官网](https://link.jianshu.com?t=https://github.com/chapmanb/bcbio-nextgen)
+
+*   bccb：生物分析相关代码集合[官网](https://link.jianshu.com?t=https://github.com/chapmanb/bcbb)
+
+*   Biopython：Biopython 是一组可以免费使用的用来进行生物计算的工具。[官网](https://link.jianshu.com?t=http://biopython.org/wiki/MainPage)
+
+*   [blaze](https://link.jianshu.com?t=http://hao.jobbole.com/blaze/)：NumPy 和 Pandas 的大数据接口。[官网](https://link.jianshu.com?t=http://blaze.readthedocs.org/en/latest/index.html)
+
+*   [cclib](https://link.jianshu.com?t=http://hao.jobbole.com/cclib/)：一个用来解析和解释计算化学软件包输出结果的库。[官网](https://link.jianshu.com?t=http://cclib.github.io/)
+
+*   NetworkX：一个为复杂网络设计的高性能软件。[官网](https://link.jianshu.com?t=https://networkx.github.io/)
+
+*   Neupy：执行和测试各种不同的人工神经网络算法。[官网](https://link.jianshu.com?t=http://neupy.com/pages/home.html)
+
+*   Numba：Python JIT (just in time) 编译器，针对科学用的 Python ，由Cython 和 NumPy 的开发者开发。[官网](https://link.jianshu.com?t=http://numba.pydata.org/)
+
+*   [NumPy](https://link.jianshu.com?t=http://hao.jobbole.com/numpy/)：使用 Python 进行科学计算的基础包。[官网](https://link.jianshu.com?t=http://www.numpy.org/)
+
+*   Open Babel：一个化学工具箱，用来描述多种化学数据。[官网](https://link.jianshu.com?t=http://openbabel.org/wiki/MainPage)
+
+*   [Open Mining](https://link.jianshu.com?t=http://hao.jobbole.com/open-mining/)：使用 Python 挖掘商业情报 (BI) (Pandas web 接口)。[官网](https://link.jianshu.com?t=https://github.com/mining/mining)
+
+*   [orange](https://link.jianshu.com?t=http://hao.jobbole.com/orange/)：通过可视化编程或 Python 脚本进行数据挖掘，数据可视化，分析和机器学习。[官网](https://link.jianshu.com?t=http://orange.biolab.si/)
+
+*   Pandas：提供高性能，易用的数据结构和数据分析工具。[官网](https://link.jianshu.com?t=http://pandas.pydata.org/)
+
+*   PyDy：PyDy 是 Python Dynamics 的缩写，用来为动力学运动建模工作流程提供帮助， 基于 NumPy, SciPy, IPython 和 matplotlib。[官网](https://link.jianshu.com?t=http://www.pydy.org/)
+
+*   [PyMC](https://link.jianshu.com?t=http://hao.jobbole.com/pymc/)：马尔科夫链蒙特卡洛采样工具。[官网](https://link.jianshu.com?t=https://github.com/pymc-devs/pymc3)
+
+*   RDKit：化学信息学和机器学习软件。[官网](https://link.jianshu.com?t=http://www.rdkit.org/)
+
+*   [SciPy](https://link.jianshu.com?t=http://hao.jobbole.com/scipy/)：由一些基于 Python ，用于数学，科学和工程的开源软件构成的生态系统。[官网](https://link.jianshu.com?t=http://www.scipy.org/)
+
+*   [statsmodels](https://link.jianshu.com?t=http://hao.jobbole.com/statsmodels/)：统计建模和计量经济学。[官网](https://link.jianshu.com?t=https://github.com/statsmodels/statsmodels)
+
+*   SymPy：一个用于符号数学的 Python 库。[官网](https://link.jianshu.com?t=https://github.com/sympy/sympy)
+
+*   zipline：一个 Python 算法交易库。[官网](https://link.jianshu.com?t=https://github.com/quantopian/zipline)
+
+*   [Bayesian-belief-networks](https://link.jianshu.com?t=http://hao.jobbole.com/bayesian-belief-networks/)：优雅的贝叶斯信念网络框架。[官网](https://link.jianshu.com?t=https://github.com/eBay/bayesian-belief-networks)
+
+### 数据可视化
+
+进行数据可视化的库。 参见: [awesome-javascript](https://link.jianshu.com?t=https://github.com/sorrycc/awesome-javascript#data-visualization)。
+
+*   matplotlib：一个 Python 2D 绘图库。[官网](https://link.jianshu.com?t=http://matplotlib.org/)
+
+*   bokeh：用 Python 进行交互式 web 绘图。[官网](https://link.jianshu.com?t=https://github.com/bokeh/bokeh)
+
+*   ggplot：ggplot2 给 R 提供的 API 的 Python 版本。[官网](https://link.jianshu.com?t=https://github.com/yhat/ggplot)
+
+*   plotly：协同 Python 和 matplotlib 工作的 web 绘图库。[官网](https://link.jianshu.com?t=https://plot.ly/python/)
+
+*   pygal：一个 Python SVG 图表创建工具。[官网](https://link.jianshu.com?t=http://www.pygal.org/en/latest/)
+
+*   pygraphviz：Graphviz 的 Python 接口。[官网](https://link.jianshu.com?t=https://pypi.python.org/pypi/pygraphviz)
+
+*   PyQtGraph：交互式实时2D/3D/图像绘制及科学/工程学组件。[官网](https://link.jianshu.com?t=http://www.pyqtgraph.org/)
+
+*   SnakeViz：一个基于浏览器的 Python's cProfile 模块输出结果查看工具。[官网](https://link.jianshu.com?t=http://jiffyclub.github.io/snakeviz/)
+
+*   vincent：把 Python 转换为 Vega 语法的转换工具。[官网](https://link.jianshu.com?t=https://github.com/wrobstory/vincent)
+
+*   VisPy：基于 OpenGL 的高性能科学可视化工具。[官网](https://link.jianshu.com?t=http://vispy.org/)
+
+### 计算机视觉
+
+计算机视觉库。
+
+*   OpenCV：开源计算机视觉库。[官网](https://link.jianshu.com?t=http://opencv.org/)
+
+*   pyocr：Tesseract和Cuneiform的包装库。[官网](https://link.jianshu.com?t=https://github.com/jflesch/pyocr)
+
+*   pytesseract：[Google Tesseract OCR](https://link.jianshu.com?t=https://github.com/tesseract-ocr)的另一包装库。[官网](https://link.jianshu.com?t=https://github.com/madmaze/pytesseract)
+
+*   [SimpleCV](https://link.jianshu.com?t=http://hao.jobbole.com/simplecv/)：一个用来创建计算机视觉应用的开源框架。[官网](https://link.jianshu.com?t=http://simplecv.org/)
+
+### 机器学习
+
+机器学习库。 参见: [awesome-machine-learning](https://link.jianshu.com?t=https://github.com/josephmisiti/awesome-machine-learning#python).
+
+*   Crab：灵活、快速的推荐引擎。[官网](https://link.jianshu.com?t=https://github.com/muricoca/crab)
+
+*   gensim：人性化的话题建模库。[官网](https://link.jianshu.com?t=https://github.com/piskvorky/gensim)
+
+*   hebel：GPU 加速的深度学习库。[官网](https://link.jianshu.com?t=https://github.com/hannes-brt/hebel)
+
+*   NuPIC：智能计算 Numenta 平台。[官网](https://link.jianshu.com?t=https://github.com/numenta/nupic)
+
+*   pattern：Python 网络挖掘模块。[官网](https://link.jianshu.com?t=https://github.com/clips/pattern)
+
+*   [PyBrain](https://link.jianshu.com?t=http://hao.jobbole.com/pybrain/)：另一个 Python 机器学习库。[官网](https://link.jianshu.com?t=https://github.com/pybrain/pybrain)
+
+*   [Pylearn2](https://link.jianshu.com?t=http://hao.jobbole.com/pylearn2/)：一个基于 [Theano](https://link.jianshu.com?t=https://github.com/Theano/Theano) 的机器学习库。[官网](https://link.jianshu.com?t=https://github.com/lisa-lab/pylearn2)
+
+*   [python-recsys](https://link.jianshu.com?t=http://hao.jobbole.com/python-recsys/)：一个用来实现推荐系统的 Python 库。[官网](https://link.jianshu.com?t=https://github.com/ocelma/python-recsys)
+
+*   scikit-learn：基于 SciPy 构建的机器学习 Python 模块。[官网](https://link.jianshu.com?t=http://scikit-learn.org/)
+
+*   pydeep：Python 深度学习库。[官网](https://link.jianshu.com?t=https://github.com/andersbll/deeppy)
+
+*   vowpalporpoise：轻量级 [Vowpal Wabbit](https://link.jianshu.com?t=https://github.com/JohnLangford/vowpalwabbit/) 的 Python 封装。[官网](https://link.jianshu.com?t=https://github.com/josephreisinger/vowpalporpoise)
+
+*   skflow：一个 [TensorFlow](https://link.jianshu.com?t=https://github.com/tensorflow/tensorflow) 的简化接口(模仿 scikit-learn)。[官网](https://link.jianshu.com?t=https://github.com/tensorflow/skflow)
+
+### MapReduce
+
+MapReduce 框架和库。
+
+*   [dpark](https://link.jianshu.com?t=http://hao.jobbole.com/dpark/)：Spark 的 Python 克隆版，一个类似 MapReduce 的框架。[官网](https://link.jianshu.com?t=https://github.com/douban/dpark)
+
+*   dumbo：这个 Python 模块可以让人轻松的编写和运行 Hadoop 程序。[官网](https://link.jianshu.com?t=https://github.com/klbostee/dumbo)
+
+*   luigi：这个模块帮你构建批处理作业的复杂流水线。[官网](https://link.jianshu.com?t=https://github.com/spotify/luigi)
+
+*   mrjob：在 Hadoop 或 Amazon Web Services 上运行 MapReduce 任务。[官网](https://link.jianshu.com?t=https://github.com/Yelp/mrjob)
+
+*   PySpark：Spark 的 Python API 。[官网](https://link.jianshu.com?t=http://spark.apache.org/docs/latest/programming-guide.html)
+
+*   streamparse：运行针对事实数据流的 Python 代码。集成了[Apache Storm](https://link.jianshu.com?t=http://storm.apache.org/)。[官网](https://link.jianshu.com?t=https://github.com/Parsely/streamparse)
+
+### 函数式编程
+
+使用 Python 进行函数式编程。
+
+*   CyToolz：Toolz 的 Cython 实现 : 高性能函数式工具。[官网](https://link.jianshu.com?t=https://github.com/pytoolz/cytoolz/)
+
+*   fn.py：在 Python 中进行函数式编程 : 实现了一些享受函数式编程缺失的功能。[官网](https://link.jianshu.com?t=https://github.com/kachayev/fn.py)
+
+*   funcy：炫酷又实用的函数式工具。[官网](https://link.jianshu.com?t=https://github.com/Suor/funcy)
+
+*   Toolz：一组用于迭代器，函数和字典的函数式编程工具。[官网](https://link.jianshu.com?t=https://github.com/pytoolz/toolz)
+
+### 第三方 API
+
+用来访问第三方 API的库。 参见： [List of Python API Wrappers and Libraries](https://link.jianshu.com?t=https://github.com/realpython/list-of-python-api-wrappers)。
+
+*   apache-libcloud：一个为各种云设计的 Python 库。[官网](https://link.jianshu.com?t=https://libcloud.apache.org/)
+
+*   boto：Amazon Web Services 的 Python 接口。[官网](https://link.jianshu.com?t=https://github.com/boto/boto)
+
+*   django-wordpress：WordPress models and views for Django.[官网](https://link.jianshu.com?t=https://github.com/sunlightlabs/django-wordpress/)
+
+*   facebook-sdk：Facebook 平台的 Python SDK.[官网](https://link.jianshu.com?t=https://github.com/mobolic/facebook-sdk)
+
+*   facepy：Facepy 让和 Facebook's Graph API 的交互变得更容易。[官网](https://link.jianshu.com?t=https://github.com/jgorset/facepy)
+
+*   gmail：Gmail 的 Python 接口。[官网](https://link.jianshu.com?t=https://github.com/charlierguo/gmail)
+
+*   google-api-python-client：Python 用的 Google APIs 客户端库。[官网](https://link.jianshu.com?t=https://github.com/google/google-api-python-client)
+
+*   gspread：Google 电子表格的 Python API.[官网](https://link.jianshu.com?t=https://github.com/burnash/gspread)
+
+*   twython：Twitter API 的封装。[官网](https://link.jianshu.com?t=https://github.com/ryanmcgrath/twython)
+
+### DevOps 工具
+
+用于 DevOps 的软件和库。
+
+*   Ansible：一个非常简单的 IT 自动化平台。[官网](https://link.jianshu.com?t=https://github.com/ansible/ansible)
+
+*   SaltStack：基础设施自动化和管理系统。[官网](https://link.jianshu.com?t=https://github.com/saltstack/salt)
+
+*   OpenStack：用于构建私有和公有云的开源软件。[官网](https://link.jianshu.com?t=http://www.openstack.org/)
+
+*   Docker Compose：快速，分离的开发环境，使用 Docker。[官网](https://link.jianshu.com?t=https://docs.docker.com/compose/)
+
+*   Fabric：一个简单的，Python 风格的工具，用来进行远程执行和部署。[官网](https://link.jianshu.com?t=http://www.fabfile.org/)
+
+*   cuisine：为 Fabric 提供一系列高级函数。[官网](https://link.jianshu.com?t=https://github.com/sebastien/cuisine)
+
+*   Fabtools：一个用来编写超赞的 Fabric 文件的工具。[官网](https://link.jianshu.com?t=https://github.com/ronnix/fabtools)
+
+*   gitapi：Git 的纯 Python API。[官网](https://link.jianshu.com?t=https://bitbucket.org/haard/gitapi)
+
+*   hgapi：Mercurial 的纯 Python API。[官网](https://link.jianshu.com?t=https://bitbucket.org/haard/hgapi)
+
+*   honcho：[Foreman](https://link.jianshu.com?t=https://github.com/ddollar/foreman)的 Python 克隆版，用来管理基于[Procfile](https://link.jianshu.com?t=https://devcenter.heroku.com/articles/procfile)的应用。[官网](https://link.jianshu.com?t=https://github.com/nickstenning/honcho)
+
+*   pexpect：Controlling interactive programs in a pseudo-terminal like 在一个伪终端中控制交互程序，就像 GNU expect 一样。[官网](https://link.jianshu.com?t=https://github.com/pexpect/pexpect)
+
+*   psutil：一个跨平台进程和系统工具模块。[官网](https://link.jianshu.com?t=https://github.com/giampaolo/psutil)
+
+*   supervisor：UNIX 的进程控制系统。[官网](https://link.jianshu.com?t=https://github.com/Supervisor/supervisor)
+
+### 任务调度
+
+任务调度库。
+
+*   APScheduler：轻巧但强大的进程内任务调度，使你可以调度函数。[官网](https://link.jianshu.com?t=http://apscheduler.readthedocs.org/en/latest/)
+
+*   django-schedule：一个 Django 排程应用。[官网](https://link.jianshu.com?t=https://github.com/thauber/django-schedule)
+
+*   doit：一个任务执行和构建工具。[官网](https://link.jianshu.com?t=http://pydoit.org/)
+
+*   gunnery：分布式系统使用的多用途任务执行工具 ，具有 web 交互界面。[官网](https://link.jianshu.com?t=https://github.com/gunnery/gunnery)
+
+*   Joblib：一组为 Python 提供轻量级作业流水线的工具。[官网](https://link.jianshu.com?t=http://pythonhosted.org/joblib/index.html)
+
+*   Plan：如有神助地编写 crontab 文件。[官网](https://link.jianshu.com?t=https://github.com/fengsp/plan)
+
+*   schedule：人性化的 Python 任务调度库。[官网](https://link.jianshu.com?t=https://github.com/dbader/schedule)
+
+*   Spiff：使用纯 Python 实现的强大的工作流引擎。[官网](https://link.jianshu.com?t=https://github.com/knipknap/SpiffWorkflow)
+
+*   TaskFlow：一个可以让你方便执行任务的 Python 库，一致并且可靠。[官网](https://link.jianshu.com?t=http://docs.openstack.org/developer/taskflow/)
+
+### 外来函数接口
+
+使用外来函数接口的库。
+
+*   cffi：用来调用 C 代码的外来函数接口。[官网](https://link.jianshu.com?t=https://pypi.python.org/pypi/cffi)
+
+*   [ctypes](https://link.jianshu.com?t=http://hao.jobbole.com/ctypes/)：(Python 标准库) 用来调用 C 代码的外来函数接口。[官网](https://link.jianshu.com?t=https://docs.python.org/2/library/ctypes.html)
+
+*   PyCUDA：Nvidia CUDA API 的封装。[官网](https://link.jianshu.com?t=https://mathema.tician.de/software/pycuda/)
+
+*   SWIG：简化的封装和接口生成器。[官网](https://link.jianshu.com?t=http://www.swig.org/Doc1.3/Python.html)
+
+### 高性能
+
+让 Python 更快的库。
+
+*   Cython：优化的 Python 静态编译器。使用类型混合使 Python 编译成 C 或 C++ 模块来获得性能的极大提升。[官网](https://link.jianshu.com?t=http://cython.org/)
+
+*   PeachPy：嵌入 Python 的 x86-64 汇编器。可以被用作 Python 内联的汇编器或者是独立的汇编器，用于 Windows, Linux, OS X, Native Client 或者 Go 。[官网](https://link.jianshu.com?t=https://github.com/Maratyszcza/PeachPy)
+
+*   PyPy：使用 Python 实现的 Python。解释器使用黑魔法加快 Python 运行速度且不需要加入额外的类型信息。[官网](https://link.jianshu.com?t=http://pypy.org/)
+
+*   [Pyston](https://link.jianshu.com?t=http://hao.jobbole.com/pyston-llvm-jit/)：使用 LLVM 和现代 JIT 技术构建的 Python 实现，目标是为了获得很好的性能。[官网](https://link.jianshu.com?t=https://github.com/dropbox/pyston)
+
+*   Stackless Python：一个强化版的 Python。[官网](https://link.jianshu.com?t=https://bitbucket.org/stackless-dev/stackless/overview)
+
+### 微软的 Windows平台
+
+在 Windows 平台上进行 Python 编程。
+
+*   Python(x,y)：面向科学应用的 Python 发行版，基于 Qt 和 Spyder。[官网](https://link.jianshu.com?t=http://python-xy.github.io/)
+
+*   pythonlibs：非官方的 Windows 平台 Python 扩展二进制包。[官网](https://link.jianshu.com?t=http://www.lfd.uci.edu/~gohlke/pythonlibs/)
+
+*   PythonNet：Python 与 .NET 公共语言运行库 (CLR)的集成。[官网](https://link.jianshu.com?t=https://github.com/pythonnet/pythonnet)
+
+*   PyWin32：针对 Windows 的Python 扩展。[官网](https://link.jianshu.com?t=https://sourceforge.net/projects/pywin32/)
+
+*   WinPython：Windows 7/8 系统下便携式开发环境。[官网](https://link.jianshu.com?t=https://winpython.github.io/)
+
+### 网络可视化和SDN
+
+用来进行网络可视化和SDN(软件定义网络)的工具和库。
+
+*   Mininet：一款流行的网络模拟器以及用 Python 编写的 API。[官网](https://link.jianshu.com?t=http://mininet.org/)
+
+*   POX：一个针对基于 Python 的软件定义网络应用（例如 OpenFlow SDN 控制器）的开源开发平台。[官网](https://link.jianshu.com?t=https://github.com/noxrepo/pox)
+
+*   Pyretic：火热的 SDN 编程语言中的一员，为网络交换机和模拟器提供强大的抽象能力。[官网](https://link.jianshu.com?t=http://frenetic-lang.org/pyretic/)
+
+*   SDX Platform：基于 SDN 的 IXP 实现，影响了 Mininet, POX 和 Pyretic。[官网](https://link.jianshu.com?t=https://github.com/sdn-ixp/internet2award)
+
+### 硬件
+
+用来对硬件进行编程的库。
+
+*   ino：操作[Arduino](https://link.jianshu.com?t=https://www.arduino.cc/)的命令行工具。[官网](https://link.jianshu.com?t=http://inotool.org/)
+
+*   Pyro：Python 机器人编程库。[官网](https://link.jianshu.com?t=http://pyrorobotics.com/)
+
+*   PyUserInput：跨平台的，控制鼠标和键盘的模块。[官网](https://link.jianshu.com?t=https://github.com/SavinaRoja/PyUserInput)
+
+*   scapy：一个非常棒的操作数据包的库。[官网](https://link.jianshu.com?t=https://github.com/secdev/scapy)
+
+*   wifi：一个 Python 库和命令行工具用来在 Linux 平台上操作WiFi。[官网](https://link.jianshu.com?t=https://wifi.readthedocs.org/en/latest/)
+
+*   Pingo：Pingo 为类似Raspberry Pi，pcDuino， Intel Galileo等设备提供统一的API用以编程。[官网](https://link.jianshu.com?t=http://www.pingo.io/)
+
+### 兼容性
+
+帮助从 Python 2 向 Python 3迁移的库。
+
+*   Python-Future：这就是 Python 2 和 Python 3 之间丢失的那个兼容性层。[官网](https://link.jianshu.com?t=http://python-future.org/index.html)
+
+*   Python-Modernize：使 Python 代码更加现代化以便最终迁移到 Python 3。[官网](https://link.jianshu.com?t=https://github.com/mitsuhiko/python-modernize)
+
+*   Six：Python 2 和 3 的兼容性工具。[官网](https://link.jianshu.com?t=https://pypi.python.org/pypi/six)
+
+### 杂项
+
+不属于上面任何一个类别，但是非常有用的库。
+
+*   blinker：一个快速的 Python 进程内信号/事件分发系统。[官网](https://link.jianshu.com?t=https://github.com/jek/blinker)
+
+*   itsdangerous：一系列辅助工具用来将可信的数据传入不可信的环境。[官网](https://link.jianshu.com?t=https://github.com/pallets/itsdangerous)
+
+*   pluginbase：一个简单但是非常灵活的 Python 插件系统。[官网](https://link.jianshu.com?t=https://github.com/mitsuhiko/pluginbase)
+
+*   Pychievements：一个用来创建和追踪成就的 Python 框架。[官网](https://link.jianshu.com?t=https://github.com/PacketPerception/pychievements)
+
+*   [Tryton](https://link.jianshu.com?t=http://hao.jobbole.com/tryton/)：一个通用商务框架。[官网](https://link.jianshu.com?t=http://www.tryton.org/)
+
+### 算法和设计模式
+
+Python 实现的算法和设计模式。
+
+*   [algorithms](https://link.jianshu.com?t=http://hao.jobbole.com/algorithms/)：一个 Python 算法模块。[官网](https://link.jianshu.com?t=https://github.com/nryoung/algorithms)
+
+*   python-patterns：Python 设计模式的集合。[官网](https://link.jianshu.com?t=https://github.com/faif/python-patterns)
+
+*   sortedcontainers：快速，纯 Python 实现的SortedList，SortedDict 和 SortedSet 类型。[官网](https://link.jianshu.com?t=http://www.grantjenks.com/docs/sortedcontainers/)
+
+### 编辑器插件
+
+编辑器和 IDE 的插件
+
+*   Emacs
+
+*   Elpy：Emacs Python 开发环境。[官网](https://link.jianshu.com?t=https://github.com/jorgenschaefer/elpy)
+
+*   Sublime Text
+
+*   SublimeJEDI：一个 Sublime Text 插件，用来使用超赞的自动补全库 Jedi。[官网](https://link.jianshu.com?t=https://github.com/srusskih/SublimeJEDI)
+
+*   Anaconda：Anaconda 把你的 Sublime Text 3 变成一个功能齐全的 Python IDE。[官网](https://link.jianshu.com?t=https://github.com/DamnWidget/anaconda)
+
+*   Vim
+
+*   [YouCompleteMe](https://link.jianshu.com?t=http://hao.jobbole.com/youcompleteme/)：引入基于 [Jedi](https://link.jianshu.com?t=https://github.com/davidhalter/jedi) 的 Python 自动补全引擎。[官网](https://link.jianshu.com?t=https://github.com/Valloric/YouCompleteMe)
+
+*   Jedi-vim：绑定 Vim 和 Jedi 自动补全库对 Python 进行自动补全。[官网](https://link.jianshu.com?t=https://github.com/davidhalter/jedi-vim)
+
+*   Python-mode：将 Vim 变成 Python IDE 的一款多合一插件。[官网](https://link.jianshu.com?t=https://github.com/klen/python-mode)
+
+*   Visual Studio
+
+*   PTVS：Visual Studio 的 Python 工具[官网](https://link.jianshu.com?t=https://github.com/Microsoft/PTVS)
+
+### 集成开发环境
+
+流行的 Python 集成开发环境。
+
+*   PyCharm：商业化的 Python IDE ，由 JetBrains 开发。也有免费的社区版提供。[官网](https://link.jianshu.com?t=https://www.jetbrains.com/pycharm/)
+
+*   LiClipse：基于 Eclipse 的免费多语言 IDE 。使用 PyDev 来支持 Python 。[官网](https://link.jianshu.com?t=http://www.liclipse.com/)
+
+*   Spyder：开源 Python IDE。[官网](https://link.jianshu.com?t=https://github.com/spyder-ide/spyder)
+
+### 自动聊天工具
+
+用于开发聊天机器人的库
+
+*   Errbot：最简单和最流行的聊天机器人用来实现自动聊天工具。[官网](https://link.jianshu.com?t=http://errbot.io/en/latest/)
+
+## 服务
+
+在线工具和简化开发的 API 。
+
+### 持续集成
+
+参见: [awesome-CIandCD](https://link.jianshu.com?t=https://github.com/ciandcd/awesome-ciandcd#online-build-system).
+
+*   Travis CI：一个流行的工具，为你的开源和[私人](https://link.jianshu.com?t=https://travis-ci.com/)项目提供持续集成服务。(仅支持 GitHub)[官网](https://link.jianshu.com?t=https://travis-ci.org/)
+
+*   CircleCI：一个持续集成工具，可以非常快速的进行并行测试。 (仅支持 GitHub)[官网](https://link.jianshu.com?t=https://circleci.com/)
+
+*   Vexor CI：一个为私人 app 提供持续集成的工具，支持按分钟付费。[官网](https://link.jianshu.com?t=https://vexor.io/)
+
+*   Wercker：基于 Docker 平台，用来构建和部署微服务。[官网](https://link.jianshu.com?t=http://wercker.com/)
+
+### 代码质量
+
+*   Codacy：自动化代码审查，更加快速的发布高质量代码。对于开源项目是免费的。[官网](https://link.jianshu.com?t=https://www.codacy.com/)
+
+*   QuantifiedCode：一个数据驱动、自动、持续的代码审查工具。[官网](https://link.jianshu.com?t=https://www.quantifiedcode.com/)
+
+## 资源
+
+在这里可以找到新的 Python 库。
+
+### 网站
+
+*   [r/Python](https://link.jianshu.com?t=https://www.reddit.com/r/python)
+
+*   [CoolGithubProjects](https://link.jianshu.com?t=https://www.coolgithubprojects.com/)
+
+*   [Django Packages](https://link.jianshu.com?t=https://www.djangopackages.com/)
+
+*   [Full Stack Python](https://link.jianshu.com?t=http://www.fullstackpython.com/)
+
+*   [Python 3 Wall of Superpowers](https://link.jianshu.com?t=http://python3wos.appspot.com/)
+
+*   [Python Hackers](https://link.jianshu.com?t=http://pythonhackers.com/open-source/)
+
+*   [Python ZEEF](https://link.jianshu.com?t=https://python.zeef.com/alan.richmond)
+
+*   [Trending Python repositories on GitHub today](https://link.jianshu.com?t=https://github.com/trending?l=python)
+
+*   [PyPI Ranking](https://link.jianshu.com?t=http://pypi-ranking.info/alltime)
+
+### 周刊
+
+*   [Import Python Newsletter](https://link.jianshu.com?t=http://importpython.com/newsletter/)
+
+*   [Pycoder's Weekly](https://link.jianshu.com?t=http://pycoders.com/)
+
+*   [Python Weekly](https://link.jianshu.com?t=http://www.pythonweekly.com/)
+
+### Twitter
+
+*   [@codetengu](https://link.jianshu.com?t=https://twitter.com/codetengu)
+
+*   [@getpy](https://link.jianshu.com?t=https://twitter.com/getpy)
+
+*   [@planetpython](https://link.jianshu.com?t=https://twitter.com/planetpython)
+
+*   [@pycoders](https://link.jianshu.com?t=https://twitter.com/pycoders)
+
+*   [@pypi](https://link.jianshu.com?t=https://twitter.com/pypi)
+
+*   [@pythontrending](https://link.jianshu.com?t=https://twitter.com/pythontrending)
+
+*   [@PythonWeekly](https://link.jianshu.com?t=https://twitter.com/PythonWeekly)
+
+### 学习指南
+
+*   [Scipy-lecture-notes](https://link.jianshu.com?t=http://hao.jobbole.com/scipy-lecture-notes/)：如何用Python来做学术？[官网](https://link.jianshu.com?t=https://github.com/scipy-lectures/scipy-lecture-notes)
+
+*   [SScientific-python-lectures](https://link.jianshu.com?t=http://hao.jobbole.com/scientific-python-lectures/)：Python科学计算的资料。[官网](https://link.jianshu.com?t=https://github.com/jrjohansson/scientific-python-lectures)
+
+*   [Mario-Level-1](https://link.jianshu.com?t=http://hao.jobbole.com/mario-level-1/)：用Python和Pygame写的超级马里奥第一关。[官网](https://link.jianshu.com?t=https://github.com/justinmeister/Mario-Level-1)
+
+*   [Python Koans](https://link.jianshu.com?t=http://hao.jobbole.com/python-koans/)：Python的交互式学习工具。[官网](https://link.jianshu.com?t=https://github.com/gregmalcolm/python_koans)
+
+*   [Minecraft](https://link.jianshu.com?t=http://hao.jobbole.com/minecraft-python/)：用python写的Minecraft游戏。[官网](https://link.jianshu.com?t=https://github.com/fogleman/Minecraft)
+
+*   [pycrumbs](https://link.jianshu.com?t=http://hao.jobbole.com/python-pycrumbs/)：Python资源大全。[官网](https://link.jianshu.com?t=https://github.com/kirang89/pycrumbs/blob/master/pycrumbs.md)
+
+*   [python-patterns](https://link.jianshu.com?t=http://hao.jobbole.com/python-patterns/)：使用python实现设计模式。[官网](https://link.jianshu.com?t=https://github.com/faif/python-patterns)
+
+*   [Projects](https://link.jianshu.com?t=http://hao.jobbole.com/python-projects/)：Python项目大集合。[官网](https://link.jianshu.com?t=https://github.com/karan/Projects)
+
+*   [The Hitchhiker’s Guide to Python](https://link.jianshu.com?t=http://hao.jobbole.com/the-hitchhikers-guide-to-python/)：旅行者的Python学习指南。[官网](https://link.jianshu.com?t=http://docs.python-guide.org/en/latest/)
+
+*   [Code Like a Pythonista: Idiomatic Python](http://top.jobbole.com/18767/)：如何像Python高手(Pythonista)一样编程。[官网](http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html)
+
+转自：[http://www.jianshu.com/p/a166e63544d8](https://www.jianshu.com/p/a166e63544d8)
+
+        </div>
+    </div>
+
+      <div class="support-author"></div>
+
+      <div class="show-foot">
+        [
+
+          <span>Python</span>
+](/nb/19608491)        <div class="copyright" data-toggle="tooltip" data-html="true" data-original-title="转载请联系作者获得授权，并标注“简书作者”。">
+          © 著作权归作者所有
+        </div>
+        <div class="modal-wrap" data-report-note>
+          <a id="report-modal">举报文章</a>
+        </div>
+      </div>
+
+    <!-- 文章底部作者信息 -->
+      <div class="follow-detail">
+        <div class="info">
+          [
+            ![96](//upload.jianshu.io/users/upload_avatars/2898156/856e36eb-3eec-4e42-b258-12b009fabf5e.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96)
+](/u/c26433653d96)          <div props-data-classes="user-follow-button-footer" data-author-follow-button></div>
+          [天外飞仙丶](/u/c26433653d96)
+
+        </div>
+      </div>
+
+    <div class="meta-bottom">
+      <div class="btn like-group"></div>
+      <div class="share-group">
+        <a class="share-circle" data-action="weixin-share" data-toggle="tooltip" data-original-title="分享到微信">
+
+        </a>
+        [
+
+        ](javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f=&#39;http://v.t.sina.com.cn/share/share.php?appkey=1881139527&#39;,u=z||d.location,p=[&#39;&amp;url=&#39;,e(u),&#39;&amp;title=&#39;,e(t||d.title),&#39;&amp;source=&#39;,e(r),&#39;&amp;sourceUrl=&#39;,e(l),&#39;&amp;content=&#39;,c||&#39;gb2312&#39;,&#39;&amp;pic=&#39;,e(p||&#39;&#39;)].join(&#39;&#39;);function%20a(){if(!window.open([f,p].join(&#39;&#39;),&#39;mb&#39;,[&#39;toolbar=0,status=0,resizable=1,width=440,height=430,left=&#39;,(s.width-440)/2,&#39;,top=&#39;,(s.height-430)/2].join(&#39;&#39;)))u.href=[f,p].join(&#39;&#39;);};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,&#39;&#39;,&#39;&#39;,&#39;http://cwb.assets.jianshu.io/notes/images/20695873/weibo/image_0c8ade1bf51e.png&#39;, &#39;推荐 天外飞仙丶 的文章《Python 资源大全中文版》（ 分享自 @简书 ）&#39;,&#39;https://www.jianshu.com/p/e62eff348032?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=weibo&#39;,&#39;页面编码gb2312|utf-8默认gb2312&#39;)); "&#39;,e(t||d.title),&#39;&amp;source=&#39;,e(r),&#39;&amp;sourceUrl=&#39;,e(l),&#39;&amp;content=&#39;,c||&#39;gb2312&#39;,&#39;&amp;pic=&#39;,e(p||&#39;&#39;)].join(&#39;&#39;);function%20a(){if(!window.open([f,p].join(&#39;&#39;),&#39;mb&#39;,[&#39;toolbar=0,status=0,resizable=1,width=440,height=430,left=&#39;,(s.width-440)/2,&#39;,top=&#39;,(s.height-430)/2].join(&#39;&#39;)))u.href=[f,p].join(&#39;&#39;);};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,&#39;&#39;,&#39;&#39;,&#39;http://cwb.assets.jianshu.io/notes/images/20695873/weibo/image_0c8ade1bf51e.png&#39;, &#39;推荐 天外飞仙丶 的文章《Python 资源大全中文版》（ 分享自 @简书 ）&#39;,&#39;https://www.jianshu.com/p/e62eff348032?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=weibo&#39;,&#39;页面编码gb2312|utf-8默认gb2312&#39;));")
+          [
+
+          ](http://cwb.assets.jianshu.io/notes/images/20695873/weibo/image_0c8ade1bf51e.png "下载长微博图片")
+        [
+            <li><a href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=&#39;+e(&#39;https://www.jianshu.com/p/e62eff348032?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=qzone&#39;)+&#39;&amp;title=&#39;+e(&#39;推荐 天外飞仙丶 的文章《Python 资源大全中文版》&#39;),x=function(){if(!window.open(r,&#39;qzone&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();"><span>分享到QQ空间</span>](javascript:void(0);)</li>
+            <li>[<span>分享到Twitter</span>](javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://twitter.com/share?url=&#39;+e(&#39;https://www.jianshu.com/p/e62eff348032?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=twitter&#39;)+&#39;&amp;text=&#39;+e(&#39;推荐 天外飞仙丶 的文章《Python 资源大全中文版》（ 分享自 @jianshucom ）&#39;)+&#39;&amp;related=&#39;+e(&#39;jianshucom&#39;),x=function(){if(!window.open(r,&#39;twitter&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();)</li>
+            <li>[<span>分享到Facebook</span>](javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://www.facebook.com/dialog/share?app_id=483126645039390&amp;display=popup&amp;href=https://www.jianshu.com/p/e62eff348032?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=facebook&#39;,x=function(){if(!window.open(r,&#39;facebook&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();)</li>
+            <li>[<span>分享到Google+</span>](javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://plus.google.com/share?url=&#39;+e(&#39;https://www.jianshu.com/p/e62eff348032?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=google_plus&#39;),x=function(){if(!window.open(r,&#39;google_plus&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();)</li>
+            <li>[<span>分享到豆瓣</span>](javascript:void(function(){var d=document,e=encodeURIComponent,s1=window.getSelection,s2=d.getSelection,s3=d.selection,s=s1?s1():s2?s2():s3?s3.createRange().text:&#39;&#39;,r=&#39;http://www.douban.com/recommend/?url=&#39;+e(&#39;https://www.jianshu.com/p/e62eff348032?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=douban&#39;)+&#39;&amp;title=&#39;+e(&#39;Python 资源大全中文版&#39;)+&#39;&amp;sel=&#39;+e(s)+&#39;&amp;v=1&#39;,x=function(){if(!window.open(r,&#39;douban&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r+&#39;&amp;r=1&#39;};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})() "&#39;+e(&#39;Python 资源大全中文版&#39;)+&#39;&amp;sel=&#39;+e(s)+&#39;&amp;v=1&#39;,x=function(){if(!window.open(r,&#39;douban&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r+&#39;&amp;r=1&#39;};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})()")</li>
+          </ul>
+        '>更多分享</a>
+      </div>
+    </div>
+      [![Web note ad 1](//cdn2.jianshu.io/assets/web/web-note-ad-1-10f08e404d3887d2d45a4bc8f1831403.png)](/apps/download?utm_source=nbc)
+    <div id="vue_comment"></div>
+  </div>
+
+  <div class="vue-side-tool" props-data-props-show-qr-code="0"></div>
+</div>
+<div class="note-bottom">
+  <div class="js-included-collections"></div>
+  <div data-vcomp="recommended-notes" data-lazy="1.5" data-note-id="20695873"></div>
+  <!-- 相关文章 -->
+  <div class="seo-recommended-notes">
+
+        <div class="note have-img">
+          [
+            ![240](//upload-images.jianshu.io/upload_images/8668514-ab50a5dc79736c72.png?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240)
+](/p/4ec054960507?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation)          [[转]Python 资源大全中文版](/p/4ec054960507?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation)
+
+原文链接: http://www.jianshu.com/p/9c6ae64a1bd7 GitHub 上有一个 Awesome - XXX 系列的资源整理,资源非常丰富，涉及面非常广。awesome-python 是 vinta 发起维护的 Python 资源列表，内容包括...
+
+          [
+            <div class="avatar">
+              ![48](//upload.jianshu.io/users/upload_avatars/8668514/140d656c-9811-4169-9565-8e3f3b56b3d0?imageMogr2/auto-orient/strip|imageView2/1/w/48/h/48)
+            </div>
+            <span class="name">李绍俊</span>
+](/u/cc8fe10de4ab?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation)        </div>
+
+        <div class="note have-img">
+          [
+            ![240](//upload-images.jianshu.io/upload_images/1293367-bf614dc56c72a793.png?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240)
+](/p/9c6ae64a1bd7?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation)          [Python 资源大全中文版](/p/9c6ae64a1bd7?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation)
+
+GitHub 上有一个 Awesome - XXX 系列的资源整理,资源非常丰富，涉及面非常广。awesome-python 是 vinta 发起维护的 Python 资源列表，内容包括：Web框架、网络爬虫、网络内容提取、模板引擎、数据库、数据可视化、图片处理、文本处理、...
+
+          [
+            <div class="avatar">
+              ![48](//upload.jianshu.io/users/upload_avatars/1293367/91ccecc113ea.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/48/h/48)
+            </div>
+            <span class="name">若与</span>
+](/u/30c5a2b50c1d?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation)        </div>
+
+        <div class="note ">
+                    [Python--Flask Django等常用库总结](/p/a166e63544d8?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation)
+
+# Python 资源大全中文版 我想很多程序员应该记得 GitHub 上有一个 Awesome - XXX 系列的资源整理。[awesome-python](https://github.com/vinta/awesome-python) 是 vinta 发起维护的 Py...
+
+          [
+            <div class="avatar">
+              ![48](//cdn2.jianshu.io/assets/default_avatar/5-33d2da32c552b8be9a0548c7a4576607.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/48/h/48)
+            </div>
+            <span class="name">aimaile</span>
+](/u/f8ed0b1f76ef?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation)        </div>
+
+        <div class="note have-img">
+          [
+            ![240](//upload-images.jianshu.io/upload_images/8866383-3a1d3abbc72267f4?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240)
+](/p/1a31cb0e1670?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation)          [你想找的Python资料这里全都有！没有你找不到！史上最全资料合集](/p/1a31cb0e1670?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation)
+
+GitHub 上有一个 Awesome - XXX 系列的资源整理,资源非常丰富，涉及面非常广。awesome-python 是 vinta 发起维护的 Python 资源列表，内容包括：Web框架、网络爬虫、网络内容提取、模板引擎、数据库、数据可视化、图片处理、文本处理、...
+
+          [
+            <div class="avatar">
+              ![48](//upload.jianshu.io/users/upload_avatars/8866383/7735912d-5eff-4ad8-86d1-0929245bb4e3?imageMogr2/auto-orient/strip|imageView2/1/w/48/h/48)
+            </div>
+            <span class="name">力大士</span>
+](/u/367a2462b63d?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation)        </div>
+
+        <div class="note ">
+                    [python库收集贴](/p/59e5662b8fc3?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation)
+
+环境管理管理Python版本和环境的工具。p–非常简单的交互式python版本管理工具。pyenv–简单的Python版本管理工具。Vex–可以在虚拟环境中执行命令。virtualenv–创建独立Python环境的工具。virtualenvwrapper-virtualen...
+
+          [
+            <div class="avatar">
+              ![48](//cdn2.jianshu.io/assets/default_avatar/13-394c31a9cb492fcb39c27422ca7d2815.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/48/h/48)
+            </div>
+            <span class="name">MrHamster</span>
+](/u/257aacaef4f5?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation)        </div>
+
+        <div class="note have-img">
+          [
+            ![240](//upload-images.jianshu.io/upload_images/5460110-a6a155b0c0c132b0.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240)
+](/p/a6ce32422cd5?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation)          [儒家法家，谁是中国人奴性形成的元凶？](/p/a6ce32422cd5?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation)
+
+ 有人说中国人奴性是因为儒家长期训导的结果，这一点我有异议。儒家学说倡导老少尊卑与统治秩序，在没有更先进理念产生前，有一定合理性。儒家并没有让人们甘做奴隶，相反，它还要求人们“善养浩然之气”，为了心中信念应做到“富贵不能淫、贫贱不能移、威武不能屈”，历史上有浩然之气的儒生多...
+
+          [
+            <div class="avatar">
+              ![48](//cdn2.jianshu.io/assets/default_avatar/15-a7ac401939dd4df837e3bbf82abaa2a8.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/48/h/48)
+            </div>
+            <span class="name">渔人纵论</span>
+](/u/13e67380a83e?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation)        </div>
+
+        <div class="note have-img">
+          [
+            ![240](//upload-images.jianshu.io/upload_images/7310864-559bb50e7323bf65.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240)
+](/p/bb677dd410e5?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation)          [万众瞩目的一台云共享电！](/p/bb677dd410e5?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation)
+
+为什么说一台云共享电是万众瞩目的？随着共享经济发展迅猛，共享理念传播迅速，共享经济是未来城市发展，国家发展的趋势。共享电源已成为当下市场的新宠，受到众多年轻人的热捧。共享理念之所以受到追捧，是因为现代的生活理念是简单、方便、时尚的生活理念，而共享电源完全符合了这种理念。 共...
+
+          [
+            <div class="avatar">
+              ![48](//cdn2.jianshu.io/assets/default_avatar/3-9a2bcc21a5d89e21dafc73b39dc5f582.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/48/h/48)
+            </div>
+            <span class="name">老王家的猪</span>
+](/u/3b702e6c0c10?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation)        </div>
+
+        <div class="note have-img">
+          [
+            ![240](//upload-images.jianshu.io/upload_images/3719655-8b66a84a7c35cefd.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240)
+](/p/7a78ff5c0ef9?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation)          [梅干菜烧肉各种烧肉的做法](/p/7a78ff5c0ef9?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation)
+
+烧肉以其肉松化、香脆、口感富有层次感，被称为一绝，一块肉可以尝到三种口感：先会感到表皮的香脆，其次会感到脂肪的柔软，最后会感到瘦肉的甘香。 梅干菜烧肉 梅干菜烧肉的做法 材料：梅干菜、五花肉、干辣椒、八角、葱段、姜片、冰糖、黄酒、酱油、老抽、盐、鸡粉 做法：1、把五花肉洗净...
+
+          [
+            <div class="avatar">
+              ![48](//cdn2.jianshu.io/assets/default_avatar/3-9a2bcc21a5d89e21dafc73b39dc5f582.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/48/h/48)
+            </div>
+            <span class="name">老宗医123</span>
+](/u/e2041e6a153a?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation)        </div>
+
+        <div class="note ">
+                    [《原谅》（长篇小说连载1）](/p/9fe3f94a2f79?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation)
+
+第一篇  结亲 故事从80年代末的一座小山村开始讲起…… （一）说事 芒种的南方，乍暖还寒。六点的早晨，鸡鸣还未结束，山坝村的男村民们早早地提着锄头或背着双手，在各自田埂上来来回回巡走；妇女们在自家灶前做着早饭，小孩则负责搬柴生火。一股股炊烟袅袅升起，从远处看，在四处环山间...
+
+          [
+            <div class="avatar">
+              ![48](//upload.jianshu.io/users/upload_avatars/2326300/f0180bc38ee4?imageMogr2/auto-orient/strip|imageView2/1/w/48/h/48)
+            </div>
+            <span class="name">目青</span>
+](/u/852420239681?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation)        </div>
+
+        <div class="note ">
+                    [德国的思想纳粹化](/p/d4f751d490ab?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation)
+
+ 从1933年夏末开始．在纳粹的强制改变之下，德国人民的信仰，文化和艺术生活发生了极大的改变，基督教的消失，各式各类书籍的焚烧和禁止，音乐的专制化，戏剧的退化，美术的消失，报刊广告的纳粹化，电影的沉睡，都代表着这个国家精神上的纳粹化，这是极为可怕的惨剧。 希特勒在上任总理和...
+
+          [
+            <div class="avatar">
+              ![48](//upload.jianshu.io/users/upload_avatars/2147474/36570f1be11b.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/48/h/48)
+            </div>
+            <span class="name">一个历史宅的自述</span>
+](/u/a964bacacd29?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation)        </div>
+  </div>
+</div>
+
+    <script type="application/json" data-name="page-data">{"user_signed_in":false,"locale":"zh-CN","os":"mac","read_mode":"day","read_font":"font2","note_show":{"is_martin_user":false,"is_author":false,"is_following_author":false,"is_liked_note":false,"follow_state":0,"uuid":"804d9ad6-d91b-4159-a615-a76d01e58b8a"},"note":{"id":20695873,"slug":"e62eff348032","user_id":2898156,"notebook_id":19608491,"commentable":true,"likes_count":125,"views_count":2367,"public_wordage":14368,"comments_count":1,"total_rewards_count":0,"is_author":false,"author":{"nickname":"天外飞仙丶","total_wordage":15532,"followers_count":88,"total_likes_count":126}}}</script>
+
+    <script src="//cdn2.jianshu.io/assets/babel-polyfill-cae74bd66cdb76fcd4b4.js" crossorigin="anonymous"></script>
+    <script src="//cdn2.jianshu.io/assets/web-base-be0974b0600944a04205.js" crossorigin="anonymous"></script>
+<script src="//cdn2.jianshu.io/assets/web-f6401205cedb616eec1b.js" crossorigin="anonymous"></script>
+
+    <script src="//cdn2.jianshu.io/assets/web/pages/notes/show/entry-8ae3f215c46059956740.js" crossorigin="anonymous"></script>
+    <script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+
+  </body>
+</html>
