@@ -37,3 +37,4 @@ cond(no)->sub1(left)->op1
 c2(yes)->io->e
 c2(no)->op2->e
 ```
+[flower]:http://ww2.sinaimg.cn/large/56d258bdjw1eugeubg8ujj21kw16odn6.jpg  "美丽花儿"
