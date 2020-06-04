@@ -1,4 +1,4 @@
-# 服务器安全运维规范（Server security operation）
+# 工程师运维小册（Engineer pamphlet operation）
 
 ![Image text](https://raw.githubusercontent.com/lilinji/DevopsBooklet/master/WechatIMG701.jpeg)
 
@@ -52,14 +52,6 @@
 |[- Gitlab从删库到恢复：丢失6小时生产数据](http://mp.weixin.qq.com/s?__biz=MzA4Nzg5Nzc5OA==&mid=2651663996&idx=1&sn=7c1eb9a34993ea50a943c73caa8bf4cb&chksm=8bcbedd5bcbc64c34f506c843d56180c65a64d36c1d9f5361d5f0e8445f8ebff57ff94db82da&scene=21#wechat_redirect)|龙井、萧田国|[转载链接](http://mp.weixin.qq.com/s?__biz=MzA4Nzg5Nzc5OA==&mid=2651663996&idx=1&sn=7c1eb9a34993ea50a943c73caa8bf4cb&chksm=8bcbedd5bcbc64c34f506c843d56180c65a64d36c1d9f5361d5f0e8445f8ebff57ff94db82da&scene=21#wechat_redirect)|[推荐](http://mp.weixin.qq.com/s?__biz=MzA4Nzg5Nzc5OA==&mid=2651663996&idx=1&sn=7c1eb9a34993ea50a943c73caa8bf4cb&chksm=8bcbedd5bcbc64c34f506c843d56180c65a64d36c1d9f5361d5f0e8445f8ebff57ff94db82da&scene=21#wechat_redirect)｜归档
 |[- 运维三十六计](http://mp.weixin.qq.com/s?__biz=MzA4Nzg5Nzc5OA==&mid=2651663842&idx=1&sn=faab6acb4bd87a1f1cfe6eb8d3dc5dec&chksm=8bcbee4bbcbc675db19a57aae5eb5307f91f2656bcb39be0e98fc132be22fd5813a84855f6ed&scene=21#wechat_redirect)|梁定安、周小军|[转载链接](http://mp.weixin.qq.com/s?__biz=MzA4Nzg5Nzc5OA==&mid=2651663842&idx=1&sn=faab6acb4bd87a1f1cfe6eb8d3dc5dec&chksm=8bcbee4bbcbc675db19a57aae5eb5307f91f2656bcb39be0e98fc132be22fd5813a84855f6ed&scene=21#wechat_redirect)|[推荐](http://mp.weixin.qq.com/s?__biz=MzA4Nzg5Nzc5OA==&mid=2651663842&idx=1&sn=faab6acb4bd87a1f1cfe6eb8d3dc5dec&chksm=8bcbee4bbcbc675db19a57aae5eb5307f91f2656bcb39be0e98fc132be22fd5813a84855f6ed&scene=21#wechat_redirect)｜归档
 
-
-
-
-
-## 说明
-### 关于重要程度标签
-- 重要程度：R1-R5, 对应关系：基础(R1)、简单(R2)、一般(R3)、重要(R4)、非常重要(R5)
-- 建议：R3以上，运维工程师必须做到！做到的好处是：可以避免一些业务故障和安全事件！
 
 
 
