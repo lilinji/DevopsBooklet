@@ -9,9 +9,6 @@
 ![Security](https://img.shields.io/badge/Security-Baseline-red)
 ![Automation](https://img.shields.io/badge/Automation-Ansible%20%7C%20Shell%20%7C%20Python-purple)
 
-![Image text](https://raw.githubusercontent.com/lilinji/DevopsBooklet/master/WechatIMG701.jpeg)
-
-```html
 <p align="center">
   <img
     src="https://raw.githubusercontent.com/lilinji/DevopsBooklet/master/WechatIMG701.jpeg"
@@ -19,7 +16,7 @@
     width="420"
   />
 </p>
-```
+
 
 
 
