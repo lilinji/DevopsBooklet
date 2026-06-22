@@ -1,20 +1,56 @@
 # 工程师运维小册（Engineer pamphlet operation）
 
+
+![DevOps](https://img.shields.io/badge/DevOps-Practices-blue)
+![SRE](https://img.shields.io/badge/SRE-Reliability-green)
+![Linux](https://img.shields.io/badge/Linux-Operations-orange)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-CloudNative-326CE5)
+![Docker](https://img.shields.io/badge/Docker-Containers-2496ED)
+![Security](https://img.shields.io/badge/Security-Baseline-red)
+![Automation](https://img.shields.io/badge/Automation-Ansible%20%7C%20Shell%20%7C%20Python-purple)
+
 ![Image text](https://raw.githubusercontent.com/lilinji/DevopsBooklet/master/WechatIMG701.jpeg)
+
+```html
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/lilinji/DevopsBooklet/master/WechatIMG701.jpeg"
+    alt="Engineer Operation Booklet"
+    width="420"
+  />
+</p>
+```
+
 
 
 ## 项目简介
-- Booklet 主要是汇集整理IT运维规范，包括运维工程师日常的操作、包含 Bash、Python、Mysql、学习服务器运维中注意事项、故障避免手段等文档，帮助运维工程师避免服务器安全和运维故障，方便运维工程师学习成长。
+
+**Engineer Operation Booklet｜工程师运维小册** 是一个面向 IT 运维、DevOps、SRE、安全运维、云原生平台工程师的知识库项目。
+
+本项目主要收集和整理服务器运维规范、Linux 常用操作、自动化运维、数据库运维、安全基线、故障排查、云平台、容器化、CI/CD、监控告警、备份恢复等内容，帮助工程师在实际生产环境中形成标准化、流程化、工程化的操作习惯。
+
+项目核心目标：
+
+- 建立系统化的运维知识体系；
+- 汇总常见 Linux / Bash / Python / MySQL / Redis / Nginx / Docker / Kubernetes 操作规范；
+- 总结生产环境中的高危操作、风险场景与事故预防措施；
+- 提供可复用的 Runbook、Checklist、故障排查流程和安全基线；
+- 帮助运维工程师、DevOps 工程师和 SRE 工程师提升工程实践能力。
 
 
 ## 适合的职业
-- 运维工程师
-- 运维经理
-- 运维总监
-- 资深运维工程师
-- 安全运维工程师
+
+### 本项目适合以下岗位或学习方向：
+- Linux 运维工程师
+- DevOps 工程师
+- SRE 工程师
+- 云计算工程师
+- 云原生平台工程师
 - 运维开发工程师
-- 安全工程师
+- 安全运维工程师
+- 数据库运维工程师
+- 运维经理 / 运维负责人
+- 希望系统学习生产环境运维规范的开发工程师
 
 ### 现状
 目前，网上运维工程师，大部分都存在这三方面的问题：
@@ -37,6 +73,28 @@
 ## 一起来参与，补充linux常用运维规范手册
 - 如果想要贡献或是交流的话，请加 QQ 群： （313682642）
 - Email：golucklee@gmail.com
+
+## 技术方向
+
+本项目覆盖但不限于以下技术方向：
+
+| 分类 | 内容 |
+|---|---|
+| Linux 运维 | 用户权限、系统服务、磁盘、网络、日志、进程、性能排查 |
+| Shell / Bash | 自动化脚本、批量任务、巡检脚本、日志处理 |
+| Python 运维开发 | API 调用、批量管理、自动化工具、运维平台脚本 |
+| 数据库运维 | MySQL、PostgreSQL、Redis、备份恢复、权限控制 |
+| Web 服务 | Nginx、Apache、负载均衡、TLS、反向代理 |
+| 容器技术 | Docker、Containerd、镜像构建、容器安全 |
+| Kubernetes | Pod、Deployment、Service、Ingress、Helm、RBAC、集群排障 |
+| 自动化运维 | Ansible、Terraform、SaltStack、配置管理 |
+| CI/CD | Jenkins、GitLab CI、GitHub Actions、Argo CD |
+| 云平台 | AWS、Azure、阿里云、腾讯云、云资源治理 |
+| 可观测性 | Prometheus、Grafana、Alertmanager、日志、链路追踪 |
+| 安全运维 | Linux 安全基线、SSH 加固、漏洞扫描、入侵排查 |
+| 故障处理 | 事故响应、应急预案、RCA、复盘机制 |
+| 备份恢复 | 数据备份、快照、灾备、恢复演练 |
+| 运维规范 | Runbook、Checklist、变更流程、发布流程 |
 
 关于运维安全的推荐阅读：
 
