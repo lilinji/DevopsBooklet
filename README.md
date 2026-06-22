@@ -9,16 +9,6 @@
 ![Security](https://img.shields.io/badge/Security-Baseline-red)
 ![Automation](https://img.shields.io/badge/Automation-Ansible%20%7C%20Shell%20%7C%20Python-purple)
 
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/lilinji/DevopsBooklet/master/WechatIMG701.jpeg"
-    alt="Engineer Operation Booklet"
-    width="420"
-  />
-</p>
-
-
-
 
 ## 项目简介
 
@@ -115,3 +105,11 @@
 # IT
 学习IT资源收集持续更新
 https://github.com/lilinji/IT/wiki 
+
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/lilinji/DevopsBooklet/master/WechatIMG701.jpeg"
+    alt="Engineer Operation Booklet"
+    width="420"
+  />
+</p>
