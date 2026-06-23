@@ -9,6 +9,7 @@
 ![Security](https://img.shields.io/badge/Security-Baseline-red)
 ![Automation](https://img.shields.io/badge/Automation-Ansible%20%7C%20Shell%20%7C%20Python-purple)
 ![SDN](https://img.shields.io/badge/SDN-Software%20Defined%20Networking-blue)
+![AI](https://img.shields.io/badge/AI-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD-purple)
 
 
 ## 项目简介

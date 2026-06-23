@@ -8,6 +8,7 @@
 ![Security](https://img.shields.io/badge/Security-Baseline-red)
 ![Automation](https://img.shields.io/badge/Automation-Ansible%20%7C%20Shell%20%7C%20Python-purple)
 ![SDN](https://img.shields.io/badge/SDN-Software%20Defined%20Networking-blue)
+![AI](https://img.shields.io/badge/AI-Artificial%20Intelligence-purple)
 ## Project Introduction
 
 **Engineer Operation Booklet** is a knowledge base project for IT operations, DevOps, SRE, security operations, and cloud-native platform engineers.
