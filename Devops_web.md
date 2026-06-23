@@ -9,8 +9,8 @@ This is a list of software (SaaS, PaaS, IaaS, etc.) and other offerings with fre
 The scope of this particular list is limited to things that infrastructure developers (System Administrator, DevOps Practitioners, etc.) are likely to find useful. We love all the free services out there, but it would be good to keep it on topic. It's a grey line sometimes, so this is opinionated; please don't feel offended if I don't accept your contribution.
 这份清单的范围仅限于基础设施开发人员（系统管理员、DevOps 从业人员等）可能会觉得有用的工具。我们喜欢所有免费服务，但最好还是围绕主题展开。有时候界限比较模糊，所以这份清单带有个人观点；如果我没有采纳您的建议，请不要介意。
 
-This list results from Pull Requests, reviews, ideas, and work done by 1600+ people. You can also help by sending [Pull Requests](https://github.com/ripienaar/free-for-dev) to add more services or remove ones whose offerings have changed or been retired.
-这份列表汇集了 1600 多位贡献者的 Pull Request、审核、想法和工作成果。您也可以通过提交 [Pull Request](https://github.com/ripienaar/free-for-dev) 来帮助我们添加更多服务，或移除那些功能已变更或已停止维护的服务。
+This list results from Pull Requests, reviews, ideas, and work done by 1600+ people. You can also help by sending [Pull Requests](https://github.com/lilinji/DevopsBooklet) to add more services or remove ones whose offerings have changed or been retired.
+这份列表汇集了 1600 多位贡献者的 Pull Request、审核、想法和工作成果。您也可以通过提交 [Pull Request](https://github.com/lilinji/DevopsBooklet) 来帮助我们添加更多服务，或移除那些功能已变更或已停止维护的服务。
 
 [![Track Awesome List](https://www.trackawesomelist.com/badge.svg)](https://www.trackawesomelist.com/ripienaar/free-for-dev)
 
