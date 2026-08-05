@@ -1,0 +1,47 @@
+// ConsoleApplication6.cpp : 定义控制台应用程序的入口点。
+//
+
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+//自定义数据类型 数据对齐
+typedef struct student
+{
+	char label[1];
+	int number;
+	float score;
+}stu;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	//在cpu-memory模式下面 数据是需要对齐的 因为这样cpu和memory的内存交互速度是最快的 
+	//在硬件设计的时候 就已经把这种属性 注入到硬件的平台 
+	//但是在gpu平台上面 对于数据对齐的处理要求会更严格
+	//因为并行计算 需要数据的提供延时更小 所以在不是4字节的类型里面 会自动进行填充 
+	//也就是说在gpu平台上面 这个student结构体16字节
+	std::cout << "sizeof(stu):" << sizeof(stu) << endl;
+
+	//void*类型作为一个万能类型 专门给强制类型转换预留的接口 内核驱动里面和回掉函数里面 会有大量应用
+	char *p = (char *)malloc(100 * sizeof(char));
+
+	//申请的空间里面的值全部赋值成0 
+	memset(p, 0, 100);
+
+	char p_str[50] = "I love C++ program!!!";
+	//char *pstr = "I love C program!!!";
+
+	//把内存里面的值进行拷贝
+	memcpy(p, p_str, strlen(p_str));
+
+	//格式化输出
+	printf("%s", p);
+
+	//申请的内存空间需要释放 告诉编译器现在这段空间我不需要了 编译器进而通知系统 这段空间我现在不需要了 最后系统把这段空间重新利用
+	free(p);
+
+	system("pause");
+	return 0;
+}
+
