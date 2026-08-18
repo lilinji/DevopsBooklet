@@ -1,0 +1,942 @@
+<section style="max-width:677px;margin:0 auto;background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#374151;line-height:1.75;letter-spacing:0.5px;overflow-x:hidden;">
+
+  <!-- 1. 封面 -->
+  <section style="margin:0 0 32px;background:#fff;border:1.5px solid rgba(5,150,105,0.15);border-radius:20px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06);width:100%;">
+    <section style="padding:32px 28px 28px;">
+      <section style="display:flex;align-items:center;gap:8px;margin-bottom:28px;">
+        <span style="width:6px;height:6px;background:#059669;border-radius:50%;"><span leaf=""><br></span></span>
+        <span style="font-size:11px;font-weight:700;letter-spacing:3px;color:#059669;"><span leaf="">AI INFRA · 技术深潜</span></span>
+        <section style="flex:1;height:1px;overflow:hidden;background:linear-gradient(to right,rgba(5,150,105,0.12),transparent);"><span leaf=""><br></span></section>
+        <span style="font-size:10px;color:#D1D5DB;font-weight:600;"><span leaf="">2026.08</span></span>
+      </section>
+      <section>
+        <p style="font-size:15px;color:#D1D5DB;margin:0 0 6px;text-decoration:line-through;letter-spacing:0.5px;">
+          <span leaf="">数据都得先经过 CPU 内存？</span>
+        </p>
+        <p style="font-size:24px;font-weight:900;color:#111827;margin:0;line-height:1.05;letter-spacing:-2px;">
+          <span leaf="">GPU 的数据</span>
+          <span style="color:#059669;"><span leaf="">高速公路</span></span>
+        </p>
+        <p style="font-size:24px;font-weight:900;color:#059669;margin:0 0 16px;line-height:1.05;letter-spacing:-2px;">
+          <span leaf="">到底是怎么修通的</span>
+        </p>
+        <section style="width:48px;height:3px;background:linear-gradient(to right,#059669,#34D399);border-radius:2px;margin-bottom:12px;">
+          <span leaf=""><br></span>
+        </section>
+        <p style="font-size:13px;color:#9CA3AF;margin:0;line-height:1.7;letter-spacing:0.5px;">
+          <span leaf="">RDMA · GDS · DMA-BUF · PCIe P2P · cuFile</span>
+        </p>
+      </section>
+    </section>
+    <section style="background:linear-gradient(135deg,#059669,#10B981);padding:12px 28px;display:flex;align-items:center;justify-content:space-between;">
+      <p style="font-size:12px;color:rgba(255,255,255,0.9);margin:0;font-weight:600;letter-spacing:0.5px;">
+        <span leaf="">NVIDIA GPUDirect</span>
+      </p>
+      <section style="display:flex;gap:4px;">
+        <span style="background:rgba(255,255,255,0.2);padding:1px 6px;border-radius:3px;font-size:8px;color:#fff;font-weight:600;"><span leaf="">RDMA</span></span>
+        <span style="background:rgba(255,255,255,0.2);padding:1px 6px;border-radius:3px;font-size:8px;color:#fff;font-weight:600;"><span leaf="">GDS</span></span>
+      </section>
+    </section>
+  </section>
+
+  <!-- 2. 目录 -->
+  <section style="margin:0 20px 32px;">
+    <section style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
+      <p style="font-size:10px;color:#9CA3AF;margin:0;text-transform:uppercase;letter-spacing:2px;font-weight:600;">
+        <span leaf="">📦 3 Parts + Conclusion</span>
+      </p>
+      <p style="font-size:10px;color:#9CA3AF;margin:0;">
+        <span leaf="">👉 滑动</span>
+      </p>
+    </section>
+    <section style="overflow-x:scroll;-webkit-overflow-scrolling:touch;white-space:nowrap;padding-bottom:8px;">
+      <section style="display:inline-block;white-space:normal;vertical-align:top;width:110px;background:linear-gradient(135deg,#059669,#10B981);border-radius:12px;padding:12px;margin-right:8px;">
+        <p style="font-size:9px;font-weight:700;color:rgba(255,255,255,0.7);letter-spacing:1px;margin:0 0 5px;">
+          <span leaf="">PART 01</span>
+        </p>
+        <p style="font-size:13px;font-weight:800;color:#fff;margin:0 0 3px;">
+          <span leaf="">为什么需要它</span>
+        </p>
+        <p style="font-size:10px;color:rgba(255,255,255,0.7);margin:0;">
+          <span leaf="">GPU 挨饿的真相</span>
+        </p>
+      </section>
+      <section style="display:inline-block;white-space:normal;vertical-align:top;width:110px;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px;margin-right:8px;box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+        <p style="font-size:9px;font-weight:700;color:#9CA3AF;letter-spacing:1px;margin:0 0 5px;">
+          <span leaf="">PART 02</span>
+        </p>
+        <p style="font-size:13px;font-weight:800;color:#111827;margin:0 0 3px;">
+          <span leaf="">RDMA 直通</span>
+        </p>
+        <p style="font-size:10px;color:#9CA3AF;margin:0;">
+          <span leaf="">NIC → GPU 直达</span>
+        </p>
+      </section>
+      <section style="display:inline-block;white-space:normal;vertical-align:top;width:110px;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px;margin-right:8px;box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+        <p style="font-size:9px;font-weight:700;color:#9CA3AF;letter-spacing:1px;margin:0 0 5px;">
+          <span leaf="">PART 03</span>
+        </p>
+        <p style="font-size:13px;font-weight:800;color:#111827;margin:0 0 3px;">
+          <span leaf="">Storage 直通</span>
+        </p>
+        <p style="font-size:10px;color:#9CA3AF;margin:0;">
+          <span leaf="">NVMe → GPU 直达</span>
+        </p>
+      </section>
+      <section style="display:inline-block;white-space:normal;vertical-align:top;width:110px;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px;box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+        <p style="font-size:9px;font-weight:700;color:#9CA3AF;letter-spacing:1px;margin:0 0 5px;">
+          <span leaf="">PART ///</span>
+        </p>
+        <p style="font-size:13px;font-weight:800;color:#111827;margin:0 0 3px;">
+          <span leaf="">写在最后</span>
+        </p>
+        <p style="font-size:10px;color:#9CA3AF;margin:0;">
+          <span leaf="">先定位瓶颈</span>
+        </p>
+      </section>
+    </section>
+  </section>
+
+  <!-- 3. 开头引言 -->
+  <section style="background:#FFF;border:1px dashed #BBF7D0;border-radius:8px;padding:14px 16px;margin:0 20px 32px;text-align:center;">
+    <p style="font-size:12px;color:#9CA3AF;margin:0 0 6px;line-height:1.5;">
+      <span leaf="">一句话看懂 GPUDirect</span>
+    </p>
+    <p style="margin:0;line-height:1.6;">
+      <span style="font-size:15px;color:#059669;font-weight:bold;border-bottom:3px solid #FDE68A;padding-bottom:2px;"><span leaf="">尽可能消除 Host DRAM 中转，让数据面由 PCIe / RDMA / DMA 设备直接进入 GPU 显存</span></span>
+    </p>
+  </section>
+
+  <!-- 4. 前言正文 -->
+  <section style="padding:0 20px;">
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">随着高性能计算（HPC）、大模型训练、生成式 AI、科学计算和 GPU 数据分析系统不断扩大，<span style="border-bottom:2px solid #A7F3D0;font-weight:600;">GPU 的计算能力</span>增长速度已经显著超过传统主机 I/O 子系统的<span style="border-bottom:2px solid #A7F3D0;font-weight:600;">数据供应能力</span>。</span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">现代 GPU 可以在极短时间内处理数十甚至数百 GB 数据，但传统系统中的网络和存储数据通常需要先进入 Host DRAM，再由 GPU DMA Engine 将数据搬入显存。由此产生的 <span style="border-bottom:2px solid #A7F3D0;font-weight:600;">Host Memory Staging</span>、CPU 软件处理、NUMA 跨节点访问以及 PCIe 往返流量，会逐渐成为整个 GPU 系统的<span style="border-bottom:2px solid #A7F3D0;font-weight:600;">数据路径瓶颈</span>。</span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf=""><strong style="color:#059669;">NVIDIA GPUDirect</strong> 是针对这一问题建立的一系列数据移动技术。其中最重要的两个组成部分是：</span>
+    </p>
+  </section>
+
+  <!-- 摘要表格 -->
+  <section style="margin:0 20px 24px;overflow-x:auto;">
+    <table style="width:100%;border-collapse:collapse;font-size:13px;">
+      <thead>
+        <tr>
+          <th style="background:#059669;color:#fff;font-weight:700;padding:8px 12px;text-align:left;"><span leaf="">技术</span></th>
+          <th style="background:#059669;color:#fff;font-weight:700;padding:8px 12px;text-align:left;"><span leaf="">主要解决的问题</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding:8px 12px;border-bottom:1px solid #E5E7EB;color:#374151;"><span leaf="">GPUDirect RDMA</span></td>
+          <td style="padding:8px 12px;border-bottom:1px solid #E5E7EB;color:#374151;"><span leaf="">NIC、DPU、采集卡等 PCIe 设备与 GPU 显存之间直接进行 DMA/RDMA</span></td>
+        </tr>
+        <tr>
+          <td style="padding:8px 12px;border-bottom:1px solid #E5E7EB;color:#374151;background:#F9FAFB;"><span leaf="">GPUDirect Storage（GDS）</span></td>
+          <td style="padding:8px 12px;border-bottom:1px solid #E5E7EB;color:#374151;background:#F9FAFB;"><span leaf="">本地或远程存储与 GPU 显存之间建立直接 I/O 数据路径</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section style="padding:0 20px;">
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">GPUDirect RDMA 最早随 Kepler GPU 和 CUDA 5.0 引入，其核心思想是在第三方 PCIe 设备与 GPU Memory 之间建立直接 <span style="border-bottom:2px solid #A7F3D0;font-weight:600;">Peer-to-Peer</span> 数据路径，从而避免数据必须经过 Host Memory。</span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">GPUDirect Storage 则将类似思想扩展到存储系统，通过 <span style="border-bottom:2px solid #A7F3D0;font-weight:600;">cuFile</span>、Linux PCI P2PDMA、DMA-BUF、<span leaf="">nvidia-fs</span> 以及支持 RDMA 的分布式文件系统，让 NVMe、NIC 或其他 Storage DMA Engine 可以直接向 GPU Memory 读写数据。</span>
+    </p>
+  </section>
+
+  <section style="background:#F9FAFB;border:1px dashed #D1D5DB;border-radius:8px;padding:12px 16px;margin:0 20px 24px;text-align:justify;">
+    <p style="font-size:13px;color:#374151;margin:0;line-height:1.6;">
+      <span leaf="">需要特别强调的是：<strong style="color:#059669;">GPUDirect 并不意味着 CPU 从系统中消失</strong>，也不意味着“数据完全没有发生拷贝”。</span>
+    </p>
+  </section>
+
+  <!-- 架构图 -->
+  <section style="background:#FFF;border-radius:12px;padding:6px;border:1px solid #E5E7EB;box-shadow:0 4px 12px -2px rgba(0,0,0,0.08);margin:0 20px 8px;">
+    <section style="margin:0;border-radius:8px;overflow:hidden;">
+      <span leaf=""><img src="images/gpudirect.gif" style="max-width:100%;height:auto;display:block;margin:0 auto;"></span>
+    </section>
+  </section>
+  <p style="text-align:center;margin:0 0 32px;">
+    <span style="display:inline-block;background:#ECFDF5;color:#059669;font-size:11px;font-weight:700;padding:1px 8px;border-radius:4px;margin-right:6px;"><span leaf="">GIF 动图</span></span>
+    <span style="font-size:12px;color:#9CA3AF;"><span leaf="">GPUDirect 架构图</span></span>
+  </p>
+
+  <!-- 第 1 章 -->
+  <section style="margin-top:16px;margin-bottom:32px;padding:0 20px;">
+    <section style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+      <section style="text-align:center;flex-shrink:0;">
+        <p style="margin:0;font-size:28px;font-weight:900;color:#059669;line-height:1;letter-spacing:-2px;">
+          <span leaf="">01</span>
+        </p>
+        <p style="margin:0;font-size:8px;font-weight:700;color:#D1D5DB;letter-spacing:2px;">
+          <span leaf="">PART</span>
+        </p>
+      </section>
+      <span style="width:1px;height:36px;background:#E5E7EB;flex-shrink:0;"><span leaf=""><br></span></span>
+      <section>
+        <p style="margin:0 0 1px;font-size:17px;font-weight:900;color:#111827;letter-spacing:0.3px;">
+          <span leaf="">为什么需要 GPUDirect</span>
+        </p>
+        <p style="margin:0;font-size:11px;font-weight:600;color:#9CA3AF;letter-spacing:1.5px;">
+          <span leaf="">WHY · GPU 挨饿的真相</span>
+        </p>
+      </section>
+    </section>
+
+    <p style="font-size:15px;font-weight:900;color:#111827;margin:0 0 16px;">
+      <span style="background:linear-gradient(180deg,transparent 65%,#FDE68A 65%);padding:0 4px;"><span leaf="">1.1 GPU 算力增长带来的数据供应问题</span></span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">传统 CPU 系统通常围绕 <span style="border-bottom:2px solid #A7F3D0;font-weight:600;">Host DRAM</span> 构建：</span>
+    </p>
+
+    <section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
+      <section style="display:flex;align-items:center;padding:9px 14px;background:#0F172A;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="margin-left:12px;font-size:12px;color:#64748B;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">text</span></span>
+      </section>
+      <section style="padding:11px 14px;">
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">Storage</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">Host Memory</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">CPU</span></p>
+      </section>
+    </section>
+
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">加入 GPU 后，传统架构变成：</span>
+    </p>
+
+    <section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
+      <section style="display:flex;align-items:center;padding:9px 14px;background:#0F172A;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="margin-left:12px;font-size:12px;color:#64748B;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">text</span></span>
+      </section>
+      <section style="padding:11px 14px;">
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">Storage / NIC</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　Host Memory</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　 GPU</span></p>
+      </section>
+    </section>
+
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">也就是说，几乎所有外部数据首先进入 <span style="border-bottom:2px solid #A7F3D0;font-weight:600;">Host Memory</span>。</span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">这种设计在 GPU 算力较低时问题并不明显，但随着 GPU 数量增加，会逐渐出现：</span>
+    </p>
+
+    <section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
+      <section style="display:flex;align-items:center;padding:9px 14px;background:#0F172A;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="margin-left:12px;font-size:12px;color:#64748B;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">text</span></span>
+      </section>
+      <section style="padding:11px 14px;">
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">GPU 计算能力</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　↑↑↑↑↑↑</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf=""></span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">CPU Memory Bandwidth</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　↑↑</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf=""></span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">Storage / Network</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　↑↑↑</span></p>
+      </section>
+    </section>
+
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">GPU 很可能最终不是“算不动”，而是：</span>
+    </p>
+
+    <section style="background:#FFF;border:1px dashed #BBF7D0;border-radius:8px;padding:14px 16px;margin-bottom:24px;text-align:center;">
+      <p style="margin:0;line-height:1.6;">
+        <span style="font-size:15px;color:#059669;font-weight:bold;border-bottom:3px solid #FDE68A;padding-bottom:2px;"><span leaf="">没有数据可算</span></span>
+      </p>
+    </section>
+
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">在大规模系统中，这种现象通常被称为 <span style="border-bottom:2px solid #A7F3D0;font-weight:600;">GPU starvation</span>。</span>
+    </p>
+  </section>
+
+  <!-- 第 2 章 -->
+  <section style="margin-top:48px;margin-bottom:32px;padding:0 20px;">
+    <section style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+      <section style="text-align:center;flex-shrink:0;">
+        <p style="margin:0;font-size:28px;font-weight:900;color:#059669;line-height:1;letter-spacing:-2px;">
+          <span leaf="">02</span>
+        </p>
+        <p style="margin:0;font-size:8px;font-weight:700;color:#D1D5DB;letter-spacing:2px;">
+          <span leaf="">PART</span>
+        </p>
+      </section>
+      <span style="width:1px;height:36px;background:#E5E7EB;flex-shrink:0;"><span leaf=""><br></span></span>
+      <section>
+        <p style="margin:0 0 1px;font-size:17px;font-weight:900;color:#111827;letter-spacing:0.3px;">
+          <span leaf="">必须先掌握的几个概念</span>
+        </p>
+        <p style="margin:0;font-size:11px;font-weight:600;color:#9CA3AF;letter-spacing:1.5px;">
+          <span leaf="">CONCEPTS · DMA / P2P / BAR</span>
+        </p>
+      </section>
+    </section>
+
+    <p style="font-size:15px;font-weight:900;color:#111827;margin:0 0 16px;">
+      <span style="background:linear-gradient(180deg,transparent 65%,#FDE68A 65%);padding:0 4px;"><span leaf="">2.1 DMA</span></span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf=""><strong style="color:#059669;">DMA（Direct Memory Access）</strong> 的核心作用是允许设备在不需要 CPU 执行逐字节 memcpy 的情况下直接搬运数据。</span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">例如传统 NVMe 读取：</span>
+    </p>
+
+    <section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
+      <section style="display:flex;align-items:center;padding:9px 14px;background:#0F172A;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="margin-left:12px;font-size:12px;color:#64748B;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">text</span></span>
+      </section>
+      <section style="padding:11px 14px;">
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">NVMe Controller</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　│ DMA</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">Host DRAM</span></p>
+      </section>
+    </section>
+
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">CPU 主要完成：</span>
+    </p>
+
+    <section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
+      <section style="display:flex;align-items:center;padding:9px 14px;background:#0F172A;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="margin-left:12px;font-size:12px;color:#64748B;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">text</span></span>
+      </section>
+      <section style="padding:11px 14px;">
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">提交 IO</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">建立描述符</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">处理中断 / Completion</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">管理内存</span></p>
+      </section>
+    </section>
+
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">真正的数据传输由 NVMe Controller 的 <span style="border-bottom:2px solid #A7F3D0;font-weight:600;">DMA Engine</span> 完成。</span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">因此：</span>
+    </p>
+
+    <section style="background:#F9FAFB;border:1px dashed #D1D5DB;border-radius:8px;padding:12px 16px;margin-bottom:24px;text-align:justify;">
+      <p style="font-size:13px;color:#374151;margin:0;line-height:1.6;">
+        <span leaf="">“CPU 不参与数据搬运”和“数据不经过 CPU Memory”是<span style="border-bottom:2px solid #A7F3D0;font-weight:600;">完全不同的两个概念</span>。</span>
+      </p>
+    </section>
+
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">传统 DMA 虽然不需要 CPU 执行 memcpy，但数据仍然通常落在 Host DRAM。</span>
+    </p>
+
+    <p style="font-size:15px;font-weight:900;color:#111827;margin:0 0 16px;">
+      <span style="background:linear-gradient(180deg,transparent 65%,#FDE68A 65%);padding:0 4px;"><span leaf="">2.2 PCIe Peer-to-Peer</span></span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">正常 PCIe DMA：</span>
+    </p>
+
+    <section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
+      <section style="display:flex;align-items:center;padding:9px 14px;background:#0F172A;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="margin-left:12px;font-size:12px;color:#64748B;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">text</span></span>
+      </section>
+      <section style="padding:11px 14px;">
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">PCIe Device</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">Host Memory</span></p>
+      </section>
+    </section>
+
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">PCIe P2P：</span>
+    </p>
+
+    <section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
+      <section style="display:flex;align-items:center;padding:9px 14px;background:#0F172A;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="margin-left:12px;font-size:12px;color:#64748B;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">text</span></span>
+      </section>
+      <section style="padding:11px 14px;">
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">PCIe Device A</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">PCIe Device B</span></p>
+      </section>
+    </section>
+
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">例如：</span>
+    </p>
+
+    <section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
+      <section style="display:flex;align-items:center;padding:9px 14px;background:#0F172A;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="margin-left:12px;font-size:12px;color:#64748B;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">text</span></span>
+      </section>
+      <section style="padding:11px 14px;">
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">NIC ─────────► GPU</span></p>
+      </section>
+    </section>
+
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">或者：</span>
+    </p>
+
+    <section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
+      <section style="display:flex;align-items:center;padding:9px 14px;background:#0F172A;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="margin-left:12px;font-size:12px;color:#64748B;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">text</span></span>
+      </section>
+      <section style="padding:11px 14px;">
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">NVMe ────────► GPU</span></p>
+      </section>
+    </section>
+
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">Linux 上游内核提供 PCI P2PDMA 基础设施，允许 PCIe Device Driver 注册 P2P Memory，并让其他兼容 PCIe Device 对该 Memory 发起 DMA。</span>
+    </p>
+
+    <p style="font-size:15px;font-weight:900;color:#111827;margin:0 0 16px;">
+      <span style="background:linear-gradient(180deg,transparent 65%,#FDE68A 65%);padding:0 4px;"><span leaf="">2.3 PCIe BAR</span></span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">PCIe 设备通过 <strong style="color:#059669;">BAR（Base Address Register）</strong> 将设备内部资源映射到 PCIe Address Space。</span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">对于 GPU：</span>
+    </p>
+
+    <section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
+      <section style="display:flex;align-items:center;padding:9px 14px;background:#0F172A;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="margin-left:12px;font-size:12px;color:#64748B;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">text</span></span>
+      </section>
+      <section style="padding:11px 14px;">
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">GPU HBM / VRAM</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　BAR1</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">PCIe Address Space</span></p>
+      </section>
+    </section>
+
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">NIC 或 NVMe Controller 无法理解 CUDA Virtual Address。设备最终需要的是 <span style="border-bottom:2px solid #A7F3D0;font-weight:600;">PCIe Bus Address</span>。</span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">GPUDirect 软件栈的一个重要任务，就是完成：</span>
+    </p>
+
+    <section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
+      <section style="display:flex;align-items:center;padding:9px 14px;background:#0F172A;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="margin-left:12px;font-size:12px;color:#64748B;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">text</span></span>
+      </section>
+      <section style="padding:11px 14px;">
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">GPU Virtual Address</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　　↓</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">GPU Allocation</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　　↓</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">Pinned GPU Pages</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　　↓</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">PCIe / DMA Mapping</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　　↓</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">Device DMA Address</span></p>
+      </section>
+    </section>
+
+    <p style="font-size:15px;font-weight:900;color:#111827;margin:0 0 16px;">
+      <span style="background:linear-gradient(180deg,transparent 65%,#FDE68A 65%);padding:0 4px;"><span leaf="">2.4 BAR1</span></span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">GPU 的 <strong style="color:#059669;">BAR1 Aperture</strong> 是外部 PCIe Device 访问 GPU Memory 的重要窗口。</span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">概念上：</span>
+    </p>
+
+    <section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
+      <section style="display:flex;align-items:center;padding:9px 14px;background:#0F172A;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="margin-left:12px;font-size:12px;color:#64748B;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">text</span></span>
+      </section>
+      <section style="padding:11px 14px;">
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">GPU HBM</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">┌───────────────────────────────┐</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">│　　　　　　　　　　　　　　　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">│　　　　　　Data　　　　　　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">│　　　　　　　　　　　　　　　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">└───────────────────────────────┘</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　　　　　▲</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　　　　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　　　　BAR1</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　　　　　▲</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　　　　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　NIC / NVMe DMA</span></p>
+      </section>
+    </section>
+
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">BAR1 并不一定等于全部 GPU HBM 大小。</span>
+    </p>
+
+    <p style="font-size:15px;font-weight:900;color:#111827;margin:0 0 16px;">
+      <span style="background:linear-gradient(180deg,transparent 65%,#FDE68A 65%);padding:0 4px;"><span leaf="">2.5 Pinned Memory</span></span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">DMA 要求目标内存在 DMA 操作执行期间不能随意被迁移或释放，因此需要 <strong style="color:#059669;">Memory Pinning</strong>。</span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">CPU Memory 通常通过 Linux 的 <span leaf="">get_user_pages()</span> 等机制锁定。GPU Memory 则需要 NVIDIA Driver、DMA-BUF 或其他 Peer Memory 机制暴露稳定的 <span style="border-bottom:2px solid #A7F3D0;font-weight:600;">DMA Mapping</span>。</span>
+    </p>
+  </section>
+
+  <!-- 第 3 章 -->
+  <section style="margin-top:48px;margin-bottom:32px;padding:0 20px;">
+    <section style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+      <section style="text-align:center;flex-shrink:0;">
+        <p style="margin:0;font-size:28px;font-weight:900;color:#059669;line-height:1;letter-spacing:-2px;">
+          <span leaf="">03</span>
+        </p>
+        <p style="margin:0;font-size:8px;font-weight:700;color:#D1D5DB;letter-spacing:2px;">
+          <span leaf="">PART</span>
+        </p>
+      </section>
+      <span style="width:1px;height:36px;background:#E5E7EB;flex-shrink:0;"><span leaf=""><br></span></span>
+      <section>
+        <p style="margin:0 0 1px;font-size:17px;font-weight:900;color:#111827;letter-spacing:0.3px;">
+          <span leaf="">GPUDirect RDMA</span>
+        </p>
+        <p style="margin:0;font-size:11px;font-weight:600;color:#9CA3AF;letter-spacing:1.5px;">
+          <span leaf="">RDMA · NIC 到 GPU 直达</span>
+        </p>
+      </section>
+    </section>
+
+    <p style="font-size:15px;font-weight:900;color:#111827;margin:0 0 16px;">
+      <span style="background:linear-gradient(180deg,transparent 65%,#FDE68A 65%);padding:0 4px;"><span leaf="">3.1 GPUDirect RDMA 是什么</span></span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf=""><strong style="color:#059669;">GPUDirect RDMA</strong> 允许第三方 PCIe Device 直接 DMA 到 NVIDIA GPU Memory。这类设备例如：</span>
+    </p>
+
+    <section style="margin-bottom:14px;">
+      <p style="margin:0 0 6px;">
+        <span style="display:inline-block;font-size:13px;font-weight:700;color:#059669;background:rgba(5,150,105,0.08);padding:3px 10px;border-radius:999px;"><span style="display:inline-block;width:6px;height:6px;background:#059669;border-radius:50%;margin-right:5px;vertical-align:middle;"><span leaf=""><br></span></span><span leaf="">ConnectX NIC</span></span>
+      </p>
+    </section>
+    <section style="margin-bottom:14px;">
+      <p style="margin:0 0 6px;">
+        <span style="display:inline-block;font-size:13px;font-weight:700;color:#059669;background:rgba(5,150,105,0.08);padding:3px 10px;border-radius:999px;"><span style="display:inline-block;width:6px;height:6px;background:#059669;border-radius:50%;margin-right:5px;vertical-align:middle;"><span leaf=""><br></span></span><span leaf="">BlueField DPU</span></span>
+      </p>
+    </section>
+    <section style="margin-bottom:14px;">
+      <p style="margin:0 0 6px;">
+        <span style="display:inline-block;font-size:13px;font-weight:700;color:#059669;background:rgba(5,150,105,0.08);padding:3px 10px;border-radius:999px;"><span style="display:inline-block;width:6px;height:6px;background:#059669;border-radius:50%;margin-right:5px;vertical-align:middle;"><span leaf=""><br></span></span><span leaf="">InfiniBand HCA</span></span>
+      </p>
+    </section>
+    <section style="margin-bottom:14px;">
+      <p style="margin:0 0 6px;">
+        <span style="display:inline-block;font-size:13px;font-weight:700;color:#059669;background:rgba(5,150,105,0.08);padding:3px 10px;border-radius:999px;"><span style="display:inline-block;width:6px;height:6px;background:#059669;border-radius:50%;margin-right:5px;vertical-align:middle;"><span leaf=""><br></span></span><span leaf="">Ethernet / RoCE NIC</span></span>
+      </p>
+    </section>
+    <section style="margin-bottom:14px;">
+      <p style="margin:0 0 6px;">
+        <span style="display:inline-block;font-size:13px;font-weight:700;color:#059669;background:rgba(5,150,105,0.08);padding:3px 10px;border-radius:999px;"><span style="display:inline-block;width:6px;height:6px;background:#059669;border-radius:50%;margin-right:5px;vertical-align:middle;"><span leaf=""><br></span></span><span leaf="">FPGA</span></span>
+      </p>
+    </section>
+    <section style="margin-bottom:16px;">
+      <p style="margin:0 0 6px;">
+        <span style="display:inline-block;font-size:13px;font-weight:700;color:#059669;background:rgba(5,150,105,0.08);padding:3px 10px;border-radius:999px;"><span style="display:inline-block;width:6px;height:6px;background:#059669;border-radius:50%;margin-right:5px;vertical-align:middle;"><span leaf=""><br></span></span><span leaf="">Video Capture Card</span></span>
+      </p>
+    </section>
+
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">传统网络发送路径：</span>
+    </p>
+
+    <section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
+      <section style="display:flex;align-items:center;padding:9px 14px;background:#0F172A;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="margin-left:12px;font-size:12px;color:#64748B;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">text</span></span>
+      </section>
+      <section style="padding:11px 14px;">
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">GPU A</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　│ D2H</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">Host RAM</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　│ NIC DMA</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　NIC</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">══════════ Network ══════════</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　NIC</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　│ DMA</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">Host RAM</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　│ H2D</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">GPU B</span></p>
+      </section>
+    </section>
+
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">GPUDirect RDMA：</span>
+    </p>
+
+    <section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
+      <section style="display:flex;align-items:center;padding:9px 14px;background:#0F172A;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="margin-left:12px;font-size:12px;color:#64748B;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">text</span></span>
+      </section>
+      <section style="padding:11px 14px;">
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">GPU A</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　NIC</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">══════════ Network ══════════</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　NIC</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">GPU B</span></p>
+      </section>
+    </section>
+
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">这里真正被消除的是 <span style="border-bottom:2px solid #A7F3D0;font-weight:600;">Host Memory Staging</span>。</span>
+    </p>
+
+    <p style="font-size:15px;font-weight:900;color:#111827;margin:0 0 16px;">
+      <span style="background:linear-gradient(180deg,transparent 65%,#FDE68A 65%);padding:0 4px;"><span leaf="">3.2 为什么 RDMA 本身还不够</span></span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">普通 RDMA 已经可以：</span>
+    </p>
+
+    <section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
+      <section style="display:flex;align-items:center;padding:9px 14px;background:#0F172A;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="margin-left:12px;font-size:12px;color:#64748B;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">text</span></span>
+      </section>
+      <section style="padding:11px 14px;">
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">NIC → Host Memory</span></p>
+      </section>
+    </section>
+
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">但是 NIC 默认并不知道 GPU Virtual Address 对应什么 PCIe Address。</span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">因此必须解决：</span>
+    </p>
+
+    <section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
+      <section style="display:flex;align-items:center;padding:9px 14px;background:#0F172A;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="margin-left:12px;font-size:12px;color:#64748B;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">text</span></span>
+      </section>
+      <section style="padding:11px 14px;">
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">CUDA pointer</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　↓</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">GPU memory allocation</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　↓</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">DMA mapping</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　↓</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">NIC Memory Region</span></p>
+      </section>
+    </section>
+
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">GPUDirect RDMA 本质上就是：</span>
+    </p>
+
+    <section style="background:#FFF;border:1px dashed #BBF7D0;border-radius:8px;padding:14px 16px;margin-bottom:24px;text-align:center;">
+      <p style="margin:0;line-height:1.6;">
+        <span style="font-size:15px;color:#059669;font-weight:bold;border-bottom:3px solid #FDE68A;padding-bottom:2px;"><span leaf="">让 RDMA Device 能将 GPU Memory 注册为合法 DMA / RDMA Memory Region</span></span>
+      </p>
+    </section>
+
+    <p style="font-size:15px;font-weight:900;color:#111827;margin:0 0 16px;">
+      <span style="background:linear-gradient(180deg,transparent 65%,#FDE68A 65%);padding:0 4px;"><span leaf="">3.3 GPUDirect RDMA 软件栈</span></span>
+    </p>
+
+    <section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
+      <section style="display:flex;align-items:center;padding:9px 14px;background:#0F172A;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="margin-left:12px;font-size:12px;color:#64748B;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">text</span></span>
+      </section>
+      <section style="padding:11px 14px;">
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">Application</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">NCCL / MPI / UCX / NVSHMEM</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">libibverbs / RDMA Core</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">NIC Driver</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　├──────── DMA-BUF</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　└──────── legacy nvidia-peermem</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">NVIDIA GPU Driver</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">GPU Memory</span></p>
+      </section>
+    </section>
+
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">现代实现应优先关注 DMA-BUF；<span leaf="">nvidia-peermem</span> 更适合作为 legacy 路径理解。</span>
+    </p>
+
+    <p style="font-size:15px;font-weight:900;color:#111827;margin:0 0 16px;">
+      <span style="background:linear-gradient(180deg,transparent 65%,#FDE68A 65%);padding:0 4px;"><span leaf="">3.4 GPU Memory Registration</span></span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">逻辑流程：</span>
+    </p>
+
+    <section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
+      <section style="display:flex;align-items:center;padding:9px 14px;background:#0F172A;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="margin-left:12px;font-size:12px;color:#64748B;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">text</span></span>
+      </section>
+      <section style="padding:11px 14px;">
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">cudaMalloc()</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">GPU Virtual Address</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">识别 Pointer Type</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">Pin GPU Allocation</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">建立 DMA Mapping</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">NIC 创建 MR / MKEY</span></p>
+      </section>
+    </section>
+
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">Memory Registration 本身有成本，因此实际通信库通常会维护 <span style="border-bottom:2px solid #A7F3D0;font-weight:600;">Registration Cache</span>，避免频繁 register / deregister。</span>
+    </p>
+
+    <p style="font-size:15px;font-weight:900;color:#111827;margin:0 0 16px;">
+      <span style="background:linear-gradient(180deg,transparent 65%,#FDE68A 65%);padding:0 4px;"><span leaf="">3.5 PCIe 拓扑为什么极其重要</span></span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">最佳：</span>
+    </p>
+
+    <section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
+      <section style="display:flex;align-items:center;padding:9px 14px;background:#0F172A;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="margin-left:12px;font-size:12px;color:#64748B;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">text</span></span>
+      </section>
+      <section style="padding:11px 14px;">
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　　　PCIe Switch</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　　　/　　　　\</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　　GPU　　　　NIC</span></p>
+      </section>
+    </section>
+
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">较差：</span>
+    </p>
+
+    <section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
+      <section style="display:flex;align-items:center;padding:9px 14px;background:#0F172A;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="margin-left:12px;font-size:12px;color:#64748B;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">text</span></span>
+      </section>
+      <section style="padding:11px 14px;">
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">GPU</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">CPU Root Complex</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">NIC</span></p>
+      </section>
+    </section>
+
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">更差：</span>
+    </p>
+
+    <section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
+      <section style="display:flex;align-items:center;padding:9px 14px;background:#0F172A;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="margin-left:12px;font-size:12px;color:#64748B;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">text</span></span>
+      </section>
+      <section style="padding:11px 14px;">
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">GPU</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">CPU0</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">UPI / Inter-socket Link</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">CPU1</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">NIC</span></p>
+      </section>
+    </section>
+
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">所以“GPU 和 NIC 都插在机器上”并不代表一定存在高性能 GPUDirect RDMA 路径。</span>
+    </p>
+
+    <p style="font-size:15px;font-weight:900;color:#111827;margin:0 0 16px;">
+      <span style="background:linear-gradient(180deg,transparent 65%,#FDE68A 65%);padding:0 4px;"><span leaf="">3.6 IOMMU</span></span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">IOMMU 如果对设备 DMA 地址进行不一致转换，可能破坏 <span style="border-bottom:2px solid #A7F3D0;font-weight:600;">P2P Mapping</span>。</span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">因此实际部署时不能简单套用“必须 <span leaf="">iommu=pt</span>”这种单一结论，而应遵循 NVIDIA 与服务器 OEM 对具体平台的 qualification。</span>
+    </p>
+
+    <p style="font-size:15px;font-weight:900;color:#111827;margin:0 0 16px;">
+      <span style="background:linear-gradient(180deg,transparent 65%,#FDE68A 65%);padding:0 4px;"><span leaf="">3.7 Memory Ordering</span></span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">如果 NIC 正在：</span>
+    </p>
+
+    <section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
+      <section style="display:flex;align-items:center;padding:9px 14px;background:#0F172A;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="margin-left:12px;font-size:12px;color:#64748B;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">text</span></span>
+      </section>
+      <section style="padding:11px 14px;">
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">RDMA WRITE → GPU Buffer</span></p>
+      </section>
+    </section>
+
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">同时 GPU Kernel 正在读取同一 Buffer，就不能假设 NIC Completion 自动等于 GPU 一定观察到完整且有序的数据。</span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">正确做法需要 CUDA / Communication Runtime 提供同步与 <span style="border-bottom:2px solid #A7F3D0;font-weight:600;">Memory Ordering</span> 保证。</span>
+    </p>
+
+    <p style="font-size:15px;font-weight:900;color:#111827;margin:0 0 16px;">
+      <span style="background:linear-gradient(180deg,transparent 65%,#FDE68A 65%);padding:0 4px;"><span leaf="">3.8 GPUDirect RDMA 与 NCCL</span></span>
+    </p>
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">大多数 AI 开发者不会直接操作 verbs API，而是：</span>
+    </p>
+
+    <section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
+      <section style="display:flex;align-items:center;padding:9px 14px;background:#0F172A;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
+        <span style="margin-left:12px;font-size:12px;color:#64748B;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">text</span></span>
+      </section>
+      <section style="padding:11px 14px;">
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">PyTorch Distributed</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　NCCL</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">Network Transport</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　　│</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　　　　▼</span></p>
+        <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">GPUDirect RDMA</span></p>
+      </section>
+    </section>
+
+    <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+      <span leaf="">这也是 GPUDirect RDMA 实际普及度远高于“直接调用相关 API 的开发者人数”的原因。</span>
+    </p>
+  </section>
+
+<!--CHAPTERS-->
+
+</section>

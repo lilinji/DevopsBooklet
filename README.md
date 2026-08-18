@@ -84,6 +84,35 @@
 | 故障处理 | 事故响应、应急预案、RCA、复盘机制 |
 | 备份恢复 | 数据备份、快照、灾备、恢复演练 |
 | 运维规范 | Runbook、Checklist、变更流程、发布流程 |
+| AI 基础设施 | GPU/NPU 架构与编程、CUDA、集群运维、NCCL、推理优化、KV Cache、Agent、RAG |
+| AI 集群运维 | nvidia-smi、InfiniBand、GPU 调度、HAMi、云原生 AI 平台 |
+
+---
+
+## AI 基础设施小册（AI Fundamentals）
+
+涵盖从硬件底座到智能体应用的全链路 AI 技术栈：GPU/NPU 架构与异构编程、AI 集群运维与 NCCL 高性能通信、云原生 AI 平台（K8s + GPU 调度）、大模型训练与微调、推理系统优化（vLLM / SGLang / KV Cache）、RAG 与知识图谱、企业级 AI Agent 开发，以及 AI Native 全栈实践。已按工程师运维风格重构，含学习路径图与章节速览。
+
+> **入口**：[AI Fundamentals ｜ AI 基础设施实战小册](AI-fundamentals/README.md)
+>
+> **口号**：看懂硬件，写对算子，跑稳集群，算清成本——不掉坑，不白花算力！
+
+| 模块 | 技术栈 | 目录 |
+|---|---|---|
+| 硬件架构与互连 | GPU/TPU、PCIe、NVLink、GPUDirect、GB300 | [01_hardware_architecture](AI-fundamentals/01_hardware_architecture/README.md) |
+| GPU / DPU / NPU 编程 | CUDA、TileLang、DOCA、CANN | [02_*_programming](AI-fundamentals/02_gpu_programming/README.md) |
+| AI 集群运维 | nvidia-smi、InfiniBand、NCCL | [03_ai_cluster_ops](AI-fundamentals/03_ai_cluster_ops/README.md) |
+| 云原生 AI 平台 | K8s、Kueue/HAMi、JuiceFS/3FS | [04_cloud_native_ai_platform](AI-fundamentals/04_cloud_native_ai_platform/README.md) |
+| 模型训练与微调 | SFT、LoRA、70B 从零训练 | [05_model_training_and_fine_tuning](AI-fundamentals/05_model_training_and_fine_tuning/README.md) |
+| LLM 理论与基础 | Transformer、MoE、量化、Deep Research | [06_llm_theory_and_fundamentals](AI-fundamentals/06_llm_theory_and_fundamentals/README.md) |
+| RAG 与工具生态 | RAG、GraphRAG、Neo4j、PDF 解析 | [07_rag_and_tools](AI-fundamentals/07_rag_and_tools/README.md) |
+| 企业级 AI Agent | 多智能体、MCP、记忆、上下文工程 | [08_agentic_system](AI-fundamentals/08_agentic_system/README.md) |
+| 推理系统与优化 | vLLM、SGLang、KV Cache、成本分析 | [09_inference_system](AI-fundamentals/09_inference_system/README.md) |
+| 课程与学习路径 | AISystem、Token Factory、Trae | [10_ai_related_course](AI-fundamentals/10_ai_related_course/README.md) |
+| AI Native 全栈 | Vibe Coding、Software 3.0 | [11_ai_native_everything](AI-fundamentals/11_ai_native_everything/README.md) |
+| LLM 应用开发 | Spring AI、LangGraph、Coze、n8n | [98_llm_programming](AI-fundamentals/98_llm_programming/README.md) |
+
+---
 
 关于运维安全的推荐阅读：
 

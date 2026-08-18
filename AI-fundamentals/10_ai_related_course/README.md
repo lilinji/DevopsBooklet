@@ -1,0 +1,63 @@
+# AI 相关课程
+
+![Course](https://img.shields.io/badge/Course-AI%20System-blue) ![Lecture](https://img.shields.io/badge/Lecture-Token%20Factory-purple) ![Training](https://img.shields.io/badge/Training-Multi%20Agent-green)
+
+> **章节定位**：系统性课程、培训讲稿、课件与实战案例集——从底层 AI 基础设施到上层 AI 编程、智能体开发的一条进阶路径。
+>
+> **学完能做**：跟完 ZOMI AI System 全栈课；理解"每 token 成本四年降 100 倍"的四层杠杆；用 Trae 跑通 AI 辅助开发全流程；掌握 LangGraph 企业级多智能体培训内容。
+>
+> **本章核心**：课程是地图，实战是脚印。
+
+---
+
+AI Fundamentals 课程资源库汇集了人工智能领域的系统性课程、培训讲稿、课件与实战案例。内容涵盖了从底层的 AI 基础设施到上层的 AI 编程实战、智能体开发等多个维度，旨在为学习者提供一条完整的人工智能技术进阶路径。
+
+## 1. 课程模块概览
+
+以下四大核心模块梳理了 AI 学习的基础设施与实战应用，为学习者构建了清晰的知识导航体系。
+
+- **[AI 编程入门](ai_coding/README.md)**：包含 AI 辅助编程的基础概念与实战演示课件。
+- **[Token Factory 讲座](ai_infra_lecture/入门级/README.md)**：AI 推理成本革命——四层杠杆（模型架构/硬件/推理引擎/基础设施与生态）如何让每 token 成本四年下降 100 倍。
+- **[多智能体系统](multi_agent_system/multi_agent_training/README.md)**：深入讲解多智能体架构设计、LangGraph 框架应用及企业级落地实践。
+- **[Trae 编程实战](trae/README.md)**：围绕 Trae 智能 IDE 展开的从基础到高级的全流程实战开发教程。
+
+## 2. 核心课程详情
+
+详细的模块大纲明确了各个技术栈的侧重点与核心知识体系，涵盖从工具使用到架构设计的完整演进路径。
+
+### 2.1 AI 编程入门
+
+AI 编程基础培训通过实战演示与交互式课件，指导开发者如何利用 AI 工具重塑软件开发工作流并大幅提升研发效率。详见 [ai_coding/README.md](ai_coding/README.md)。
+
+- 课件资源：包含多页 HTML 格式的演示幻灯片，可通过浏览器直接查看（附带 `ppt-mode.js` 驱动）。
+
+### 2.2 Token Factory 讲座
+
+一场 90 分钟的技术普及讲座，回答一个问题：AI 推理成本为什么在四年里下降 100 倍？答案沿"模型架构 → 硬件 → 推理引擎 → 基础设施与生态"四层杠杆展开，覆盖 2026 年最新格局（DeepSeek-V4 CSA/HCA、Kimi K3 2.8T、开源价格战 28 倍价差、1M 上下文、Agentic 编程）。详见 [ai_infra_lecture/入门级/README.md](ai_infra_lecture/入门级/README.md)。
+
+- **内容资产**：40 页 PPT 大纲（单一数据源）+ 552 行演讲逐字稿 + 自制 PPT 成品（40 页）。
+- **演示资源**：GPU 与 CPU 对比演示视频、Transwarp 品牌 Logo。
+
+### 2.3 多智能体系统
+
+多智能体系统开发培训从底层理论延伸至企业级应用，全面覆盖 LangGraph 框架实践与 LangSmith 监控体系。详见 [multi_agent_system/multi_agent_training/README.md](multi_agent_system/multi_agent_training/README.md)。
+
+- **理论基础**：多智能体系统概论，建立基础认知。
+- **框架应用**：深入探讨 LangGraph 框架在复杂业务流程中的应用。
+- **运维与架构**：涵盖 LangSmith 监控平台集成、企业级系统架构设计以及部署运维实战。
+
+### 2.4 Trae 编程实战
+
+Trae 智能编程实战教程采用循序渐进的五阶结构，系统讲解从环境配置、代码开发到微服务运维的全流程 AI 辅助开发方案。详见 [trae/README.md](trae/README.md)。
+
+- **基础入门**：Trae 简介、环境配置与基础交互模式。
+- **场景实战**：现代前端开发、高性能后端 API、数据库设计与安全权限管理。
+- **高级应用**：涵盖微服务架构、数据分析可视化与 AI 模型集成。
+- **团队协作**：探讨代码质量管理、项目协作与 DevOps 云原生实践。
+- **综合项目**：从架构设计到核心功能开发，再到最终的部署运维全流程演示。
+
+### 2.5 独立学习资料
+
+独立的技术专题文档提供了特定领域的知识纵深，为完整的课程体系补充了具备商业实战价值的延展阅读材料。
+
+- [AI Agents for Beginners 课程之 AI Agent 及使用场景简介](AI%20Agents%20for%20Beginners%20%E8%AF%BE%E7%A8%8B%E4%B9%8B%20AI%20Agent%E5%8F%8A%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF%E7%AE%80%E4%BB%8B.md)：深入浅出地介绍了 AI Agent 的基础概念及其在实际业务中的典型使用场景。
